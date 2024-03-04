@@ -1,8 +1,8 @@
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
 import Logo from "./Logo";
 import { HeaderStyle } from "./Header.style";
 import { Container } from "@/styles/Common.style";
-import {HeaderDropdown} from "./"
+import HeaderDropdown from "@/components/Header/HeaderDropdown";
+
 
 export const Header = () => {
     return <HeaderStyle>
