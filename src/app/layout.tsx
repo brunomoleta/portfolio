@@ -3,6 +3,8 @@ import { Inter } from "next/font/google";
 import "./custom.variables.css";
 import { Providers } from "@/providers/Providers";
 import React from "react";
+import { Header } from "@/components/Header";
+import { PageMain } from "@/components/Main";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -12,19 +14,22 @@ const inter = Inter({
 
 export const metadata: Metadata = {
   title: "Bruno Moleta's portfolio",
-  description: "Full stack developer portfolio",
+  description: "Bruno Moleta's Full stack developer portfolio",
 };
 
 export default function RootLayout({
-                                     children,
-                                   }: Readonly<{
+  children,
+}: Readonly<{
   children: React.ReactNode;
 }>) {
   return (
-      <html lang="pt-BR">
+    <html lang="pt-BR">
       <body className={inter.className}>
-      <Providers>{children}</Providers>
+        <Providers>
+          <Header />
+          <PageMain>{children}</PageMain>
+        </Providers>
       </body>
-      </html>
+    </html>
   );
 }
