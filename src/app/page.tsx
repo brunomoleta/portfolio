@@ -1,16 +1,16 @@
-import { Header } from "@/components/header";
-import { PageMain } from "@/components/main";
-import { Footer } from "@/components/footer";
-import { Hero } from "@/components/main/hero";
+import { Header } from "@/components/Header";
+import { PageMain } from "@/components/Main";
+import { Footer } from "@/components/Footer";
+import { Hero } from "@/components/Main/hero";
 
 export default function Home() {
   return (
       <>
-        <Header></Header>
+        <Header/>
         <PageMain>
           <Hero />
         </PageMain>
-        <Footer></Footer>
+        <Footer/>
       </>
   );
 }
