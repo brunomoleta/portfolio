@@ -5,15 +5,31 @@
 
     /*colors*/
 
-
     --pure-white: hsl(223, 100%, 100%);
     --rich-black: hsl(250, 100%, 12.5%);
-    --grey-100: hsl(0, 0%, 98%);
-    --grey-200: hsl(223, 18%, 96%);
-    --grey-300: hsl(232.5, 8.16%, 61.57%);
-    --grey-400: hsl(232.5, 0%, 59%);
-    --grey-400-t: hsl(232.5, 0%, 0%, 30%);
 
+    --cool-grey-90: hsl(212, 19%, 16%);
+    --cool-grey-80: hsl(214, 20%, 16%);
+    --cool-grey-70: hsl(211, 17%, 28%);
+    --cool-grey-60: hsl(211, 14%, 32%);
+    --cool-grey-50: hsl(216, 10%, 48%);
+    --cool-grey-40: hsl(215, 12%, 64%);
+    --cool-grey-30: hsl(216, 12%, 84%);
+    --cool-grey-20: hsl(214, 14%, 90%);
+    --cool-grey-10: hsl(200, 14%, 96%);
+    --cool-grey-5:  hsl(210, 20%, 98%);
+
+    --neutral-grey-90: hsl(0, 0%, 11%);
+    --neutral-grey-80: hsl(0, 0%, 17%);
+    --neutral-grey-70: hsl(0, 0%, 27%);
+    --neutral-grey-60: hsl(0, 0%, 34%);
+    --neutral-grey-50: hsl(0, 0%, 46%);
+    --neutral-grey-40: hsl(0, 0%, 65%);
+    --neutral-grey-30: hsl(0, 0%, 84%);
+    --neutral-grey-20: hsl(0, 0%, 91%);
+    --neutral-grey-10: hsl(0, 0%, 96%);
+    --neutral-grey-5:  hsl(0, 0%, 98%);
+    
     --red-80: hsla(4, 86%, 36%, 1);
     --red-70: hsla(4, 86%, 47%, 1);
     --red-60: hsla(4, 86%, 58%, 1);
@@ -21,25 +37,41 @@
     --red-40: hsla(4, 86%, 74%, 1);
 
     /*font-size*/
-    --font-hero: 3.5rem;
-    --font-large: 2.5rem;
-    --font-medium-2: 1.625rem;
-    --font-medium: 1.125rem;
-    --font-normal: 1rem;
-    --font-small: 0.875rem;
-    --font-smaller: 0.625rem;
+    --font-display-1: 7rem;
+    --font-display-2: 6.5rem;
+    --font-display-3: 6rem;
 
+    --font-heading-1: 5.25rem;
+    --font-heading-2: 4rem;
+    --font-heading-3: 3.375rem;
+    --font-heading-4: 2.625rem;
+    --font-heading-5: 2.125rem;
+    --font-heading-6: 1.750rem;
+    --font-heading-7: 0.750rem;
+    
+    --font-body-1: 1.625rem;
+    --font-body-2: 1.375rem;
+    --font-body-3: 1.250rem;
+    --font-body-4: 1.125rem;
+
+    --font-body-sm-1: 1rem;
+    --font-body-sm-2: .875rem;
+    --font-body-sm-3: .75rem;
+
+    
     /*clamp*/
     --font-heading-clamp: clamp(var(--font-medium-2), 12svw, var(--font-large));
     --page-alignment: clamp(var(--s0), 10svw, var(--s2));
-
+    
     /*card width*/
     --flex-wrap-card: 1 0 220px;
-
+    
     /*media query*/
     --media-tablet: 550px;
     --media-desktop: 930px;
-
+    
+    --desktop-width: 1440px;
+    
     /*mockups image sizes*/
 
     --mockup-image-width: 767;
