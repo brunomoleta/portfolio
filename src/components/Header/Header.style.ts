@@ -1,0 +1,13 @@
+"use client";
+import styled from "styled-components";
+
+export const HeaderStyle = styled.header`
+    width: 100%;   
+    display: grid;
+
+    padding-block: var(--s0);
+
+    border-block-end: 2px solid var(--cool-grey-30);
+
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+`
