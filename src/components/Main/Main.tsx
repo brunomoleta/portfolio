@@ -1,12 +1,12 @@
-import { Container } from "@/styles/Common.style";
+import {Container, MainStyles} from "@/styles/Common.style";
 import {ChildrenProps} from "@/types/children";
 
 export const PageMain = ({children}:ChildrenProps) =>{
-    return <main>
+    return <MainStyles>
         <Container>
         {children}
         </Container>
-    </main>
+    </MainStyles>
 }
 
 export default PageMain;
