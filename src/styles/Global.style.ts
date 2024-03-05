@@ -31,7 +31,8 @@ const GlobalStyles = createGlobalStyle`
     /* the bigger container */
     .wrapper {
         min-height: 100%;
-        border: solid;
+        width: 100%;
+        border: 1px solid transparent;
     }
 
     ol {
