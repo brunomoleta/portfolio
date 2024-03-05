@@ -1,52 +1,83 @@
 'use client';
 import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import styled from "styled-components";
+import * as Ariakit from "@ariakit/react";
 
-export const DContent = styled(DropdownMenu.Content)`
+export const MenuProvider = styled(Ariakit.MenuProvider)``
+
+export const DContent = styled(Ariakit.Menu)`
 
 
-  width: 100%;
-    max-width: 500px;
+    min-width: 100%;
+    width: 90svw;
+    max-width: 350px;
 
-  background-color: white;
-  border-radius: 6px;
+    background-color: white;
+    border-radius: 6px;
 
-  padding: 8px;
-  padding-block: 16px;
+    padding: 8px;
+    padding-block: 16px;
 
-  box-shadow:
-    0 10px 38px -10px rgba(22, 23, 24, 0.35),
+    box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35),
     0 10px 20px -15px rgba(22, 23, 24, 0.2);
 
-  animation-duration: 400ms;
-  animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+    animation-duration: 400ms;
+    animation-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
 
-  will-change: transform, opacity;
+    will-change: transform, opacity;
 `;
 
-export const DSubTrigger = styled(DropdownMenu.SubTrigger)`
-  cursor: pointer;
+export const DSubTrigger = styled(Ariakit.MenuButton)`
+    margin-inline-start: auto;
+    cursor: pointer;
+    outline-offset: 8px;
 
-  &:hover {
-    outline: 2px solid var(--teal-60);
-  }
+    &:hover {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 2px;
+    }
+    &:focus {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 4px;
+    }
+    &:active {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 4px;
+    }
 `;
-export const DItem = styled(DropdownMenu.Item)`
-  padding-block: 4px;
-  font-weight: 500;
-  background-color: var(--cool-grey-5);
-  padding-block-end: 8px;
-  padding-inline: 8px;
+export const DItem = styled(Ariakit.MenuItem)`
+    font-weight: 500;
+    background-color: var(--cool-grey-5);
 
-  &:hover {
-    outline: 2px solid var(--teal-60);
-  }
 
+    padding-block: var(--s0) 8px;
+    padding-inline: 8px;
+
+    cursor: pointer;
+
+    width: 100%;
+    max-width: 500px;
+
+    &:hover {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 2px;
+    }
+
+    &:focus {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 4px;
+    }
+
+    &:active {
+        outline: 2px solid var(--teal-60);
+        outline-offset: 4px;
+    }
+    
 `;
 
 export const DSeparator = styled(DropdownMenu.Separator)`
   height: 2px;
-  color: var(--teal-40);
+  color: var(--teal-50);
 `;
 
 
