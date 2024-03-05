@@ -1,20 +1,14 @@
 import React from "react";
-import Link from "next/link";
 import HeroLink from "@/components/Main/hero/HeroLink";
-import {LinksListStyle} from "@/components/Main/hero/LinksList/LinksList.style";
+import { LinksListStyle } from "@/components/Main/hero/LinksList/LinksList.style";
+import { linksList } from "@/services/data";
 
 function LinksList() {
   return (
     <LinksListStyle>
-      <HeroLink name="github" href="https://github.com/brunomoleta" />
-      <HeroLink
-        name="linkedin"
-        href="https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/"
-      />
-      <HeroLink
-        name="currículo vitae"
-        href="/"
-      />
+      {linksList.map((item) => (
+        <HeroLink name={item.name} href={item.href} />
+      ))}
     </LinksListStyle>
   );
 }
