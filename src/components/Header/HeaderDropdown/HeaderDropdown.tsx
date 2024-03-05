@@ -15,8 +15,8 @@ function HeaderDropdown() {
         <HamburgerMenuIcon />
       </DSubTrigger>
       <DContent gutter={32}>
-        {dropdownList.map((item) => (
-          <DropdownItem name={item.name} href={item.href} />
+        {dropdownList.map((item, index) => (
+          <DropdownItem key={index} name={item.name} href={item.href} />
         ))}
       </DContent>
     </MenuProvider>

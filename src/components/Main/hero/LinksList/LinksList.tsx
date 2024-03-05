@@ -6,8 +6,8 @@ import { linksList } from "@/services/data";
 function LinksList() {
   return (
     <LinksListStyle>
-      {linksList.map((item) => (
-        <HeroLink name={item.name} href={item.href} />
+      {linksList.map((item, index) => (
+        <HeroLink key={index} name={item.name} href={item.href} />
       ))}
     </LinksListStyle>
   );

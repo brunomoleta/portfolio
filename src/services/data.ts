@@ -1,8 +1,8 @@
 export const headerItems: string[] = ["início", "sobre", "projetos", "contato"];
 
-export const heroHeading = "Bruno Moleta. Full-stack Developer.";
+export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
-    "Sou um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-stack.";
+    "Sou um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-Stack.";
 
 export const linksList = [
     {
