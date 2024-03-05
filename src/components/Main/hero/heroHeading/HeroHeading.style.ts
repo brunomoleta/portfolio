@@ -5,11 +5,18 @@ export const HHeading = styled.div`
     padding-block: var(--s1);
     font-weight: 700;
     width: 100%;
-    
-    display: flex;
-    flex-wrap: wrap;
 
-    gap: var(--s0);
+    display: flex;
+    flex-flow: column;
+
+    gap: var(--s2);
+
+    @media (min-width: 550px) {
+        display: grid;
+        grid-template-columns: 48% 48%;
+        gap: 4%;
+    }
+
 `;
 
 export const Name = styled.h1`
@@ -18,10 +25,3 @@ export const Name = styled.h1`
     max-width: 100%;
 `
 
-export const HeroText = styled.p`
-    font-size: clamp(var(--font-heading-7), 20svw, var(--font-body-4));
-    line-height: 130%;
-    max-width: 100%;
-    
-    max-inline-size: 50ch;
-`

@@ -1,5 +1,4 @@
 import React from "react";
-import Link from "next/link";
 import { upper } from "@/services/service";
 import {ListItem} from "@/components/Main/hero/HeroLink/HeroLink.style";
 
