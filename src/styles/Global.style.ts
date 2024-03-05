@@ -189,18 +189,15 @@ const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        max-inline-size: 50ch;
+        max-inline-size: var(--max-inline-size);
     }
-
-    html,
-    body,
+    
     div,
     header,
-    nav,
-    main,
     footer,
-    section,
-    article,
+    main,
+    html,
+    body,
     ul,
     form,
     input[type="text"],
@@ -211,7 +208,6 @@ const GlobalStyles = createGlobalStyle`
     a {
         // pointer-events: none;
         cursor: pointer;
-        text-decoration: underline;
     }
 
     /* Chrome, Safari, Edge, Opera */
@@ -239,19 +235,18 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    p {
-        color: var(--grey-300);
-        font-size: var(--font-small);
-        text-align: initial;
-    }
-
     li {
 
-        color: var(--grey-400);
+        color: var(--cool-grey-90);
     }
 
     a:disabled, button:disabled {
         opacity: .6;
+    }
+
+    a:focus, a:hover, button:hover, button:focus, button:active {
+        outline-offset: 2px;    
+        outline: 2px solid var(--teal-70);
     }
 `;
 
