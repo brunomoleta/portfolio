@@ -7,6 +7,11 @@ export const Container = styled.div`
     margin: auto;
 
     padding-inline: var(--page-alignment);
+    margin-block: var(--s1);
+
+    display: flex;
+    flex-flow: column;
+    gap: var(--s3);
 `
 
 export const FixedContainer = styled(Container)`

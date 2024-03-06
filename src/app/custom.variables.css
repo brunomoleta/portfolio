@@ -138,7 +138,6 @@ input[type='radio']:hover {
 
 
 .casio {
-    position: absolute;
     inset: 0;
     right: -20px;
 
@@ -155,6 +154,8 @@ input[type='radio']:hover {
     0 3px 1px #FBFAF8 inset,
     0 45px 10px -25px rgba(0, 0, 0, 0.1),
     0 65px 50px -10px rgba(0, 0, 0, 0.05);
+
+    margin-inline: auto;
 }
 
 .speaker {

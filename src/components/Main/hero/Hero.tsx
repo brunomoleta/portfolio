@@ -5,13 +5,12 @@ import HeroInfo from "@/components/Main/hero/HeroInfo";
 
 export const Hero = () => {
   return (
-      <>
-    <HeroHeading>
-      <Name>{heroHeading}</Name>
-      <HeroInfo />
-    </HeroHeading>
-
-      </>
+    <>
+      <HeroHeading>
+        <Name>{heroHeading}</Name>
+        <HeroInfo />
+      </HeroHeading>
+    </>
   );
 };
 
