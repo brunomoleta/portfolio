@@ -192,7 +192,7 @@ const GlobalStyles = createGlobalStyle`
     * {
         max-inline-size: var(--max-inline-size);
     }
-    
+
     div,
     header,
     footer,
@@ -202,7 +202,9 @@ const GlobalStyles = createGlobalStyle`
     ul,
     form,
     input[type="text"],
-    hr {
+    button,
+    summary,
+    div[data-orientation="vertical"], hr {
         max-inline-size: none;
     }
 
@@ -246,7 +248,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a:focus, a:hover, button:hover, button:focus, button:active {
-        outline-offset: 2px;    
+        outline-offset: 2px;
         outline: 2px solid var(--teal-70);
     }
 `;
