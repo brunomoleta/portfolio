@@ -1,4 +1,5 @@
 import React from "react";
+import {StaticImageData} from "next/image";
 
 export interface ChildrenProps {
     children: ReactNode;
@@ -10,3 +11,13 @@ export interface ITechItem {
     items: string[];
 }
 
+export interface IProject {
+    title: string;
+    subTitle: string;
+    tags: string[];
+    illustration: string;
+    live: string;
+    doc: string;
+    backEndRepo: string;
+    frontEndRepo: string;
+}
