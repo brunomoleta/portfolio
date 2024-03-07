@@ -15,7 +15,7 @@ export interface IProject {
     title: string;
     subTitle: string;
     tags: string[];
-    illustration: string;
+    illustration: StaticImageData;
     live: string;
     doc: string;
     backEndRepo: string;

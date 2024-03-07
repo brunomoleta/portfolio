@@ -5,8 +5,11 @@ import {
   ImageWrapper,
   ProjectArticle,
   ProjectImage,
+  Subtitle,
+  Title,
 } from "@/components/Main/Projects/projectCard/ProjectCard.style";
 import { upper } from "@/services/service";
+import { LinksListStyle } from "@/components/Main/hero/LinksList/LinksList.style";
 
 export const ProjectCard = ({ item }: { item: IProject }) => {
   const {
@@ -22,8 +25,10 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
   return (
     <>
       <ProjectArticle>
-        <h3>{upper(title)}</h3>
-        <h4>{upper(subTitle)}</h4>
+        <div>
+          <Title>{title}</Title>
+          <Subtitle>{upper(subTitle)}</Subtitle>
+        </div>
         <ImageWrapper>
           <ProjectImage
             fill={true}
@@ -31,9 +36,11 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
             alt="human hand holding a mobile with the app running in it"
           />
         </ImageWrapper>
-        {tags.map((tag, index) => (
-          <TagItem key={index} tag={tag} />
-        ))}
+        <LinksListStyle>
+          {tags.map((tag, index) => (
+            <TagItem key={index} tag={tag} />
+          ))}
+        </LinksListStyle>
       </ProjectArticle>
     </>
   );
