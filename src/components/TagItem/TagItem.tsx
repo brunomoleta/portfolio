@@ -10,6 +10,8 @@ function TagItem({ tag }: { tag: string }) {
 export default TagItem;
 
 export const TechItem = styled.li`
+  font-size: clamp(var(--font-body-sm-2), 5svw, var(--font-body-sm-4));
+
   text-align: center;
   padding: var(--s-4) var(--s1);
 

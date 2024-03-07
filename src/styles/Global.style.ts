@@ -204,6 +204,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="text"],
     button,
     summary,
+    article,
     div[data-orientation="vertical"], hr {
         max-inline-size: none;
     }

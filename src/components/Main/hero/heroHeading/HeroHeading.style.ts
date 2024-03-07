@@ -11,7 +11,7 @@ export const HHeading = styled.div`
 
     gap: var(--s2);
 
-    @media (min-width: 550px) {
+    @media (min-width: 900px) {
         display: grid;
         grid-template-columns: 48% 48%;
         gap: 4%;

@@ -7,3 +7,7 @@ export const LinksListStyle = styled.ul`
     flex-wrap: wrap;
     gap: var(--s-1);
 `
+
+export const ProjList = styled(LinksListStyle)`
+    justify-content: space-around;
+`

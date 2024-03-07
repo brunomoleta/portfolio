@@ -5,25 +5,57 @@ import Image from "next/image";
 export const ProjectArticle = styled
 .article`
     width: 100%;
-    flex: 1 0 50%;
+
+    padding: var(--s1) var(--s0);
+    border-radius: var(--s-1);
+    border: 2px solid var(--cool-grey-30);
+
+    min-height: 900px;
+    max-width: 460px;
+
+    display: flex;
+    flex-flow: column;
+
+
+    gap: var(--s1);
+
+    box-shadow: 4px 4px 12px 0 rgba(141, 141, 141, 0.25);
+
 `
 
 export const ImageWrapper = styled.div`
-    overflow: auto;
-    
-
-    
     position: relative;
     
+    width: 100%;
+    height: 100%;
     
-    
-    max-height: 500px;
-    
-    
-    width: 500px;
-    height: 500px;
-    
+    border-radius: var(--s1);
+    max-width: 400px;
+
 `
 export const ProjectImage = styled(Image)`
-    position: absolute;
+    overflow: hidden;
+    max-height: 600px;
+    
+    
+    
+    height: auto;
+    width: auto;
+    
+    
+    object-fit: cover;
+    object-position: top;
+`
+
+
+export const Subtitle = styled.h4`
+    word-break: normal;
+    color: var(--cool-grey-40);
+    font-size: clamp(var(--font-body-sm-2), 4%, var(--font-body-sm-4));
+
+`
+export const Title = styled.h3`
+    font-weight: 700;
+    font-size: clamp(var(--font-body-sm-1), 4svw, var(--font-body-sm-3));
+
 `
