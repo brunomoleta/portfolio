@@ -1,21 +1,18 @@
-import React from "react";
-import { ChevronDownIcon } from "@radix-ui/react-icons";
-import * as Accordion from "@radix-ui/react-accordion";
-import {ITechItem} from "@/services/data";
+import {PlusIcon} from "@radix-ui/react-icons";
+import {
+  TechName,
+  Trigger,
+} from "@/components/Main/Stack/ATrigger/ATrigger.style";
+import {ITechItem} from "@/types/children";
 
-function ATrigger({
-  tech,
-}: {
-  tech: Omit<ITechItem
-      , 'items'>
-}){
+function ATrigger({ tech }: { tech: Omit<ITechItem, "items"> }) {
   const { logoImage, name } = tech;
   return (
-    <Accordion.Trigger>
+    <Trigger>
       {logoImage}
-      {name}
-      <ChevronDownIcon />
-    </Accordion.Trigger>
+      <TechName>{name}</TechName>
+      <PlusIcon width={20} height="auto" style={{ marginInlineStart: "auto" }} />
+    </Trigger>
   );
 }
 

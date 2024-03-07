@@ -1,17 +1,22 @@
 import React from "react";
-import * as Accordion from "@radix-ui/react-accordion";
-import { ITechItem } from "@/services/data";
+
+import {
+    AContainer,
+    ContentList,
+    Item,
+} from "@/components/Main/Stack/AContent/AContent.style";
+import {ITechItem} from "@/types/children";
 
 function AContent({ tech }: { tech: Pick<ITechItem, "items"> }) {
   const { items } = tech;
   return (
-    <Accordion.Content>
-      <ul>
+    <AContainer>
+      <ContentList>
         {items.map((item, index) => (
-          <li key={index}>{item}</li>
+          <Item key={index}>{item}</Item>
         ))}
-      </ul>
-    </Accordion.Content>
+      </ContentList>
+    </AContainer>
   );
 }
 
