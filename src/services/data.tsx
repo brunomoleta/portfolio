@@ -1,7 +1,8 @@
 import React from "react";
-import { TechImage } from "@/components/Main/Stack/ATrigger/ATrigger.style";
+import {TechImage} from "@/components/Main/Stack/ATrigger/ATrigger.style";
 import {IProject, ITechItem} from "@/types/children";
-import CasioKeyboard from "@/components/CasioKeyboard";
+import DurvalMobileHome from "../assets/durval-home.jpg"
+import BankMobileHome from "../assets/bank_home_mobile.jpg";
 
 export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
@@ -151,10 +152,10 @@ export const backEndList: ITechItem[] = [
 
 export const projects: IProject[] = [
   {
-    title: "durval Music Shop",
-    subTitle: "e-commerce de equipamentos musicais",
+    title: "Durval Music Shop",
+    subTitle: "e-commerce de equipamentos musicais para compra e venda.",
     tags: ["react", "styled-components", "node.js", "express.js", "postgreSQL"],
-    illustration: "https://img.freepik.com/psd-gratuitas/mao-segurando-uma-nova-maquete-de-smartphone-cercada-por-folhas_252953-23.jpg?w=1380&t=st=1709827948~exp=1709828548~hmac=fcc9a47070ef686a67d65ab1432f6ee031493c51c2bb575de05eb0ca1540dc8b",
+    illustration: DurvalMobileHome,
     live: "https://durval-music-shop.vercel.app/",
     doc: "https://loja-do-durval.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/durval-music-shop-server",
@@ -162,9 +163,9 @@ export const projects: IProject[] = [
   },
   {
     title: "Easybank Investments",
-    subTitle: "onde investidores encontram assessores de investimentos",
+    subTitle: "onde investidores encontram assessores de investimentos.",
     tags: ["next.js", "node.js", "nest.js", "postgreSQL", "styled-components"],
-    illustration: "https://img.freepik.com/psd-gratuitas/mao-segurando-uma-nova-maquete-de-smartphone-cercada-por-folhas_252953-23.jpg?w=1380&t=st=1709827948~exp=1709828548~hmac=fcc9a47070ef686a67d65ab1432f6ee031493c51c2bb575de05eb0ca1540dc8b",
+    illustration: BankMobileHome,
     live: "https://easybank-investments.vercel.app/",
     doc: "https://investment-fullstack.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
