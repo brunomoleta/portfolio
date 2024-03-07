@@ -4,7 +4,7 @@ import {
   Wrapper,
 } from "@/components/Main/Stack/Stack.style";
 import { ArrowRightIcon } from "@radix-ui/react-icons";
-import { upper } from "@/services/service";
+import ProjectsList from "@/components/Main/Projects/ProjectsList";
 
 export const ProjectsSection = () => {
   return (
@@ -13,6 +13,7 @@ export const ProjectsSection = () => {
         <ArrowRightIcon />
         <Heading>{"projetos".toUpperCase()}</Heading>
       </StackHeader>
+      <ProjectsList />
     </Wrapper>
   );
 };
