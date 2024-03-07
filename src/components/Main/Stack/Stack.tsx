@@ -1,19 +1,30 @@
-"use client";
-import * as Accordion from "@radix-ui/react-accordion";
-import ATrigger from "@/components/Main/Stack/ATrigger";
-import AContent from "@/components/Main/Stack/AContent";
-import { ITechItem } from "@/services/data";
+import { ArrowRightIcon } from "@radix-ui/react-icons";
+import {
+  Heading, StackHeader,
+  StackSection,
+  Wrapper,
+} from "@/components/Main/Stack/Stack.style";
+import AccordionFull from "@/components/Main/Stack/AccordionFull";
+import {ITechItem} from "@/types/children";
 
-export const Stack = ({ techList }: { techList: ITechItem[] }) => {
+
+export const Stack = ({
+  stackType,
+  techList,
+}: {
+  stackType: string;
+  techList: ITechItem[];
+}) => {
   return (
-    <Accordion.Root type="single" defaultValue={techList[0].name} collapsible>
-      {techList.map((tech, index) => (
-        <Accordion.Item key={index} value={tech.name}>
-          <ATrigger tech={tech} />
-          <AContent tech={tech} />
-        </Accordion.Item>
-      ))}
-    </Accordion.Root>
+    <StackSection>
+      <Wrapper>
+        <StackHeader>
+          <ArrowRightIcon />
+          <Heading>{stackType.toUpperCase()}</Heading>
+        </StackHeader>
+        <AccordionFull techList={techList} />
+      </Wrapper>
+    </StackSection>
   );
 };
 
