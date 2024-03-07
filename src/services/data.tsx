@@ -1,9 +1,11 @@
-import Image from "next/image";
 import React from "react";
+import { TechImage } from "@/components/Main/Stack/ATrigger/ATrigger.style";
+import {ITechItem} from "@/types/children";
+import CasioKeyboard from "@/components/CasioKeyboard";
 
 export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
-  "Sou um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-Stack.";
+  "O Bruno é um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-Stack.";
 
 export const linksList = [
   {
@@ -39,21 +41,17 @@ export const dropdownList = [
   },
 ];
 
-export interface ITechItem {
-  name: string;
-  logoImage: React.ReactNode;
-  items: string[];
-}
+
 
 export const frontEndList: ITechItem[] = [
   {
     name: "React",
     logoImage: (
-      <Image
+      <TechImage
         alt="react.js"
         title="react.js"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
       />
     ),
@@ -66,11 +64,11 @@ export const frontEndList: ITechItem[] = [
   {
     name: "Next.js",
     logoImage: (
-      <Image
+      <TechImage
         alt="next.js"
         title="next.js"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
       />
     ),
@@ -82,11 +80,11 @@ export const frontEndList: ITechItem[] = [
   {
     name: "HTML",
     logoImage: (
-      <Image
+      <TechImage
         alt="html"
         title="html"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
       />
     ),
@@ -99,11 +97,11 @@ export const frontEndList: ITechItem[] = [
   {
     name: "CSS",
     logoImage: (
-      <Image
+      <TechImage
         alt="CSS"
         title="css"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
       />
     ),
@@ -119,11 +117,11 @@ export const backEndList: ITechItem[] = [
   {
     name: "Node.js",
     logoImage: (
-      <Image
+      <TechImage
         alt="node.js"
         title="node.js"
-        width="50"
-        height="50"
+        width="40"
+        height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
       />
     ),
@@ -137,16 +135,39 @@ export const backEndList: ITechItem[] = [
   {
     name: "Git",
     logoImage: (
-      <Image
-        alt="node.js"
-        title="node.js"
-        width="50"
-        height="50"
-        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
+      <TechImage
+        alt="Git"
+        title="Git"
+        width="40"
+        height="40"
+        src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
       />
     ),
     items: [
       "Criar commit's baseado em boas práticas, com zelo para mantê-los curtos e facilitar a revisão de código por pares;",
     ],
+  },
+];
+
+export const projects = [
+  {
+    title: "durval Music Shop",
+    subTitle: "e-commerce de equipamentos musicais",
+    tags: ["react", "styled-components", "node.js", "express.js", "postgreSQL"],
+    illustration: <CasioKeyboard/>,
+    live: "https://durval-music-shop.vercel.app/",
+    doc: "https://loja-do-durval.onrender.com/doc",
+    backEndRepo: "https://github.com/brunomoleta/durval-music-shop-server",
+    frontEndRepo: "https://github.com/brunomoleta/durval-music-shop-client",
+  },
+  {
+    project: "Easybank Investments",
+    subTitle: "onde investidores encontram assessores de investimentos",
+    tags: ["react.js", "node.js", "nest.js", "postgreSQL", "styled-components"],
+    illustration: <CasioKeyboard/>,
+    live: "https://easybank-investments.vercel.app/",
+    doc: "https://investment-fullstack.onrender.com/doc",
+    backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
+    frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
   },
 ];
