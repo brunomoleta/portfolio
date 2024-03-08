@@ -1,11 +1,10 @@
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import {
-  Heading, StackHeader,
   StackSection,
   Wrapper,
 } from "@/components/Main/Stack/Stack.style";
 import AccordionFull from "@/components/Main/Stack/AccordionFull";
 import {ITechItem} from "@/types/children";
+import SectionHeader from "@/components/SectionHeader";
 
 
 export const Stack = ({
@@ -18,10 +17,7 @@ export const Stack = ({
   return (
     <StackSection>
       <Wrapper>
-        <StackHeader>
-          <ArrowRightIcon />
-          <Heading>{stackType.toUpperCase()}</Heading>
-        </StackHeader>
+        <SectionHeader word={stackType}/>
         <AccordionFull techList={techList} />
       </Wrapper>
     </StackSection>

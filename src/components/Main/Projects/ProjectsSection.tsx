@@ -1,18 +1,11 @@
-import {
-  Heading,
-  StackHeader,
-  Wrapper,
-} from "@/components/Main/Stack/Stack.style";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
+import { Wrapper } from "@/components/Main/Stack/Stack.style";
 import ProjectsList from "@/components/Main/Projects/ProjectsList";
+import SectionHeader from "@/components/SectionHeader";
 
 export const ProjectsSection = () => {
   return (
     <Wrapper>
-      <StackHeader>
-        <ArrowRightIcon />
-        <Heading>{"projetos".toUpperCase()}</Heading>
-      </StackHeader>
+      <SectionHeader word="projetos" />
       <ProjectsList />
     </Wrapper>
   );
