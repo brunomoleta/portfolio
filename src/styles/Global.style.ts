@@ -26,15 +26,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         font-family: Inter, sans-serif;
     }
-
-    /*
-    /* the bigger container */
-    .wrapper {
-        min-height: 100%;
-        width: 100%;
-        border: 1px solid transparent;
-    }
-
+    
     ol {
         margin: 0;
         padding: 0
@@ -149,37 +141,6 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    .sr-only {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-
-    .not-sr-only {
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        overflow: visible;
-        clip: auto;
-        white-space: normal;
-    }
-
-    .visually-hidden {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-    }
-
     em {
         text-decoration: none;
         font-style: normal;
@@ -204,6 +165,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="text"],
     button,
     summary,
+    section,
     article,
     div[data-orientation="vertical"], hr {
         max-inline-size: none;

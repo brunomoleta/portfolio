@@ -10,8 +10,14 @@ export const ContentList = styled.ul`
     
     display: grid;
     gap: var(--s0);
+    
+    @media (min-width: 900px){
+        margin: auto;
+        width: fit-content;
+    }
 `
 
 export const Item = styled.li`
     list-style: revert;
+    
 `

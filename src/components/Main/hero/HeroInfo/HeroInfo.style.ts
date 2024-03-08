@@ -13,5 +13,5 @@ export const HeroText = styled.p`
     line-height: 130%;
     max-width: 100%;
     
-    max-inline-size: 50ch;
+    max-inline-size: var(--max-inline-size);
 `

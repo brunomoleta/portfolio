@@ -1,7 +1,7 @@
 "use client";
 import styled from "styled-components";
 
-export const HHeading = styled.div`
+export const HHeading = styled.section`
     padding-block: var(--s1);
     font-weight: 700;
     width: 100%;
