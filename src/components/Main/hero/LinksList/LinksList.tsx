@@ -6,7 +6,7 @@ import SectionHeader from "@/components/SectionHeader";
 
 function LinksList() {
   return (
-    <div>
+    <div style={{display:"flex", flexWrap:"wrap"}}>
       <SectionHeader word="links:" />
       <LinksListStyle>
         {linksList.map((item, index) => (

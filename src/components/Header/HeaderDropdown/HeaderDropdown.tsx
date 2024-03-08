@@ -12,7 +12,7 @@ function HeaderDropdown() {
   return (
     <MenuProvider>
       <DSubTrigger>
-        <HamburgerMenuIcon />
+        <HamburgerMenuIcon height={30} width={30}/>
       </DSubTrigger>
       <DContent gutter={32}>
         {dropdownList.map((item, index) => (

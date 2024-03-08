@@ -19,6 +19,14 @@ export const FixedContainer = styled(Container)`
     flex-flow: revert;
     justify-content: space-between;
     align-items: center;
+    
+`
+
+export const FooterContainer = styled(FixedContainer)`
+    margin-block: initial;
+    flex-flow: column;
+    gap: var(--s1);
+
 `
 
 export const MainStyles = styled.main`

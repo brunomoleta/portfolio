@@ -29,7 +29,6 @@ export const ImageWrapper = styled.div`
     width: 100%;
     height: 100%;
     
-    border-radius: var(--s1);
     max-width: 400px;
 
 `
@@ -37,6 +36,7 @@ export const ProjectImage = styled(Image)`
     overflow: hidden;
     max-height: 600px;
     
+    border-radius: var(--s-1);
     
     
     height: auto;
@@ -57,5 +57,8 @@ export const Subtitle = styled.h4`
 export const Title = styled.h3`
     font-weight: 700;
     font-size: clamp(var(--font-body-sm-1), 4svw, var(--font-body-sm-3));
+`
 
+export const SectionTitle = styled(Title)`
+    font-size: var(--font-body-3);
 `

@@ -6,7 +6,7 @@ import HeroInfo from "@/components/Main/hero/HeroInfo";
 export const Hero = () => {
   return (
     <>
-      <HeroHeading>
+      <HeroHeading >
         <Name>{heroHeading}</Name>
         <HeroInfo />
       </HeroHeading>

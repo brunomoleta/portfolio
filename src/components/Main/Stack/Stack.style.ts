@@ -9,23 +9,25 @@ export const Wrapper = styled.div`
 
     margin-block-end: var(--s-1);
 `;
-export const Heading = styled.h2`
+export const Heading = styled.h3`
     font-weight: normal;
     color: var(--cool-grey-50);
 `;
 
 export const StackHeader = styled.div`
-    min-width: 100%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
     gap: var(--s0);
 
     margin-block-end: var(--s0);
+    margin-inline-end: auto;
 `
 export const StackSection = styled.section`
     min-width: 100%;
 
     display: flex;
     flex-flow: column;
+
+    margin-block-start: var(--s2);
 `;

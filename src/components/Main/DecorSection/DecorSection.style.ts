@@ -13,6 +13,8 @@ export const Wrapper = styled.div`
     position: relative;
 
     box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+    
+    
 `
 
 export const DecorSectionStyle = styled.section`
@@ -20,5 +22,6 @@ export const DecorSectionStyle = styled.section`
     display: flex;
     flex-flow: column;
     gap: var(--s-1);
+    
 `
 //https://codepen.io/fossheim/pen/jObGxQQ
