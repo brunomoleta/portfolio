@@ -5,7 +5,7 @@ import SectionHeader from "@/components/SectionHeader";
 export const ProjectsSection = () => {
   return (
     <Wrapper id="projetos">
-      <SectionHeader word="projetos" />
+      <SectionHeader changeH="h2" word="projetos" />
       <ProjectsList />
     </Wrapper>
   );
