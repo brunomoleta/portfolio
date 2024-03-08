@@ -214,6 +214,10 @@ const GlobalStyles = createGlobalStyle`
         outline-offset: 2px;
         outline: 2px solid var(--teal-70);
     }
+    body{
+        display: grid;
+        grid-template-rows: 160px 1fr 300px;
+    }
 `;
 
 export default GlobalStyles;
