@@ -3,7 +3,14 @@ import {TechImage} from "@/components/Main/Stack/ATrigger/ATrigger.style";
 import {IProject, ITechItem} from "@/types/types";
 import DurvalMobileHome from "../assets/Durval/durval-home.jpg"
 import BankMobileHome from "../assets/Easy/bank_home_mobile.jpg";
+import {
+  CVLogo,
+  GithubLogo,
+  LinkedinLogo,
+} from "@/components/Footer/FooterList/FooterList.style";
 
+export const github = "https://github.com/brunomoleta"
+export const linkedin = "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/"
 export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
   "O Bruno é um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-Stack.";
@@ -180,15 +187,23 @@ export const projects: IProject[] = [
   },
 ];
 
-// export const footer = [
-//   {
-//     key: "telefone",
-//     value: "+55 (41) 9.9223.8239"
-//   },
-//   {
-//     key: "email",
-//     value: "brunomoleta@pm.me"
-//   },
-// ]
+export const footerData = [
+  {
+    title:"ir para linkedin",
+    href: linkedin,
+    icon: <LinkedinLogo/>
+  },
+  {
+    title:"ir para github",
+    href: github,
+    icon: <GithubLogo/>
+  },
+  {
+    title:"ir para Currículo Vitae",
+    href: linkedin,
+    icon: <CVLogo/>
+  }
+]
 
 export const whatsappURL = 'https://api.whatsapp.com/send?phone=5541992238239'
+
