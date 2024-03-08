@@ -10,16 +10,23 @@ function DecorSection() {
   return (
     <>
       <DecorSectionStyle>
-        <Wrapper>
-          <BraunWatch />
-        </Wrapper>
-
-        <Wrapper>
-          <CasioKeyboard />
-        </Wrapper>
+        <DecorItem decor={<BraunWatch />} />
+        <DecorItem decor={<CasioKeyboard />} />
       </DecorSectionStyle>
     </>
   );
 }
 
 export default DecorSection;
+
+interface DecorSectionProps {
+  decor: React.ReactNode;
+}
+
+const DecorItem: React.FC<DecorSectionProps> = ({ decor }) => {
+  return (
+    <>
+      <Wrapper>{decor}</Wrapper>
+    </>
+  );
+};
