@@ -10,6 +10,7 @@ import {
 } from "@/components/Footer/FooterList/FooterList.style";
 
 export const github = "https://github.com/brunomoleta"
+export const cvLink = "https://drive.google.com/file/d/1QDu5DKaSdNzCIrMOWQHO_qOfBqcIbIAs/view?usp=drive_link";
 export const linkedin = "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/"
 export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
@@ -18,15 +19,15 @@ export const heroParagraph =
 export const linksList = [
   {
     name: "github",
-    href: "https://github.com/brunomoleta",
+    href: github,
   },
   {
     name: "linkedin",
-    href: "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/",
+    href: linkedin,
   },
   {
     name: "currículo vitae",
-    href: "/",
+    href: cvLink,
   },
 ];
 
@@ -202,7 +203,7 @@ export const footerData = [
   },
   {
     title:"ir para Currículo Vitae",
-    href: linkedin,
+    href: cvLink,
     icon: <CVLogo/>
   }
 ]
