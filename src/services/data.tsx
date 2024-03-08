@@ -172,7 +172,8 @@ export const projects: IProject[] = [
     doc: "https://loja-do-durval.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/durval-music-shop-server",
     frontEndRepo: "https://github.com/brunomoleta/durval-music-shop-client",
-    href:"durval-music-shop"
+    href:"durval-music-shop",
+    authors: ["Bruno Moleta", "Gustavo Lazarin", "Filipe Otávio", "João Pedro"]
   },
   {
     title: "Easybank Investments",
@@ -183,7 +184,8 @@ export const projects: IProject[] = [
     doc: "https://investment-fullstack.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
     frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
-    href:"easybank-investments"
+    href:"easy-bank-investments",
+    authors: ["Bruno Moleta"]
   },
 ];
 
