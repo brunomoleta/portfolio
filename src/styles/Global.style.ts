@@ -26,14 +26,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         font-family: Inter, sans-serif;
     }
-
-    /*
-    /* the bigger container */
-    .wrapper {
-        min-height: 100%;
-        border: solid;
-    }
-
+    
     ol {
         margin: 0;
         padding: 0
@@ -148,37 +141,6 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    .sr-only {
-        position: absolute;
-        left: -10000px;
-        top: auto;
-        width: 1px;
-        height: 1px;
-        overflow: hidden;
-    }
-
-    .not-sr-only {
-        position: static;
-        width: auto;
-        height: auto;
-        padding: 0;
-        margin: 0;
-        overflow: visible;
-        clip: auto;
-        white-space: normal;
-    }
-
-    .visually-hidden {
-        position: absolute;
-        overflow: hidden;
-        clip: rect(0 0 0 0);
-        height: 1px;
-        width: 1px;
-        margin: -1px;
-        padding: 0;
-        border: 0;
-    }
-
     em {
         text-decoration: none;
         font-style: normal;
@@ -189,29 +151,29 @@ const GlobalStyles = createGlobalStyle`
     }
 
     * {
-        max-inline-size: 50ch;
+        max-inline-size: var(--max-inline-size);
     }
 
-    html,
-    body,
     div,
     header,
-    nav,
-    main,
     footer,
-    section,
-    article,
+    main,
+    html,
+    body,
     ul,
     form,
     input[type="text"],
-    hr {
+    button,
+    summary,
+    section,
+    article,
+    div[data-orientation="vertical"], hr {
         max-inline-size: none;
     }
 
     a {
         // pointer-events: none;
         cursor: pointer;
-        text-decoration: underline;
     }
 
     /* Chrome, Safari, Edge, Opera */
@@ -239,19 +201,22 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    p {
-        color: var(--grey-300);
-        font-size: var(--font-small);
-        text-align: initial;
-    }
-
     li {
 
-        color: var(--grey-400);
+        color: var(--cool-grey-90);
     }
 
     a:disabled, button:disabled {
         opacity: .6;
+    }
+
+    a:focus, a:hover, button:hover, button:focus, button:active {
+        outline-offset: 2px;
+        outline: 2px solid var(--teal-70);
+    }
+    body{
+        display: grid;
+        grid-template-rows: 160px 1fr 300px;
     }
 `;
 
