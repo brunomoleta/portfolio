@@ -1,8 +1,8 @@
 import React from "react";
 import {TechImage} from "@/components/Main/Stack/ATrigger/ATrigger.style";
 import {IProject, ITechItem} from "@/types/types";
-import DurvalMobileHome from "../assets/durval-home.jpg"
-import BankMobileHome from "../assets/bank_home_mobile.jpg";
+import DurvalMobileHome from "../assets/Durval/durval-home.jpg"
+import BankMobileHome from "../assets/Easy/bank_home_mobile.jpg";
 
 export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
 export const heroParagraph =
@@ -30,15 +30,20 @@ export const dropdownList = [
   },
   {
     name: "sobre",
-    href: "/sobre-o-bruno",
+    href: "/#sobre-o-bruno",
   },
   {
+    name: "tecnologias",
+    href: "/#tecnologias",
+  },
+
+  {
     name: "projetos",
-    href: "/projetos",
+    href: "/#projetos",
   },
   {
     name: "contato",
-    href: "/contato",
+    href: "/#contato",
   },
 ];
 
@@ -174,3 +179,16 @@ export const projects: IProject[] = [
     href:"easybank-investments"
   },
 ];
+
+// export const footer = [
+//   {
+//     key: "telefone",
+//     value: "+55 (41) 9.9223.8239"
+//   },
+//   {
+//     key: "email",
+//     value: "brunomoleta@pm.me"
+//   },
+// ]
+
+export const whatsappURL = 'https://api.whatsapp.com/send?phone=5541992238239'
