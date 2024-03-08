@@ -30,3 +30,7 @@ export interface HeroLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElem
         href: string;
     };
 }
+
+export interface IIcon {
+    item: {title: string, href: string, icon: React.JSX.Element}
+}

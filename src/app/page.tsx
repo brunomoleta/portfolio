@@ -10,11 +10,11 @@ export default function Home() {
     <>
       <Hero />
       <DecorSection />
-      <div>
-        <SectionTitle id="tecnologias" as="h2">Tecnologias aplicadas</SectionTitle>
+      <section>
+        <SectionTitle id="tecnologias" as="h2">Tecnologias</SectionTitle>
         <Stack stackType="front end" techList={frontEndList} />
         <Stack stackType="back end e outros" techList={backEndList} />
-      </div>
+      </section>
       <ProjectsSection />
     </>
   );

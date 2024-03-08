@@ -3,7 +3,7 @@ import {
   ImageWrapper,
   ProjectImage,
 } from "@/components/Main/Projects/projectCard/ProjectCard.style";
-import {StaticImageData} from "next/image";
+import { StaticImageData } from "next/image";
 
 function ProjectIllustration({
   illustration,
@@ -13,6 +13,7 @@ function ProjectIllustration({
   return (
     <ImageWrapper>
       <ProjectImage
+        sizes={"(max-width: 550px) 100vw, (max-width: 1200px) 50vw, 30vw"}
         fill={true}
         src={illustration}
         alt="human hand holding a mobile with the app running in it"
