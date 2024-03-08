@@ -1,46 +1,20 @@
 import { IProject } from "@/types/children";
 import React from "react";
-import TagItem from "@/components/TagItem";
-import {
-  ImageWrapper,
-  ProjectArticle,
-  ProjectImage,
-  Subtitle,
-  Title,
-} from "@/components/Main/Projects/projectCard/ProjectCard.style";
-import { upper } from "@/services/service";
-import { LinksListStyle } from "@/components/Main/hero/LinksList/LinksList.style";
+import { ProjectArticle } from "@/components/Main/Projects/projectCard/ProjectCard.style";
+import ProjectRelatedTechs from "@/components/Main/Projects/projectCard/ProjectRelatedTechs";
+import ProjectIllustration from "@/components/Main/Projects/projectCard/ProjectIllustration";
+import ProjectInfo from "@/components/Main/Projects/projectCard/ProjectInfo";
+import ProjectBtn from "@/components/Main/Projects/projectCard/ProjectBtn";
 
 export const ProjectCard = ({ item }: { item: IProject }) => {
-  const {
-    title,
-    subTitle,
-    illustration,
-    tags,
-    doc,
-    live,
-    frontEndRepo,
-    backEndRepo,
-  } = item;
+  const { illustration, tags, href } = item;
   return (
     <>
       <ProjectArticle>
-        <div>
-          <Title>{title}</Title>
-          <Subtitle>{upper(subTitle)}</Subtitle>
-        </div>
-        <ImageWrapper>
-          <ProjectImage
-            fill={true}
-            src={illustration}
-            alt="human hand holding a mobile with the app running in it"
-          />
-        </ImageWrapper>
-        <LinksListStyle>
-          {tags.map((tag, index) => (
-            <TagItem key={index} tag={tag} />
-          ))}
-        </LinksListStyle>
+        <ProjectInfo item={item} />
+        <ProjectIllustration illustration={illustration} />
+        <ProjectRelatedTechs tags={tags} />
+        <ProjectBtn destination={href} />
       </ProjectArticle>
     </>
   );

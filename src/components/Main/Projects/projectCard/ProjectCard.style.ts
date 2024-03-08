@@ -10,7 +10,7 @@ export const ProjectArticle = styled
     border-radius: var(--s-1);
     border: 2px solid var(--cool-grey-30);
 
-    min-height: 900px;
+    min-height: 1000px;
     max-width: 460px;
 
     display: flex;
