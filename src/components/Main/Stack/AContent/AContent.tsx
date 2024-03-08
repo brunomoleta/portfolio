@@ -5,7 +5,7 @@ import {
     ContentList,
     Item,
 } from "@/components/Main/Stack/AContent/AContent.style";
-import {ITechItem} from "@/types/children";
+import {ITechItem} from "@/types/types";
 
 function AContent({ tech }: { tech: Pick<ITechItem, "items"> }) {
   const { items } = tech;

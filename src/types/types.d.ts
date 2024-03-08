@@ -20,4 +20,13 @@ export interface IProject {
     doc: string;
     backEndRepo: string;
     frontEndRepo: string;
+
+    href: string;
+}
+
+export interface HeroLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+    item: {
+        name: string;
+        href: string;
+    };
 }

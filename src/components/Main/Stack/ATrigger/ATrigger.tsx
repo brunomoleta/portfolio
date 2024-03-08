@@ -3,7 +3,7 @@ import {
   TechName,
   Trigger,
 } from "@/components/Main/Stack/ATrigger/ATrigger.style";
-import {ITechItem} from "@/types/children";
+import {ITechItem} from "@/types/types";
 
 function ATrigger({ tech }: { tech: Omit<ITechItem, "items"> }) {
   const { logoImage, name } = tech;

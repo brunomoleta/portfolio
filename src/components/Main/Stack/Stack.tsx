@@ -3,7 +3,7 @@ import {
   Wrapper,
 } from "@/components/Main/Stack/Stack.style";
 import AccordionFull from "@/components/Main/Stack/AccordionFull";
-import {ITechItem} from "@/types/children";
+import {ITechItem} from "@/types/types";
 import SectionHeader from "@/components/SectionHeader";
 
 

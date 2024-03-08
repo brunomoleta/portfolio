@@ -1,5 +1,5 @@
 import { Container, MainStyles } from "@/styles/Common.style";
-import { ChildrenProps } from "@/types/children";
+import { ChildrenProps } from "@/types/types";
 
 export const PageMain = ({ children }: ChildrenProps) => {
   return (

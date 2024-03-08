@@ -1,4 +1,4 @@
-import { IProject } from "@/types/children";
+import { IProject } from "@/types/types";
 import React from "react";
 import { ProjectArticle } from "@/components/Main/Projects/projectCard/ProjectCard.style";
 import ProjectRelatedTechs from "@/components/Main/Projects/projectCard/ProjectRelatedTechs";
