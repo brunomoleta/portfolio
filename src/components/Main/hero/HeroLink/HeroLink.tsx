@@ -1,13 +1,11 @@
 import React from "react";
 import { upper } from "@/services/service";
-import {ListItem} from "@/components/Main/hero/HeroLink/HeroLink.style";
+import { ListItem } from "@/components/Main/hero/HeroLink/HeroLink.style";
+import { HeroLinkProps } from "@/types/types";
 
-interface HeroLinkProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
-  name: string;
-  href: string;
-}
+function HeroLink({ item, ...props }: HeroLinkProps) {
+  const { href, name } = item;
 
-function HeroLink({ name, href, ...props }: HeroLinkProps) {
   return (
     <li>
       <ListItem {...props} href={href}>

@@ -1,6 +1,6 @@
 import React from "react";
 import {TechImage} from "@/components/Main/Stack/ATrigger/ATrigger.style";
-import {IProject, ITechItem} from "@/types/children";
+import {IProject, ITechItem} from "@/types/types";
 import DurvalMobileHome from "../assets/durval-home.jpg"
 import BankMobileHome from "../assets/bank_home_mobile.jpg";
 
@@ -153,13 +153,14 @@ export const backEndList: ITechItem[] = [
 export const projects: IProject[] = [
   {
     title: "Durval Music Shop",
-    subTitle: "e-commerce de equipamentos musicais para compra e venda.",
-    tags: ["react", "styled-components", "node.js", "express.js", "postgreSQL"],
+    subTitle: "e-commerce de equipamentos musicais.",
+    tags: ["react.js", "node.js", "express.js", "postgreSQL","styled-components"],
     illustration: DurvalMobileHome,
     live: "https://durval-music-shop.vercel.app/",
     doc: "https://loja-do-durval.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/durval-music-shop-server",
     frontEndRepo: "https://github.com/brunomoleta/durval-music-shop-client",
+    href:"durval-music-shop"
   },
   {
     title: "Easybank Investments",
@@ -170,5 +171,6 @@ export const projects: IProject[] = [
     doc: "https://investment-fullstack.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
     frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
+    href:"easybank-investments"
   },
 ];
