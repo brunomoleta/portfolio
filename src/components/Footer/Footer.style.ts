@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledFooter = styled.footer`
     width: 100%;
     
-    padding-block: var(--s1) var(--s3);
+    padding-block: var(--s2) var(--s3);
 
     border-block-start: 2px solid var(--cool-grey-30);
     box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35),
