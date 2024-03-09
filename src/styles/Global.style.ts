@@ -217,9 +217,7 @@ const GlobalStyles = createGlobalStyle`
     body{
         background-color: #ffffff;
         color: #000000;
-        
-        display: grid;
-        grid-template-rows: auto 1fr auto;
+
     }
 `;
 
