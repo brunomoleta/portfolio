@@ -215,8 +215,11 @@ const GlobalStyles = createGlobalStyle`
         outline: 2px solid var(--teal-70);
     }
     body{
+        background-color: #ffffff;
+        color: #000000;
+        
         display: grid;
-        grid-template-rows: 160px 1fr 300px;
+        grid-template-rows: auto 1fr auto;
     }
 `;
 

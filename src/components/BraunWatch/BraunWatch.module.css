@@ -12,10 +12,10 @@
             #E5E1E0
     );
     box-shadow: 0 0 0 8px #DCE3E0 inset,
-    0px 80px 60px -70px #384140;
-    position: relative;
+    0 80px 60px -70px #384140;
+    position: absolute;
 
-    bottom: 25px;
+    inset: 0;
 }
 
 .speaker {
