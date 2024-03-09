@@ -12,6 +12,8 @@ export const ProjBtn = styled(Link)`
     text-decoration: underline;
     transition: color 300ms;
     
+    word-break: break-word;
+    
     
     &:hover {
         outline: revert;

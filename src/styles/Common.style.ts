@@ -6,7 +6,7 @@ export const Container = styled.div`
     max-width: var(--desktop-width);
     margin: auto;
 
-    padding-inline: var(--page-alignment);
+    padding-inline: clamp(1px, 3%, var(--page-alignment));
     margin-block: var(--s1);
 
     display: flex;

@@ -4,7 +4,7 @@ import { LinksListStyle } from "@/components/Main/hero/LinksList/LinksList.style
 
 function ProjectRelatedTechs({ tags }: { tags: string[] }) {
   return (
-    <LinksListStyle>
+    <LinksListStyle style={{marginBlock:"4ex"}}>
       {tags.map((tag: string, index: number) => (
         <TagItem key={index} tag={tag} />
       ))}

@@ -1,15 +1,15 @@
 import LiItem from "@/components/Footer/FooterList/LiItem";
 import React from "react";
 import {projects} from "@/services/data";
-import {HHeading} from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import {List} from "@/components/Footer/FooterList/FooterList.style";
+import {Name} from "@/components/Main/hero/heroHeading/HeroHeading.style";
 
 function SingleProject({projectNumber}: {
     projectNumber: number;
 }) {
     return (
         <>
-            <HHeading>{projects[projectNumber].title}</HHeading>
+            <Name>{projects[projectNumber].title}</Name>
             <List>
                 <LiItem
                     topic="documentação back end"
