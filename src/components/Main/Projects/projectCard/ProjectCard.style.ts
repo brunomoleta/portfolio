@@ -1,11 +1,12 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
+import Link from "next/link";
 
 export const ProjectArticle = styled.article`
   width: 100%;
 
-  padding: var(--s1) var(--s0);
+  padding: var(--s1) clamp(1px,3%,var(--s0));
   border-radius: var(--s-1);
   border: 2px solid var(--cool-grey-30);
 
@@ -22,16 +23,28 @@ export const InfoWrapper = styled.div`
   gap: var(--s-4);
 `;
 
-export const ImageWrapper = styled.div`
-  position: relative;
+export const ImageWrapper = styled(Link)`
+    position: relative;
 
-  width: 100%;
-  height: 100%;
+    width: 100%;
+    height: 100%;
 
-  max-width: 400px;
+    max-width: 400px;
+    
+    overflow: hidden;
+
+    &:hover {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+
+        img {
+            transform: scale(1.05);
+            transition: transform 350ms ease-in-out;
+            border-radius: var(--s-2);
+        }
+    }
 `;
 export const ProjectImage = styled(Image)`
-  overflow: hidden;
   max-height: 600px;
 
   border-radius: var(--s-1);

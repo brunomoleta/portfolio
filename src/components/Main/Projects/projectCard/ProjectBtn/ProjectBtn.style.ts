@@ -12,8 +12,7 @@ export const ProjBtn = styled(Link)`
     text-decoration: underline;
     transition: color 300ms;
     
-    word-break: break-all;
-    line-break: anywhere;
+    word-break: break-word;
     
     
     &:hover {

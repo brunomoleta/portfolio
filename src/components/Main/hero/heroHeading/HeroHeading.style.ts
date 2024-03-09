@@ -20,7 +20,7 @@ export const HHeading = styled.section`
 `;
 
 export const Name = styled.h1`
-    font-size: clamp(var(--font-heading-4), 5svw, var(--font-heading-7));
+    font-size: clamp(var(--font-heading-5), 5svw, var(--font-heading-7));
     line-height: 120%;
     max-width: 100%;
 `
