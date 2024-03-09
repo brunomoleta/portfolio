@@ -12,7 +12,7 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
     <>
       <ProjectArticle>
         <ProjectInfo item={item} />
-        <ProjectIllustration illustration={illustration} />
+        <ProjectIllustration destination={href} illustration={illustration} />
         <ProjectRelatedTechs tags={tags} />
         <ProjectBtn destination={href} />
       </ProjectArticle>
