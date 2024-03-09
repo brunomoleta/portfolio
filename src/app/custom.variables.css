@@ -131,13 +131,6 @@ input[type='radio']:hover {
     outline: 3px solid grey;
 }
 
-@media (prefers-color-scheme: dark) {
-    html {
-        color-scheme: dark;
-    }
-}
-
-
 .casio {
     inset: 0;
     right: -20px;
@@ -1000,5 +993,5 @@ input[type='radio']:hover {
 .wrapper {
     min-width: 100%;
     border: none;
-    position: relative;
+    position: absolute;
 }
