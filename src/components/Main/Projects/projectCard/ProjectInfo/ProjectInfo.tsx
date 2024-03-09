@@ -1,7 +1,8 @@
 import React from "react";
 import {
-  Subtitle,
-  Title,
+    InfoWrapper,
+    Subtitle,
+    Title,
 } from "@/components/Main/Projects/projectCard/ProjectCard.style";
 import { upper } from "@/services/service";
 import { IProject } from "@/types/types";
@@ -9,10 +10,10 @@ import { IProject } from "@/types/types";
 function ProjectInfo({ item }: { item: IProject }) {
   const { title, subTitle } = item;
   return (
-    <div>
+    <InfoWrapper>
       <Title>{title}</Title>
       <Subtitle>{upper(subTitle)}</Subtitle>
-    </div>
+    </InfoWrapper>
   );
 }
 
