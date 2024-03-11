@@ -30,8 +30,7 @@ export const heroParagraph4 =
   "Desta forma, ao desenvolver aplicações web através de Next.js, Node.js, Typescript e CSS, " +
   "alio habilidades comportamentais e técnicas para criar soluções escaláveis e " +
   "que façam a experiência do usuário";
-export const heroParagraph5 =
-  " fluida como um rio e ligeira como um drible do Vinícius Jr.";
+export const heroParagraph5 = "";
 
 export const linksList = [
   {
@@ -184,7 +183,13 @@ export const projects: IProject[] = [
     subTitle:
       "E-commerce onde usuários podem comprar ou vender equipamentos musicais. " +
       "Possui fluxo similar ao Mercado Livre ou Olx. ",
-    about: "Aplicação desenvolvida do zero...",
+    about1:
+      "Aplicação desenvolvida do zero absoluto. Partimos tão somente do desafio: fazer um e-commerce full stack. Foi o primeiro projeto" +
+      " robusto e independente feito por cada um da equipe.",
+    about2:
+      " Fui responsável por definir o Design de Interface" +
+      "(o que foi desafiador pois nunca tive que pensar em um design antes), por larga parte do Front end e " +
+      "por toda a documentação do projeto.",
     motivation: "Hackaton Kenzie Academy Brasil",
     tags: [
       "react.js",
@@ -207,12 +212,14 @@ export const projects: IProject[] = [
     subTitle:
       "Aplicação onde investidores obtém orientação 1:1 de assessores de investimentos" +
       " desde o momento que criam a conta.",
-    about: "Aplicação desenvolvida do zero a partir do" +
-        " requisito básico do projeto final: desenvolver uma aplicação full stack em Javascript com operações de CRUD e uma relação" +
-        "1:1 e 1:N no back end." +
-        " Para tornar o projeto mais divertido e contextualizado na realidade," +
-        " usei um template de design do site frontendmentor.io e um tema que gosto, " +
-        "investimentos.",
+    about1:
+      "Aplicação desenvolvida do zero absoluto. O desafio:" +
+      " desenvolver aplicação full stack em Typescript com operações de criação, leitura, edição e listagem(CRUD) dos dados do usuário, e " +
+      "estabelecer junto a este uma relação 1:N com outra entidade.",
+    about2:
+      " Para tornar o projeto mais divertido e ancorado ao mundo real " +
+      " foi tomado como base um template de design(figma) do site frontendmentor.io e o contexto " +
+      "do mundo de investimentos.",
     motivation: "Projeto final Kenzie Academy Brasil",
 
     tags: ["next.js", "node.js", "nest.js", "postgreSQL", "styled-components"],
