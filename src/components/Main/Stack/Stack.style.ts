@@ -9,6 +9,16 @@ export const Wrapper = styled.section`
 
     margin-block: var(--s2) var(--s-1);
 `;
+
+export const Describe = styled.small`
+    color: var(--cool-grey-50);
+    
+    margin-block-end: var(--s1);
+    margin-inline-end: auto;
+    font-size: var(--font-body-sm-2);
+    line-height: 130%;
+
+`
 export const Heading = styled.h3`
     font-weight: normal;
     color: var(--cool-grey-50);
