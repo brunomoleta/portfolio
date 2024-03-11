@@ -4,12 +4,15 @@ import {
   heroParagraph2,
   heroParagraph3,
   heroParagraph4,
+  heroParagraph5,
+  ingredients,
 } from "@/services/data";
 import LinksList from "@/components/Main/hero/LinksList";
 import {
-    HeroParagraph,
-    HeroText,
-    Wrapper,
+  Emphasis,
+  HeroParagraph,
+  HeroText,
+  Wrapper,
 } from "@/components/Main/hero/HeroInfo/HeroInfo.style";
 
 function HeroInfo() {
@@ -18,8 +21,12 @@ function HeroInfo() {
       <HeroText>
         <HeroParagraph>{heroParagraph1}</HeroParagraph>
         <HeroParagraph>{heroParagraph2}</HeroParagraph>
-        <HeroParagraph>{heroParagraph3}</HeroParagraph>
-        <HeroParagraph>{heroParagraph4}</HeroParagraph>
+        <HeroParagraph>
+          {heroParagraph3} <Emphasis>{ingredients}</Emphasis>
+        </HeroParagraph>
+        <HeroParagraph>
+          {heroParagraph4} <Emphasis>{heroParagraph5}</Emphasis>
+        </HeroParagraph>
       </HeroText>
       <LinksList />
     </Wrapper>
