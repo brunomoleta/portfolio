@@ -1,12 +1,26 @@
 import React from "react";
-import { heroParagraph } from "@/services/data";
+import {
+  heroParagraph1,
+  heroParagraph2,
+  heroParagraph3,
+  heroParagraph4,
+} from "@/services/data";
 import LinksList from "@/components/Main/hero/LinksList";
-import {HeroText, Wrapper} from "@/components/Main/hero/HeroInfo/HeroInfo.style";
+import {
+    HeroParagraph,
+    HeroText,
+    Wrapper,
+} from "@/components/Main/hero/HeroInfo/HeroInfo.style";
 
 function HeroInfo() {
   return (
     <Wrapper>
-      <HeroText>{heroParagraph}</HeroText>
+      <HeroText>
+        <HeroParagraph>{heroParagraph1}</HeroParagraph>
+        <HeroParagraph>{heroParagraph2}</HeroParagraph>
+        <HeroParagraph>{heroParagraph3}</HeroParagraph>
+        <HeroParagraph>{heroParagraph4}</HeroParagraph>
+      </HeroText>
       <LinksList />
     </Wrapper>
   );

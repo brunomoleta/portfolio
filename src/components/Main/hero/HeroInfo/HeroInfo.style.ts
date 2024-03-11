@@ -8,10 +8,19 @@ export const Wrapper = styled.div`
     
     margin-block-start: 6px;
 `
-export const HeroText = styled.p`
-    font-size: clamp(var(--font-heading-7), 20svw, var(--font-body-4));
-    line-height: 130%;
+export const HeroText = styled.article`
+    font-size: var(--font-body-sm-1);
+    line-height: 125%;
     max-width: 100%;
-    
+
+    font-weight: 500;
+
     max-inline-size: var(--max-inline-size);
+
+    @media (min-width: 550px) {
+        font-size: var(--font-body-3);
+    }
+`
+export const HeroParagraph = styled.p`
+    margin-block-end: var(--s0);
 `

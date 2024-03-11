@@ -1,7 +1,7 @@
 import React from "react";
-import {TechImage} from "@/components/Main/Stack/ATrigger/ATrigger.style";
-import {IProject, ITechItem} from "@/types/types";
-import DurvalMobileHome from "../assets/Durval/durval-home.jpg"
+import { TechImage } from "@/components/Main/Stack/ATrigger/ATrigger.style";
+import { IProject, ITechItem } from "@/types/types";
+import DurvalMobileHome from "../assets/Durval/durval-home.jpg";
 import BankMobileHome from "../assets/Easy/bank_home_mobile.jpg";
 import {
   CVLogo,
@@ -9,12 +9,26 @@ import {
   LinkedinLogo,
 } from "@/components/Footer/FooterList/FooterList.style";
 
-export const github = "https://github.com/brunomoleta"
-export const cvLink = "https://drive.google.com/file/d/1QDu5DKaSdNzCIrMOWQHO_qOfBqcIbIAs/view?usp=drive_link";
-export const linkedin = "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/"
-export const heroHeading = "Bruno Moleta. Full-Stack Developer.";
-export const heroParagraph =
-  "O Bruno é um profissional multidisciplinar, versátil e dinâmico com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento full-Stack.";
+export const github = "https://github.com/brunomoleta";
+export const cvLink =
+  "https://drive.google.com/file/d/1QDu5DKaSdNzCIrMOWQHO_qOfBqcIbIAs/view?usp=drive_link";
+export const linkedin =
+  "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/";
+
+export const heroHeading1 = "Bruno Moleta.";
+export const heroHeading2 = "Desenvolvedor Full-Stack.";
+export const heroParagraph1 =
+  "Sou um profissional multidisciplinar, versátil e dinâmico, com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento web full stack pela Kenzie Academy Brasil. ";
+
+export const heroParagraph2 =
+  "Pratico o aprendizado contínuo e, como desenvolvedor tenho o privilégio de fazer parte da evolução do mercado e da vida das pessoas " +
+  "através da tecnologia.";
+export const heroParagraph3 =
+  " Os principais ingredientes de minha carreira são: cooperação e iniciativa. ";
+export const heroParagraph4 =
+  "Desta forma, ao desenvolver aplicações web através de Next.js, Node.js, Typescript e CSS, " +
+  "alio habilidades comportamentais e técnicas para criar soluções escaláveis e " +
+  "que façam a experiência do usuário fluida como um rio e ligeira como um drible do Vinícius Jr.";
 
 export const linksList = [
   {
@@ -54,8 +68,6 @@ export const dropdownList = [
     href: "/#contato",
   },
 ];
-
-
 
 export const frontEndList: ITechItem[] = [
   {
@@ -167,14 +179,20 @@ export const projects: IProject[] = [
   {
     title: "Durval Music Shop",
     subTitle: "e-commerce de equipamentos musicais.",
-    tags: ["react.js", "node.js", "express.js", "postgreSQL","styled-components"],
+    tags: [
+      "react.js",
+      "node.js",
+      "express.js",
+      "postgreSQL",
+      "styled-components",
+    ],
     illustration: DurvalMobileHome,
     live: "https://durval-music-shop.vercel.app/",
     doc: "https://loja-do-durval.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/durval-music-shop-server",
     frontEndRepo: "https://github.com/brunomoleta/durval-music-shop-client",
-    href:"durval-music-shop",
-    authors: ["Bruno Moleta", "Gustavo Lazarin", "Filipe Otávio", "João Pedro"]
+    href: "durval-music-shop",
+    authors: ["Bruno Moleta", "Gustavo Lazarin", "Filipe Otávio", "João Pedro"],
   },
   {
     title: "Easybank Investments",
@@ -185,28 +203,27 @@ export const projects: IProject[] = [
     doc: "https://investment-fullstack.onrender.com/doc",
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
     frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
-    href:"easy-bank-investments",
-    authors: ["Bruno Moleta"]
+    href: "easy-bank-investments",
+    authors: ["Bruno Moleta"],
   },
 ];
 
 export const footerData = [
   {
-    title:"ir para linkedin",
+    title: "ir para linkedin",
     href: linkedin,
-    icon: <LinkedinLogo/>
+    icon: <LinkedinLogo />,
   },
   {
-    title:"ir para github",
+    title: "ir para github",
     href: github,
-    icon: <GithubLogo/>
+    icon: <GithubLogo />,
   },
   {
-    title:"ir para Currículo Vitae",
+    title: "ir para Currículo Vitae",
     href: cvLink,
-    icon: <CVLogo/>
-  }
-]
+    icon: <CVLogo />,
+  },
+];
 
-export const whatsappURL = 'https://api.whatsapp.com/send?phone=5541992238239'
-
+export const whatsappURL = "https://api.whatsapp.com/send?phone=5541992238239";

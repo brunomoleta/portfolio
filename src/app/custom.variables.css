@@ -52,7 +52,7 @@
     --font-heading-1: 5.25rem;
     --font-heading-2: 4rem;
     --font-heading-3: 3.375rem;
-    --font-heading-4: 2.625rem;
+    --font-heading-4: 2.375rem;
     --font-heading-5: 2.125rem;
     --font-heading-6: 1.750rem;
     --font-heading-7: 0.750rem;
@@ -669,7 +669,6 @@ input[type='radio']:hover {
     display: block;
     width: 35px;
     height: 20px;
-    background-color: red;
     border-radius: 3px;
     position: absolute;
     top: 4px;
