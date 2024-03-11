@@ -5,7 +5,7 @@ import HeaderDropdown from "@/components/Header/HeaderDropdown";
 
 export const Header = () => {
   return (
-    <HeaderStyle>
+    <HeaderStyle id="inicio">
       <FixedContainer>
         <Logo />
         <HeaderDropdown />

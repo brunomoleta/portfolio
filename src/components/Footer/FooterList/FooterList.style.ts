@@ -6,6 +6,12 @@ import {
 } from "@radix-ui/react-icons";
 import styled from "styled-components";
 
+export const FooterHead = styled.div`
+    margin-inline-end: auto;
+    display: grid;
+    gap: var(--s0);
+`;
+
 export const Content = styled.div`
 
     min-width: 100%;
@@ -17,7 +23,7 @@ export const Content = styled.div`
 export const List = styled.ul`
     display: flex;
     flex-flow: column;
-    gap: var(--s0)
+    gap: var(--s-1)
 `
 export const IconsList = styled.ul`
     display: flex;

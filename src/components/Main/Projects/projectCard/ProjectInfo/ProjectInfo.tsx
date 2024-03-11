@@ -4,7 +4,6 @@ import {
     Subtitle,
     Title,
 } from "@/components/Main/Projects/projectCard/ProjectCard.style";
-import { upper } from "@/services/service";
 import { IProject } from "@/types/types";
 
 function ProjectInfo({ item }: { item: IProject }) {
@@ -12,7 +11,7 @@ function ProjectInfo({ item }: { item: IProject }) {
   return (
     <InfoWrapper>
       <Title>{title}</Title>
-      <Subtitle>{upper(subTitle)}</Subtitle>
+      <Subtitle>{subTitle}</Subtitle>
     </InfoWrapper>
   );
 }

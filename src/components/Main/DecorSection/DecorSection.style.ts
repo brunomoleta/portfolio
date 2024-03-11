@@ -18,10 +18,24 @@ export const Wrapper = styled.div`
 `
 
 export const DecorSectionStyle = styled.section`
+    display: flex;
+    flex-flow: column;
+`
+
+export const DecorWrapper = styled.div`
     min-width: 100%;
+    
     display: flex;
     flex-flow: column;
     gap: var(--s-1);
-    
 `
-//https://codepen.io/fossheim/pen/jObGxQQ
+
+export const Describe = styled.small`
+    color: var(--cool-grey-50);
+    width: 100%;
+    text-align: end;
+    margin-inline-start: auto;
+    margin-block-start: var(--s-1);
+    font-size: var(--font-body-sm-3);
+    line-height: 130%;
+`

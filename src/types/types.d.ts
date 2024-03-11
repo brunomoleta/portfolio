@@ -14,6 +14,8 @@ export interface ITechItem {
 export interface IProject {
   title: string;
   subTitle: string;
+  about: string;
+  motivation:string;
   tags: string[];
   illustration: StaticImageData;
   live: string;
@@ -22,6 +24,8 @@ export interface IProject {
   frontEndRepo: string;
   authors: string[];
   href: string;
+
+  date: string;
 }
 
 export interface HeroLinkProps

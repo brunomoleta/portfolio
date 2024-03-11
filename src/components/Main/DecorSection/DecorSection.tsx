@@ -1,6 +1,8 @@
 import React from "react";
 import {
   DecorSectionStyle,
+  DecorWrapper,
+  Describe,
   Wrapper,
 } from "@/components/Main/DecorSection/DecorSection.style";
 import BraunWatch from "@/components/BraunWatch";
@@ -10,8 +12,13 @@ function DecorSection() {
   return (
     <>
       <DecorSectionStyle>
-        <DecorItem decor={<BraunWatch />} />
-        <DecorItem decor={<CasioKeyboard />} />
+        <DecorWrapper>
+          <DecorItem decor={<BraunWatch />} />
+          <DecorItem decor={<CasioKeyboard />} />
+        </DecorWrapper>
+        <Describe>
+          Ilustrações feitas 100% em CSS e HTML por Sarah Fossheim.
+        </Describe>
       </DecorSectionStyle>
     </>
   );
