@@ -13,7 +13,7 @@ export const ProjectArticle = styled.article`
   max-width: 460px;
 
   display: grid;
-  grid-template-rows: 10ex 600px auto auto;
+  grid-template-rows: 15ex 600px auto auto;
 
   box-shadow: 4px 4px 12px 0 rgba(141, 141, 141, 0.25);
 `;
@@ -60,7 +60,7 @@ export const Subtitle = styled.h4`
   word-break: normal;
   color: var(--cool-grey-40);
   font-size: clamp(var(--font-body-sm-2), 4%, var(--font-body-sm-4));
-  line-height: 125%;
+  line-height: 130%;
 `;
 export const Title = styled.h3`
   font-weight: 700;

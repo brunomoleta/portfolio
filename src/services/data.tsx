@@ -181,7 +181,11 @@ export const backEndList: ITechItem[] = [
 export const projects: IProject[] = [
   {
     title: "Durval Music Shop",
-    subTitle: "e-commerce de equipamentos musicais.",
+    subTitle:
+      "E-commerce onde usuários podem comprar ou vender equipamentos musicais. " +
+      "Possui fluxo similar ao Mercado Livre ou Olx. ",
+    about: "Aplicação desenvolvida do zero...",
+    motivation: "Hackaton Kenzie Academy Brasil",
     tags: [
       "react.js",
       "node.js",
@@ -196,10 +200,21 @@ export const projects: IProject[] = [
     frontEndRepo: "https://github.com/brunomoleta/durval-music-shop-client",
     href: "durval-music-shop",
     authors: ["Bruno Moleta", "Gustavo Lazarin", "Filipe Otávio", "João Pedro"],
+    date: "Novembro/2023",
   },
   {
     title: "Easybank Investments",
-    subTitle: "onde investidores encontram assessores de investimentos.",
+    subTitle:
+      "Aplicação onde investidores obtém orientação 1:1 de assessores de investimentos" +
+      " desde o momento que criam a conta.",
+    about: "Aplicação desenvolvida do zero a partir do" +
+        " requisito básico do projeto final: desenvolver uma aplicação full stack em Javascript com operações de CRUD e uma relação" +
+        "1:1 e 1:N no back end." +
+        " Para tornar o projeto mais divertido e contextualizado na realidade," +
+        " usei um template de design do site frontendmentor.io e um tema que gosto, " +
+        "investimentos.",
+    motivation: "Projeto final Kenzie Academy Brasil",
+
     tags: ["next.js", "node.js", "nest.js", "postgreSQL", "styled-components"],
     illustration: BankMobileHome,
     live: "https://easybank-investments.vercel.app/",
@@ -207,7 +222,8 @@ export const projects: IProject[] = [
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
     frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
     href: "easy-bank-investments",
-    authors: ["Bruno Moleta"],
+    authors: ["Individual"],
+    date: "Fevereiro/2024",
   },
 ];
 
