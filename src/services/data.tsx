@@ -24,11 +24,14 @@ export const heroParagraph2 =
   "Pratico o aprendizado contínuo e, como desenvolvedor tenho o privilégio de fazer parte da evolução do mercado e da vida das pessoas " +
   "através da tecnologia.";
 export const heroParagraph3 =
-  " Os principais ingredientes de minha carreira são: cooperação e iniciativa. ";
+  " Os principais ingredientes de minha carreira são: ";
+export const ingredients = "cooperação e iniciativa.";
 export const heroParagraph4 =
   "Desta forma, ao desenvolver aplicações web através de Next.js, Node.js, Typescript e CSS, " +
   "alio habilidades comportamentais e técnicas para criar soluções escaláveis e " +
-  "que façam a experiência do usuário fluida como um rio e ligeira como um drible do Vinícius Jr.";
+  "que façam a experiência do usuário";
+export const heroParagraph5 =
+  " fluida como um rio e ligeira como um drible do Vinícius Jr.";
 
 export const linksList = [
   {

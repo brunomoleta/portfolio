@@ -21,6 +21,10 @@ export const HeroText = styled.article`
         font-size: var(--font-body-3);
     }
 `
+export const Emphasis = styled.em`
+    font-weight: 600;
+`
+
 export const HeroParagraph = styled.p`
     margin-block-end: var(--s0);
 `
