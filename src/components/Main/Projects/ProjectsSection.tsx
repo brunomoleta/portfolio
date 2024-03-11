@@ -8,7 +8,7 @@ export const ProjectsSection = () => {
     <Wrapper id="projetos">
       <SectionHeader isBlack={true} changeH="h2" word="projetos" />
       <Describe>
-        Estes são os melhores projetos de Bruno e que acredito que
+        Estes são os melhores projetos de Bruno os quais creio que
         merecem um momento de sua atenção:
       </Describe>
       <ProjectsList />
