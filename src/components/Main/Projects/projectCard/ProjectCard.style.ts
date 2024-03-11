@@ -58,7 +58,7 @@ export const ProjectImage = styled(Image)`
 
 export const Subtitle = styled.h4`
   word-break: normal;
-  color: var(--cool-grey-40);
+  color: var(--cool-grey-50);
   font-size: clamp(var(--font-body-sm-2), 4%, var(--font-body-sm-4));
   line-height: 130%;
 `;

@@ -14,7 +14,8 @@ export interface ITechItem {
 export interface IProject {
   title: string;
   subTitle: string;
-  about: string;
+  about1: string;
+  about2: string;
   motivation:string;
   tags: string[];
   illustration: StaticImageData;

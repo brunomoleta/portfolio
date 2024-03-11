@@ -17,7 +17,12 @@ export const Describe = styled.small`
   margin-inline-end: auto;
   font-size: var(--font-body-sm-2);
   line-height: 130%;
+  
+  display: flex;
+  flex-flow: column;
+  gap:var(--s-1);
 `;
+
 
 type HeadingProps = {
   isBlack?: boolean;
