@@ -23,6 +23,7 @@ export const HeroText = styled.article`
 `
 export const Emphasis = styled.em`
     font-weight: 600;
+    border-block-end: 2.5px solid var(--teal-30);
 `
 
 export const HeroParagraph = styled.p`
