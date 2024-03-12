@@ -11,12 +11,19 @@ export interface ITechItem {
   items: string[];
 }
 
+export interface IImage {
+  image: StaticImageData;
+  alt: string;
+  small: string;
+  explain: string;
+}
+
 export interface IProject {
   title: string;
   subTitle: string;
   about1: string;
   about2: string;
-  motivation:string;
+  motivation: string;
   tags: string[];
   illustration: StaticImageData;
   live: string;
@@ -25,6 +32,9 @@ export interface IProject {
   frontEndRepo: string;
   authors: string[];
   href: string;
+
+  frontImages: IImage[];
+  backImages: IImage[];
 
   date: string;
 }
