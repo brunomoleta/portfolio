@@ -1,9 +1,13 @@
 import SingleProject from "@/components/SingleProject";
+import SProjSection from "@/components/SingleProject/SProjSection";
+import {projects} from "@/services/projects.data";
 
 export default function DurvalMusisShop() {
   return (
     <>
-      <SingleProject projectNumber={0} />
+        <SingleProject>
+            <SProjSection project={projects[0]} />
+        </SingleProject>
     </>
   );
 }
