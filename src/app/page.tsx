@@ -1,9 +1,9 @@
 import { Hero } from "@/components/Main/hero";
 import DecorSection from "@/components/Main/DecorSection";
 import { Stack } from "@/components/Main/Stack";
-import { backEndList, frontEndList } from "@/services/data";
 import { ProjectsSection } from "@/components/Main/Projects";
-import {SectionTitle} from "@/components/Main/Projects/projectCard/ProjectCard.style";
+import { SectionTitle } from "@/components/Main/Projects/projectCard/ProjectCard.style";
+import {backEndList, frontEndList} from "@/services/stack.data";
 
 export default function Home() {
   return (

@@ -44,9 +44,8 @@ export const ImageWrapper = styled(Link)`
         }
     }
 `;
-export const ProjectImage = styled(Image)`
-  max-height: 600px;
 
+export const BaseImage = styled(Image)`
   border-radius: var(--s-1);
 
   height: auto;
@@ -54,6 +53,10 @@ export const ProjectImage = styled(Image)`
 
   object-fit: cover;
   object-position: top;
+
+`
+export const ProjectImage = styled(BaseImage)`
+  max-height: 600px;
 `;
 
 export const Subtitle = styled.h4`

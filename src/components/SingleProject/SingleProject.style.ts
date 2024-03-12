@@ -1,11 +1,43 @@
 'use client';
 import styled from "styled-components";
+import {BaseImage} from "@/components/Main/Projects/projectCard/ProjectCard.style";
 
-export const HeadInfoWrapper = styled.div`
+export const HeadInfoWrapper = styled.section`
     display: flex;
     flex-flow: column;
     gap: var(--s0);
 `
+
+export const TourSection = styled.section`
+    margin-block: var(--s2);
+`
+
+export const ProjArticle = styled.article`
+`
+export const Wrapper = styled.div`
+    display: flex;
+    flex-flow: column;;
+`
+
+export const ImageWrapper = styled.div`
+    position: relative;
+    display: grid;
+    place-content: center;
+
+    width: 100%;
+    height: 100%;
+    
+    border-radius: var(--s-1);
+    
+    
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+`;
+
+export const ImageElement = styled(BaseImage)`
+    
+`
+
 export const HeadWrapper = styled.div`
     display: flex;
     flex-flow: column;

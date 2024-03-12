@@ -1,3 +1,4 @@
+'use client'
 import styled from "styled-components";
 import * as Accordion from "@radix-ui/react-accordion";
 export const AContainer = styled(Accordion.Content)`

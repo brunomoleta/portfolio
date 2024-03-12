@@ -1,10 +1,9 @@
 import React from "react";
 
-import { footerData } from "@/services/data";
-
 import { IconsList } from "@/components/Footer/FooterList/FooterList.style";
 
 import IconItem from "@/components/FooterIcons/IconItem";
+import { footerData } from "@/services/footer.data";
 
 function FooterIcons() {
   return (
