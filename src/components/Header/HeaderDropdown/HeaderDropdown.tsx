@@ -6,7 +6,7 @@ import {
   MenuProvider,
 } from "@/components/Header/HeaderDropdown/HeaderDropdown.style";
 import DropdownItem from "@/components/Header/HeaderDropdown/DropdownItem";
-import { dropdownList } from "@/services/data";
+import {dropdownList} from "@/services/header.data";
 
 function HeaderDropdown() {
   return (
