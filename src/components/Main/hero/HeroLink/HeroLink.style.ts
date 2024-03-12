@@ -19,9 +19,11 @@ export const ListItem = styled(Link)`
     -moz-box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
     box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
     
+    transition: color 300ms;
+    
     &:hover {
         border-color: var(--teal-60);
-        outline: 1px solid var(--teal-50);
+        color: var(--teal-70)
     }
 
     &:active {
