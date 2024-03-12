@@ -31,18 +31,15 @@ export const DSubTrigger = styled(Ariakit.MenuButton)`
     margin-inline-start: auto;
     cursor: pointer;
     outline-offset: 8px;
+    transition: outline-color 300ms;
 
-    &:hover {
-        outline: 2px solid var(--teal-60);
-        outline-offset: 2px;
-    }
     &:focus {
         outline: 2px solid var(--teal-60);
-        outline-offset: 4px;
+        outline-offset: 12px;
     }
-    &:active {
-        outline: 2px solid var(--teal-60);
-        outline-offset: 4px;
+
+    &:hover, &:active {
+        color: var(--teal-60);
     }
 `;
 export const DItem = styled(Ariakit.MenuItem)`
@@ -58,17 +55,7 @@ export const DItem = styled(Ariakit.MenuItem)`
     width: 100%;
     max-width: 500px;
 
-    &:hover {
-        outline: 2px solid var(--teal-60);
-        outline-offset: 2px;
-    }
-
-    &:focus {
-        outline: 2px solid var(--teal-60);
-        outline-offset: 4px;
-    }
-
-    &:active {
+    &:hover, &:focus, &:active {
         outline: 2px solid var(--teal-60);
         outline-offset: 4px;
     }

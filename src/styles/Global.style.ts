@@ -26,7 +26,7 @@ const GlobalStyles = createGlobalStyle`
         height: 100%;
         font-family: Inter, sans-serif;
     }
-    
+
     ol {
         margin: 0;
         padding: 0
@@ -111,6 +111,7 @@ const GlobalStyles = createGlobalStyle`
     input[type="submit"],
     a {
         cursor: pointer;
+        border-radius: 4px;
     }
 
     a {
@@ -171,11 +172,6 @@ const GlobalStyles = createGlobalStyle`
         max-inline-size: none;
     }
 
-    a {
-        // pointer-events: none;
-        cursor: pointer;
-    }
-
     /* Chrome, Safari, Edge, Opera */
     input::-webkit-outer-spin-button,
     input::-webkit-inner-spin-button {
@@ -210,14 +206,22 @@ const GlobalStyles = createGlobalStyle`
         opacity: .6;
     }
 
-    a:focus, a:hover, button:hover, button:focus, button:active {
-        outline-offset: 2px;
+    a:focus, a:hover, button:hover, button:focus {
+        outline-offset: 8px;
         outline: 2px solid var(--teal-70);
+        
     }
-    body{
+    
+
+    body {
         background-color: #ffffff;
         color: #000000;
 
+    }
+
+    button[aria-expanded="true"] {
+        border-block-end: 4px solid var(--teal-50);
+        border-radius: 4px;
     }
 `;
 
