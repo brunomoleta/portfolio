@@ -168,6 +168,8 @@ const GlobalStyles = createGlobalStyle`
     summary,
     section,
     article,
+    code,
+    pre,
     div[data-orientation="vertical"], hr {
         max-inline-size: none;
     }
@@ -209,9 +211,8 @@ const GlobalStyles = createGlobalStyle`
     a:focus, a:hover, button:hover, button:focus {
         outline-offset: 8px;
         outline: 2px solid var(--teal-70);
-        
+
     }
-    
 
     body {
         background-color: #ffffff;
