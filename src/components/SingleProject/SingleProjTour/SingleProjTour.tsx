@@ -1,8 +1,10 @@
 import React from "react";
 import { TourSection } from "@/components/SingleProject/SingleProject.style";
-import { IImage, IProject } from "@/types/types";
+import { IProject } from "@/types/types";
 import { SubName } from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import TourPiece from "@/components/SingleProject/SingleProjTour/TourPiece";
+import FrontImage from "@/components/SingleProject/FrontImage";
+import BackEndCode from "@/components/SingleProject/SingleProjTour/BackEndCode";
 
 function SingleProjTour({
   project,
@@ -12,24 +14,23 @@ function SingleProjTour({
   tourType?: boolean;
 }) {
   const { frontImages, backImages } = project;
-  console.log(frontImages);
+
+  const mapFront = frontImages.map((item, index) => (
+    <TourPiece key={index}>
+      <FrontImage content={item} />
+    </TourPiece>
+  ));
+  const mapBack = backImages.map((item, index) => (
+    <TourPiece key={index}>
+      <BackEndCode content={item} />
+    </TourPiece>
+  ));
+
   return (
-      <TourSection>
-        <SubName>{tourType ? "Front end" : "Back end"}</SubName>
-        {
-          tourType ?
-              <>
-                {frontImages.map((item, index) => (
-                    <TourPiece key={index} content={item}/>
-                ))}
-              </> :
-              <>
-                {backImages.map((item, index) => (
-                    <TourPiece key={index} content={item}/>
-                ))}
-              </>
-        }
-      </TourSection>
+    <TourSection>
+      <SubName>{tourType ? "Front end" : "Back end"}</SubName>
+      {tourType ? mapFront : mapBack}
+    </TourSection>
   );
 }
 

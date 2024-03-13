@@ -18,6 +18,12 @@ export interface IImage {
   explain: string;
 }
 
+export interface IBackData {
+  code: React.ReactNode;
+  explain: string;
+  small: string;
+}
+
 export interface IProject {
   title: string;
   subTitle: string;
@@ -34,7 +40,7 @@ export interface IProject {
   href: string;
 
   frontImages: IImage[];
-  backImages: IImage[];
+  backImages: IBackData[];
 
   date: string;
 }

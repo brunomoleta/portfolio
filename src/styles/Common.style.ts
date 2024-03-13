@@ -30,3 +30,20 @@ export const FooterContainer = styled(FixedContainer)`
 export const MainStyles = styled.main`
   width: 100%;
 `;
+
+export const Iframe = styled.iframe`
+    width: 100%;
+    max-width: 960px;
+    height: 720px;
+    border-radius: var(--s-1);
+    border: 2px solid var(--cool-grey-40);
+
+`
+export const IFrameWrapper = styled.div`
+    border-radius: var(--s-1);
+    box-shadow: 0 2px 8px 0 rgba(63, 69, 81, 0.16);
+    max-width: 960px;
+    width: 100%;
+    height: 720px;
+    position: relative;
+`
