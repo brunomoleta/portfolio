@@ -19,7 +19,7 @@ import LoginD from "@/assets/Durval/login.png";
 import DashD from "@/assets/Durval/dashboard-multi.png";
 
 import { IImage } from "@/types/types";
-import {altTemplateMulti, threeMobiles, twoMobiles} from "@/services/service";
+import { altTemplateMulti, threeMobiles, twoMobiles } from "@/services/service";
 
 export const EasyBankFront: IImage[] = [
   {
@@ -86,13 +86,11 @@ export const DurvalFront: IImage[] = [
     small: "inicial",
     explain:
       "Além de navegar pela página o usuário pode colocar um produto no carrinho(que será salvo no Local Storage), fazer uma" +
-        " busca escrita e procurar por categoria ou marca do equipamento.",
+      " busca escrita e fazer um filtro de produtos por categoria ou marca do equipamento.",
   },
   {
     image: SearchD,
-    alt: altTemplateMulti(
-      "a listagem da busca por palavra-chave",
-    ),
+    alt: altTemplateMulti("a listagem da busca por palavra-chave"),
     small: "busca por palavra-chave",
     explain:
       "Listagem dos produtos que possuem a palavra procurada pelo usuário dentro do seu nome.",
@@ -102,76 +100,75 @@ export const DurvalFront: IImage[] = [
     alt: altTemplateMulti("o detalhamento de um produto específico"),
     small: "inicial",
     explain:
-        "Ao clicar no Card de algum produto abre a página dele com informações detalhadas.",
+      "Ao clicar no Card de algum produto abre a página dele com informações detalhadas.",
   },
   {
     image: CartD,
     alt: altTemplateMulti("o Carrinho de compras em aberto"),
     small: "carrinho de compras.",
     explain:
-        "Ao clicar no botão 'adicionar no carrinho' o produto é... adicionado ao carrinho. " +
-        " Dentro dele é possível aumentar ou diminuir a quantidade de itens, remover um equipamento" +
-        " e partir para a finalização da compra." +
-        " Note que o componente que o envolve é um Modal, iniciado com Radix UI, o qual" +
-        " é usado em outras situações que serão mostradas a seguir."
+      "Ao clicar no botão 'adicionar no carrinho' o produto é... adicionado ao carrinho. " +
+      " Dentro dele é possível aumentar ou diminuir a quantidade de itens, remover um equipamento" +
+      " e partir para a finalização da compra." +
+      " Note que o componente que o envolve é um Modal, iniciado com Radix UI, o qual" +
+      " é usado em outras situações que serão mostradas a seguir.",
   },
   {
     image: SignUpD,
-    alt: altTemplateMulti(
-      "o cadastro do usuário dentro de um modal",
-    ),
+    alt: altTemplateMulti("o cadastro do usuário dentro de um modal"),
     small: "cadastro do usuário",
     explain:
       "Formulário separado em várias etapas. Foi feita uma concatenação de um objeto a " +
-        "cada vez que o usuário clica 'avançar' e na última etapa os dados são enviados" +
-        " ao banco de dados e o objeto é apagado.",
+      "cada vez que o usuário clica 'avançar' e na última etapa os dados são enviados" +
+      " ao banco de dados e o objeto é apagado.",
   },
   {
     image: LoginD,
-    alt: threeMobiles("coloca o e-mail","requisitos mínimos para enviar os dados","envio feito." +
-        " Aguardando a resposta do banco de dados"),
+    alt: threeMobiles(
+      "coloca o e-mail",
+      "requisitos mínimos para enviar os dados",
+      "envio feito." + " Aguardando a resposta do banco de dados",
+    ),
     small: "login",
     explain:
-        "O login segue a mesma lógica de etapas separadas para o envio do formulário." +
-        " Na tela do meio, há um exemplo de resposta da validação de dados através da biblioteca Zod." +
-        " Na terceira tela os dados foram enviados" +
-        " e estamos aguardando a resposta do back end.",
+      "O login segue a mesma lógica de etapas separadas para o envio do formulário." +
+      " Na tela do meio, há um exemplo de resposta da validação de dados através da biblioteca Zod." +
+      " Na terceira tela os dados foram enviados" +
+      " e estamos aguardando a resposta do back end.",
   },
   {
     image: DashD,
     alt: altTemplateMulti("o dashboard do usuário"),
     small: "dashboard do usuário logado",
     explain:
-        "central das informações do usuário logado." +
-        " A partir daqui este pode ler, criar, editar e remover" +
-        " seus endereços, formas de pagamento e anúncios."
+      "central das informações do usuário logado." +
+      " A partir daqui este pode ler, criar, editar e remover" +
+      " seus endereços, formas de pagamento e anúncios.",
   },
   {
     image: AddressesD,
-    alt: threeMobiles(
-        "criação","edição","remoção de endereço do usuário"
-    ),
+    alt: threeMobiles("criação", "edição", "remoção de endereço do usuário"),
     small: "dashboard | endereços",
     explain:
-        "Listagem dos endereços cadastrados com a possibilidade de criar, editar ou remover algum deles." +
-        " Ao clicar em 'editar' o endereço 'Savassi', por exemplo, abrirá um Modal."
+      "Listagem dos endereços cadastrados com a possibilidade de criar, editar ou remover algum deles." +
+      " Ao clicar em 'editar' o endereço 'Savassi', por exemplo, abrirá um Modal.",
   },
   {
     image: CrudD,
     alt: altTemplateMulti(
-        "operações de leitura, criação, edição e deleção do ende dashboard",
+      "operações de leitura, criação, edição e deleção do ende dashboard",
     ),
     small: "criar, editar e remover um endereço.",
     explain:
-        " O Modal é o mesmo componente usado no Cart. Foi construído com flexibilidade.",
+      " O Modal é o mesmo componente usado no Cart. Foi construído com flexibilidade.",
   },
   {
     image: ErrorMessagesD,
     alt: altTemplateMulti(
       "operações de leitura, criação, edição e deleção do dashboard",
     ),
-    small: "1ª: Carrinho vazio, 2ª: Busca por palavra-chave sem sucesso, 3ª: Usuário digita um endereço de url que não existe.",
-    explain:
-      "Páginas de tratamento de exceção.",
+    small:
+      "1ª: Carrinho vazio, 2ª: Busca por palavra-chave sem sucesso, 3ª: Usuário digita um endereço de url que não existe.",
+    explain: "Páginas de tratamento de exceção.",
   },
 ];

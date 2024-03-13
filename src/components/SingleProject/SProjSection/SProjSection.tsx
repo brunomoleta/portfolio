@@ -27,7 +27,7 @@ function SProjSection({ project }: { project: IProject }) {
 
 const Span = () => (
   <span style={{ color: "var(--cool-grey-60)" }}>
-    Para saber ainda mais, te convido a acessar os seguintes links:{" "}
+    Para saber ainda mais, te convido a acessar os links a seguir:{" "}
   </span>
 );
 
