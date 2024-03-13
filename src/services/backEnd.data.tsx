@@ -46,12 +46,15 @@ export const EasyBankBack: IBackData[] = [
         <Iframe
           allowFullScreen
           src="https://lucid.app/documents/embedded/dd479061-07a8-4747-a7ab-68930b4bb1b1"
-          id="9SejqaQB.F0v"
+          id="easy-bank-relationships"
         ></Iframe>
       </IFrameWrapper>
     ),
     small: table,
-    explain: table,
+    explain: "A relação principal do projeto é o de 1 assessor(advisor) para N investidores(investor)." +
+        "Cada assessor está associado a uma especialidade(investment_type), por exemplo: renda fixa. " +
+        "Há também a relação de N produtos para N usuários que não foi implementada na API até o momento. " +
+        "E cada produto está associado a um tipo de especialidade.",
   },
   {
     code: <CodeFormat code={sessionService} />,
@@ -69,6 +72,21 @@ export const EasyBankBack: IBackData[] = [
     small:
       "Edição de dados pessoais de usuário autenticado (neste caso, alteração de senha).",
   },
+  {
+    code: (
+        <IFrameWrapper>
+          <Iframe
+              allowTransparency
+              allowFullScreen
+              src="https://investment-fullstack.onrender.com/doc"
+              id="easybank-doc"
+          ></Iframe>
+        </IFrameWrapper>
+    ),
+    small: "documentação swagger UI",
+    explain:
+        "Documentação do back end:",
+  },
 ];
 
 export const DurvalBack: IBackData[] = [
@@ -79,12 +97,39 @@ export const DurvalBack: IBackData[] = [
           allowTransparency
           allowFullScreen
           src="https://drawsql.app/teams/mineirao/diagrams/durval-music-shop/embed"
-          id="9SejqaQB.F0v"
+          id="durval-relationships"
         ></Iframe>
       </IFrameWrapper>
     ),
     small: "inicial",
     explain:
-      "O usuário pode conhecer a empresa, clicar em 'Entrar' para acessar a conta ou clicar 'Conhecer assessores'.",
+      "As entidades mais importantes são de usuário(user) e produto(product) com uma relação de 1:N " +
+        "(ou seja, um usuário pode anunciar 412 produtos). " +
+        "Além disso cada pessoa pode ter 8 endereços(addresses) e 4 payment_methods(métodos de pagamento). " +
+        "Já o produto tem uma relação de N:N com a categoria(category), ou seja 599 produtos podem ter" +
+        " a categoria 'cordas'. Enquanto a marca(brand) é de 1:N, exemplo: a marca Tagima pode se associar" +
+        " a inúmeros produtos mas o produto 'Guitarra Tagima' só tem a marca Tagima. " +
+        ""
+  },
+  {
+    code: (
+      <IFrameWrapper>
+        <Iframe
+          allowTransparency
+          allowFullScreen
+          src="https://loja-do-durval.onrender.com/doc"
+          id="durval-doc"
+        ></Iframe>
+      </IFrameWrapper>
+    ),
+    small: "documentação swagger UI",
+    explain:
+      "O trabalho de Bruno relacionado ao back end " +
+      "foi a documentação. Foi um aprendizado abundante " +
+      "a leitura do código de meus colegas. " +
+      "Realizei testes manuais no Postman para verificar casos " +
+      "de exceção e" +
+      "padronizar as respostas " +
+      "das requisições. ",
   },
 ];
