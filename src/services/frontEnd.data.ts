@@ -10,12 +10,12 @@ import FormEB from "@/assets/Easy/MultiStepForm-Multi.png";
 import HomeD from "@/assets/Durval/Home-Multi.png";
 import CartD from "@/assets/Durval/Cart-Multi.png";
 import AddressesD from "@/assets/Durval/addresses-multi.png";
-import SignUpD from "@/assets/Durval/signup-multi.png";
-import CrudD from "@/assets/Durval/CRID.png";
-import ErrorMessagesD from "@/assets/Durval/Error-messages.png";
+import SignUpD from "@/assets/Durval/signUp-multi.png";
+import CrudD from "@/assets/Durval/crud.png";
+import ErrorMessagesD from "@/assets/Durval/error-messages.png";
 import SingleD from "@/assets/Durval/singleProduct-multi.png";
-import SearchD from "@/assets/Durval/Search-Multi.png";
-import LoginD from "@/assets/Durval/Login.png";
+import SearchD from "@/assets/Durval/search-multi.png";
+import LoginD from "@/assets/Durval/login.png";
 import DashD from "@/assets/Durval/dashboard-multi.png";
 
 import { IImage } from "@/types/types";
