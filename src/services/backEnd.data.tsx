@@ -1,6 +1,4 @@
-import { IBackData, IImage } from "@/types/types";
-import Table from "@/assets/Easy/relationships.jpeg";
-import { altTemplateMulti } from "@/services/service";
+import { IBackData } from "@/types/types";
 import { Iframe, IFrameWrapper } from "@/styles/Common.style";
 import CodeFormat from "@/components/SingleProject/SingleProjTour/BackEndCode/CodeFormat";
 
@@ -73,10 +71,18 @@ export const EasyBankBack: IBackData[] = [
   },
 ];
 
-export const DurvalBack: IImage[] = [
+export const DurvalBack: IBackData[] = [
   {
-    image: Table,
-    alt: altTemplateMulti("a homepage"),
+    code: (
+      <IFrameWrapper>
+        <Iframe
+          allowTransparency
+          allowFullScreen
+          src="https://drawsql.app/teams/mineirao/diagrams/durval-music-shop/embed"
+          id="9SejqaQB.F0v"
+        ></Iframe>
+      </IFrameWrapper>
+    ),
     small: "inicial",
     explain:
       "O usuário pode conhecer a empresa, clicar em 'Entrar' para acessar a conta ou clicar 'Conhecer assessores'.",
