@@ -70,6 +70,16 @@ There's four sections;
 
 The project page was designed by Bruno.
 It tours the user through the fullstack project.
+It's separated in the following parts:
+- Info about the project;
+- Introductory text of why it was developed;
+- Front end including:
+    - screenshots;
+    - notes on the React components;
+- Back end including:
+    - Relationships table;
+    - Code snippets;
+    - Swagger documentation;
 
 ![](./src/assets/Docs/Project.png)
 
