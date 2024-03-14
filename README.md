@@ -1,74 +1,84 @@
 # Personal Portfolio
 
+<hr style="border-top: 3px solid #bbb;">
+
 ## Description
 
 Frontend of a fullstack app that connects investors and investment advisors.
 The goal of this aplication was to make my first fullstack app using Next.js.
 
+<hr style="border-top: 3px solid #bbb;">
+
 ## Table of contents
 
 - [Overview](#overview)
     - [Built with](#built-with)
+      - [Javascript related](#javascript-related)
+      - [Other technologies](#other-technologies)
     - [Design](#design)
-        - [User flow](#user-flow)
-        - [Screenshots](#screenshots)
-    - [Deploy links](#deploy-links)
+        - [Homepage](#homepage)
+        - [Project page](#project-page)
+    - [Deploy link](#deploy-link)
 - [Project Structure](#project-structure)
-    - [Scripts](#scripts)
-    - [Dependencies](#dependencies)
-    - [Dev dependencies](#dev-dependencies)
-    - [Installation](#installation)
-    - [Architecture](#architecture)
+  - [Scripts](#scripts) 
+  - [Dependencies](#dependencies) 
+  - [Dev dependencies](#dev-dependencies) 
+  - [Architecture](#architecture)
 - [The process](#the-process)
-    - [What I learned](#what-i-learned)
+    - [Lessons learned](#lessons-learned)
     - [Continued development](#continued-development)
     - [Useful resources](#useful-resources)
 - [Acknowledgments](#acknowledgments)
     - [Author](#author)
 
+<hr style="border-top: 3px solid #bbb;">
+
 ## Overview
+
+
 
 ### Built with
 
-#### React related
+#### Javascript related
 - Next.js
 - Typescript
-- React context
 
-#### Others
-- Styled components
+#### Other technologies
+- Styled-components
 - Radix UI
+- Aria Kit
+
 
 
 ### Design
 
-#### User flow
+
+#### Homepage
+
+The design was based on a template bought from a designer online.
+There were some tweaks for the design only involved the homepage 
+and it was generic, not personalized.
+
+![](./src/assets/Docs/Home.png)
 
 
-#### Screenshots
-![]()
+#### Project page
 
-### Deploy links
+The project page was designed by Bruno.
+It tours the user through the fullstack project.
 
-- Frontend deploy: [Live App](https://easybank-investments.vercel.app/)
+![](./src/assets/Docs/Project.png)
+
+
+### Deploy link
+
+- Frontend deploy: [https://brunomoleta.com.br/](https://bruno-moleta.vercel.app)
+
+<hr style="border-top: 3px solid #bbb;">
 
 ## Project structure
 
-First, run the development server:
-
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
-
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
-## Scripts
+### Scripts
 
 dev: Starts the development environment.
 build: Used to build the application for production.
@@ -81,100 +91,143 @@ Execute the scripts with npm run, yarn or pnpm.
 
 Run the scripts with `npm run`, `yarn` or `pnpm`.
 
-## Dependencies
+### Dependencies
 
-- ````@hookform/resolvers````: ^3.3.4,
-- ````@radix-ui/react-dialog````: ^1.0.5,
-- ````@radix-ui/react-dropdown-menu````: ^2.0.6,
-- ````@radix-ui/react-icons````: ^1.3.0,
-- ````axios````: ^1.6.7,
-- ````babel-plugin-styled-components````: ^2.1.4,
-- ````nanoid````: ^5.0.5,
-- ````next````: 14.1.0,
-- ````react````: ^18,
-- ````react-dom````: ^18,
-- ````react-feather````: ^2.0.10,
-- ````react-hook-form````: ^7.50.1,
-- ````react-toastify````: ^10.0.4,
-- ````styled-components````: ^6.1.8,
-- ````yarn````: ^1.22.21,
-- ````zod````: ^3.22.4
+- ``@ariakit/react``: ^0.4.2,
+- ``@radix-ui/react-accordion``: ^1.1.2,
+- ``@radix-ui/react-dropdown-menu``: ^2.0.6,
+- ``@radix-ui/react-icons``: ^1.3.0,
+- ``devicon``: ^2.16.0,
+- ``framer-motion``: ^11.0.8,
+- ``next``: 14.1.3,
+- ``react``: ^18,
+- ``react-dom``: ^18,
+- ``react-toastify``: ^10.0.4,
+- ``styled-components``: ^6.1.8
 
-## Dev dependencies
+### Dev dependencies
 
-- ``@swc/plugin-styled-components``: ^1.5.116,
-- ``@testing-library/jest-dom``: ^6.4.0,
-- ``@testing-library/react``: ^14.1.2,
 - ``@types/node``: ^20,
 - ``@types/react``: ^18,
 - ``@types/react-dom``: ^18,
-- ``autoprefixer``: ^10.0.1,
+- ``babel-plugin-styled-components``: ^2.1.4,
 - ``eslint``: ^8,
 - ``eslint-config-next``: 14.1.0,
-- ``jest``: ^29.7.0,
-- ``jest-environment-jsdom``: ^29.7.0,
 - ``new-component``: ^5.0.2,
-- ``postcss``: ^8,
-- ``tailwindcss``: ^3.3.0,
+- ``prettier``: ^3.2.5,
 - ``typescript``: ^5"
 
-## Installation
-
-1. Clone the frontend repo:
-
-```bash
-git clone git@github.com:brunomoleta/portfolio.git
-```
-
-2. Install the dependencies:
-
-```bash
-pnpm install 
-
-# or 
-
-yarn install
-```
-
-## Architecture
+### Architecture
 
 ```
 portfolio/
 │
-├── node_modules/         Dependencies installed in your local environment.
+├── node_modules/         Dependencies installed in the local environment.
 │
 ├── public/               Public files.
 │
 ├── lib/                  Includes a file to set up Styled-components.
 │
 ├── src/                  Source code
-│   ├── app/              Routes;
+│   ├── app/              Routes of the project;
 │   ├── assets/           Static resources such as images, logos and illustrations;
 │   ├── components/       React components;
-│   ├── providers/        Componentes de gerenciamento de estado global;
-│   ├── schemas/          Data validation context;
-│   ├── hooks/            Hook functions;
-│   ├── services/         API communication service, data and helper functions.
-│   ├── styled-components/Styled-components components;
+│   ├── providers/        Setting Styled-components Global styles at the root;
+│   ├── services/         Data related to the projects and helper functions.
+│   ├── styles/           Styled-components components;
 │   ├── types/            Component types;
 │   └── ...
 ```
+<hr style="border-top: 3px solid #bbb;">
 
 ## The process
 
 
-### What I learned
+### Lessons learned
+
+- It was challenging and amusing to make an explanation of the two most
+  interesting projects Bruno was involved in thus far.
+  It feels like writing and explaining code are two
+  separate skill sets. For guidance, I applied the method from Josh Cameau's ebook `Building an effective dev portfolio`,
+  where we guide the user step by step, so they understand your project almost effortlessly.
 
 
+- Technically speaking, the key components are the following:
+
+Each page is simple:
+````tsx
+export default function EasyBankInvestments() {
+    return (
+        <SingleProject>
+            <SProjSection project={projects[1]}/>
+        </SingleProject>
+    );
+}
+````
+
+The SingleProject section has `header`, `back end` and `front end` sections:
+
+````tsx
+function SProjSection({project}: { project: IProject }) {
+    return (
+        <Wrapper>
+            <SingleProjHeader project={project}/>{" "}
+            <SingleProjTour isFront={true} project={project}/>
+            <SingleProjTour isFront={false} project={project}/>
+        </Wrapper>
+    );
+}
+````
+
+and the SingleProjTour renders each `argument` of the tour:
+````tsx
+function SingleProjTour({
+  project,
+  isFront = true,
+}: {
+  project: IProject;
+  isFront?: boolean;
+}) {
+  const { frontImages, backImages } = project;
+
+  const mapFront = frontImages.map((item, index) => (
+    <TourPiece key={index}>
+      <FrontImage content={item} />
+    </TourPiece>
+  ));
+  const mapBack = backImages.map((item, index) => (
+    <TourPiece key={index}>
+      <BackEndCode content={item} />
+    </TourPiece>
+  ));
+
+  return (
+    <TourSection>
+      <SubName>{isFront ? "Front end" : "Back end"}</SubName>
+      {isFront ? mapFront : mapBack}
+      <Span />
+      <ProjectLinks isFront={isFront} project={project} />
+    </TourSection>
+  );
+}
+````
+
+Each `TourPiece` rendered by ``mapFront`` and ``mapBack`` have:
+- an explanatory paragraph;
+- an image of the app running or a piece of `code` or `iframe`;
+- the description of the `image`;
 
 ### Continued development
 
+- Make an English version using state for international users;
 
 ### Useful resources
 
-- [Josh Cameau's blog](https://www.joshwcomeau.com/) - The best frontend blog I know by far;
-- [Radix UI](https://www.radix-ui.com/) - It saved me time from developing components such as the Dropdown and the modal
-  dialog;
+- [Josh Cameau's blog](https://www.joshwcomeau.com/) - The best frontend blog I know by far.
+Here he offers the e-book for helping you develop a dev portfolio for free;
+- [Radix UI](https://www.radix-ui.com/) - It saved me time from developing components such as the Dropdown;
+
+<hr style="border-top: 3px solid #bbb;">
 
 ## Acknowledgments
 
