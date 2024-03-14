@@ -5,13 +5,14 @@ import { SubName } from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import TourPiece from "@/components/SingleProject/SingleProjTour/TourPiece";
 import FrontImage from "@/components/SingleProject/FrontImage";
 import BackEndCode from "@/components/SingleProject/SingleProjTour/BackEndCode";
+import ProjectLinks from "@/components/SingleProject/ProjectLinks";
 
 function SingleProjTour({
   project,
-  tourType = true,
+  isFront = true,
 }: {
   project: IProject;
-  tourType?: boolean;
+  isFront?: boolean;
 }) {
   const { frontImages, backImages } = project;
 
@@ -28,10 +29,20 @@ function SingleProjTour({
 
   return (
     <TourSection>
-      <SubName>{tourType ? "Front end" : "Back end"}</SubName>
-      {tourType ? mapFront : mapBack}
+      <SubName>{isFront ? "Front end" : "Back end"}</SubName>
+      {isFront ? mapFront : mapBack}
+
+      <Span />
+      <ProjectLinks isFront={isFront} project={project} />
     </TourSection>
   );
 }
 
+const Span = () => (
+  <span
+    style={{ fontSize: "var(--font-body-sm-2)", color: "var(--cool-grey-60)" }}
+  >
+    Para saber ainda mais, te convido a acessar os links a seguir:{" "}
+  </span>
+);
 export default SingleProjTour;
