@@ -1,14 +1,14 @@
 
 export const github = "https://github.com/brunomoleta";
 export const cvLink =
-  "https://drive.google.com/file/d/1aslxVmRqnBZomoCg528IpX_Km60MuTQw/view?usp=sharing";
+  "https://drive.google.com/file/d/185PjPiiXbeFa_8AJ71jofswnQvrDvMvk/view?usp=drive_link";
 export const linkedin =
   "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/";
 
 export const heroHeading1 = "Bruno Moleta.";
 export const heroHeading2 = "Desenvolvedor Full-Stack.";
 export const heroParagraph1 =
-  "Sou um profissional multidisciplinar, versátil e dinâmico, com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento web full stack pela Kenzie Academy Brasil. ";
+  "Sou um profissional versátil e dinâmico, com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento web full stack pela Kenzie Academy Brasil. ";
 
 export const heroParagraph2 =
   "Pratico o aprendizado contínuo e, como desenvolvedor tenho o privilégio de fazer parte da evolução do mercado e da vida das pessoas " +
