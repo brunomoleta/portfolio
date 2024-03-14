@@ -86,7 +86,7 @@ It's separated in the following parts:
 
 ### Deploy link
 
-- Frontend deploy: [https://brunomoleta.com.br/](https://bruno-moleta.vercel.app)
+- Frontend deploy: [https://brunomoleta.com.br/](https://brunomoleta.com.br)
 
 <hr style="border-top: 3px solid #bbb;">
 
