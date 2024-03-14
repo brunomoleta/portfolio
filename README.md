@@ -4,8 +4,9 @@
 
 ## Description
 
-Frontend of a fullstack app that connects investors and investment advisors.
-The goal of this aplication was to make my first fullstack app using Next.js.
+Personal developer portfolio built only on the front end with Next.js.
+The goal is to display and give a through explanation of what was learned and 
+to share knowledge with the site visitor acting as a tour guid for them.
 
 <hr style="border-top: 3px solid #bbb;">
 
@@ -55,10 +56,12 @@ The goal of this aplication was to make my first fullstack app using Next.js.
 
 #### Homepage
 
-The design was based on a template bought from a designer online.
-There were some tweaks for the design only involved the homepage 
-and it was generic, not personalized.
-
+There's four sections;
+- About me;
+- Illustrations made by Sarah Fossheim using only CSS and HTML;
+- Tech Stacks Bruno uses;
+- Projects;
+- Contact;
 ![](./src/assets/Docs/Home.png)
 
 
@@ -231,9 +234,13 @@ Here he offers the e-book for helping you develop a dev portfolio for free;
 
 ## Acknowledgments
 
+- [Sarah Fossheim css art](https://codepen.io/collection/nwzQJq) - They do great art using CSS. This link takes you to all their work;
+
 ### Author
 
 - Github - [Bruno Moleta](https://github.com/brunomoleta)
 - Frontend Mentor - [@brunomoleta](https://www.frontendmentor.io/profile/brunomoleta)
 - LinkedIn - [@brunomoleta](https://www.linkedin.com/in/bruno-moleta-santos/)
-- Email - brunomoleta@pm.me 
+- Email - brunomoleta@pm.me
+
+<hr style="border-top: 3px solid #bbb;">
