@@ -62,6 +62,7 @@ There's four sections;
 - Tech Stacks Bruno uses;
 - Projects;
 - Contact;
+  
 ![](./src/assets/Docs/Home.png)
 
 
