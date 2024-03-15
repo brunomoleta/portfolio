@@ -3,9 +3,9 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
     display: flex;
-    gap: var(--s2);
     flex-flow: column;
     
+    justify-content: space-between;
     margin-block-start: 6px;
 `
 export const HeroText = styled.article`

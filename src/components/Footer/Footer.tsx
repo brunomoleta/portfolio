@@ -1,4 +1,4 @@
-import { FootHeading, StyledFooter } from "./Footer.style";
+import {FootHeading, Message, StyledFooter} from "./Footer.style";
 import { FooterContainer } from "@/styles/Common.style";
 import FooterList from "@/components/Footer/FooterList";
 import {Content, FooterHead} from "@/components/Footer/FooterList/FooterList.style";
@@ -18,6 +18,7 @@ export const Footer = () => {
         <Content>
           <FooterIcons />
           <FooterList />
+          <Message>Portfólio co-designeado e desenvolvido por Bruno Moleta Santos<hr/>(o menino da foto) em Março de 2024. :)</Message>
         </Content>
       </FooterContainer>
     </StyledFooter>

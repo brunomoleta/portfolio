@@ -17,3 +17,10 @@ export const FootHeading = styled.h3`
     font-size: var(--font-heading-5);
     margin-inline-end: auto;
 `
+
+export const Message = styled.h5`
+    color: var(--cool-grey-60);
+    font-size: var(--font-body-sm-3);
+    
+    line-height: 150%;
+`
