@@ -5,6 +5,10 @@ import BankMobileHome from "@/assets/Easy/bank_home_mobile.jpg";
 
 import { DurvalFront, EasyBankFront } from "@/services/frontEnd.data";
 import { DurvalBack, EasyBankBack } from "@/services/backEnd.data";
+import Bruno from "../assets/Authors/retrato-400x400.png";
+import Joao from "../assets/Authors/Joao-Pedro.png";
+import Filipe from "../assets/Authors/Filipe.png";
+import Gustavo from "../assets/Authors/Gustavo.png";
 
 export const projects: IProject[] = [
   {
@@ -36,7 +40,24 @@ export const projects: IProject[] = [
 
     href: "durval-music-shop",
 
-    authors: ["Bruno Moleta", "Gustavo Lazarin", "Filipe Otávio", "João Pedro"],
+    authors: [
+      {
+        image: Bruno,
+        name: "Bruno Moleta",
+      },
+      {
+        image: Filipe,
+        name: "Filipe Otávio",
+      },
+      {
+        image: Gustavo,
+        name: "Gustavo Lazarin",
+      },
+      {
+        image: Joao,
+        name: "João Pedro",
+      },
+    ],
 
     date: "Novembro/2023",
     frontImages: DurvalFront,
@@ -65,7 +86,12 @@ export const projects: IProject[] = [
     backEndRepo: "https://github.com/brunomoleta/Investment-app-server",
     frontEndRepo: "https://github.com/brunomoleta/Investment-app-client",
     href: "easy-bank-investments",
-    authors: ["Individual"],
+    authors: [
+      {
+        image: Bruno,
+        name: "Bruno Moleta",
+      },
+    ],
     date: "Fevereiro/2024",
 
     frontImages: EasyBankFront,

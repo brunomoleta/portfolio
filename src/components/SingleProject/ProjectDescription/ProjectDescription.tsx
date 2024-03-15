@@ -8,6 +8,7 @@ import {
 } from "@/components/SingleProject/SingleProject.style";
 import { IProject } from "@/types/types";
 import { joinArray } from "@/services/service";
+import {AuthorLi, AuthorUL, Avatar} from "@/components/SingleProject/ProjectDescription/ProjectDescription.style";
 
 function ProjectDescription({ project }: { project: IProject }) {
   const { date, authors, motivation, tags } = project;
@@ -19,7 +20,16 @@ function ProjectDescription({ project }: { project: IProject }) {
       </Item>
       <Item>
         <PItem>Autoria:</PItem>
-        <ProjectSpecs>{joinArray(authors)}</ProjectSpecs>
+        <ProjectSpecs>
+          <AuthorUL>
+            {authors.map((author, index) => (
+              <AuthorLi key={index}>
+                <Avatar src={author.image} alt="" />
+                <span>{author.name}</span>
+              </AuthorLi>
+            ))}
+          </AuthorUL>
+        </ProjectSpecs>
       </Item>
       <Item>
         <PItem>Data de início:</PItem>

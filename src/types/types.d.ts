@@ -24,6 +24,11 @@ export interface IBackData {
   small: string;
 }
 
+export interface IAuthors {
+  name: string;
+  image: StaticImageData;
+}
+
 export interface IProject {
   title: string;
   subTitle: string;
@@ -36,7 +41,7 @@ export interface IProject {
   doc: string;
   backEndRepo: string;
   frontEndRepo: string;
-  authors: string[];
+  authors: IAuthors[];
   href: string;
 
   frontImages: IImage[];

@@ -55,8 +55,13 @@ export const InfoList = styled.ul`
 export const Item = styled.li`
     font-size: var(--font-body-sm-2);
     border-block-end: 2px solid var(--teal-20);
-    display: grid;
-    grid-template-columns: 11ch 1fr;
+    display: flex;
+    flex-wrap: wrap;
+    @media (min-width: 350px) {
+        display: grid;
+        grid-template-columns: 11ch 1fr;
+    }
+
 `
 export const WrappedItem = styled(Item)`
     border-block-end: revert;
