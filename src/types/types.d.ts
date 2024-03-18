@@ -11,7 +11,24 @@ export interface ITechItem {
   items: string[];
 }
 
-export interface IImage {
+interface ICommon {
+  goals: string;
+  Fresponsibilities: string[];
+  Bresponsibilities: string[];
+
+  FChallenges: string[];
+  BChallenges: string[];
+
+  Flearning: string[];
+  Blearning: string[];
+
+  FnextSteps: string[];
+  BnextSteps: string[];
+
+  target: string
+}
+
+export interface IFrontData {
   image: StaticImageData;
   alt: string;
   small: string;
@@ -29,13 +46,18 @@ export interface IAuthors {
   image: StaticImageData;
 }
 
-export interface IProject {
+export interface IProject extends ICommon {
   title: string;
   subTitle: string;
+
   about1: string;
   about2: string;
   motivation: string;
+
   tags: string[];
+  frontendTags: string[];
+  backendTags: string[];
+
   illustration: StaticImageData;
   live: string;
   doc: string;
@@ -44,7 +66,7 @@ export interface IProject {
   authors: IAuthors[];
   href: string;
 
-  frontImages: IImage[];
+  frontImages: IFrontData[];
   backImages: IBackData[];
 
   date: string;

@@ -9,4 +9,6 @@ export const Portrait = styled(Image)`
     opacity: .9;
     
     border-radius: var(--s-1);
+    
+    margin-block-start: var(--s0);
 `

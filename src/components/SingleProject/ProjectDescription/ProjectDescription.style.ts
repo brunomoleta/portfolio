@@ -6,7 +6,7 @@ export const Avatar = styled(Image)`
     width: 80px;
     height: 80px;
     border-radius: 50px;
-    opacity: .80;
+    opacity: .85;
     margin-block-start: var(--s-2);
 `
 export const AuthorLi = styled.li`

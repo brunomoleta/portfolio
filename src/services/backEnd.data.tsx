@@ -54,7 +54,7 @@ export const EasyBankBack: IBackData[] = [
     explain: "A relação principal do projeto é o de 1 assessor(advisor) para N investidores(investor)." +
         "Cada assessor está associado a uma especialidade(investment_type), por exemplo: renda fixa. " +
         "Há também a relação de N produtos para N usuários que não foi implementada na API até o momento. " +
-        "E cada produto está associado a um tipo de especialidade.",
+        "E cada produto está associado a uma de especialidade.",
   },
   {
     code: <CodeFormat code={sessionService} />,
@@ -103,10 +103,9 @@ export const DurvalBack: IBackData[] = [
     ),
     small: "inicial",
     explain:
-      "As entidades mais importantes são de usuário(user) e produto(product) com uma relação de 1:N " +
-        "(ou seja, um usuário pode anunciar 412 produtos). " +
-        "Além disso cada pessoa pode ter 8 endereços(addresses) e 4 payment_methods(métodos de pagamento). " +
-        "Já o produto tem uma relação de N:N com a categoria(category), ou seja 599 produtos podem ter" +
+      "As entidades mais importantes são de usuário(user) e produto(product) com uma relação de 1:N. " +
+        "Além disso cada pessoa pode ter N endereços(addresses) e N payment_methods(métodos de pagamento). " +
+        "Já o produto tem uma relação de N:N com a categoria(category), ou seja N produtos podem ter" +
         " a categoria 'cordas'. Enquanto a marca(brand) é de 1:N, exemplo: a marca Tagima pode se associar" +
         " a inúmeros produtos mas o produto 'Guitarra Tagima' só tem a marca Tagima. " +
         ""
@@ -125,7 +124,7 @@ export const DurvalBack: IBackData[] = [
     small: "documentação swagger UI",
     explain:
       "O trabalho de Bruno relacionado ao back end " +
-      "foi a documentação. Foi um aprendizado abundante " +
+      "mais extenso foi a documentação. Foi um aprendizado abundante " +
       "a leitura do código de meus colegas. " +
       "Realizei testes manuais no Postman para verificar casos " +
       "de exceção e" +

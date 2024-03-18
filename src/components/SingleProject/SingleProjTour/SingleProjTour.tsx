@@ -1,11 +1,17 @@
 import React from "react";
 import { TourSection } from "@/components/SingleProject/SingleProject.style";
 import { IProject } from "@/types/types";
-import { SubName } from "@/components/Main/hero/heroHeading/HeroHeading.style";
+import {
+  OtherName,
+  SubName,
+} from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import TourPiece from "@/components/SingleProject/SingleProjTour/TourPiece";
 import FrontImage from "@/components/SingleProject/FrontImage";
 import BackEndCode from "@/components/SingleProject/SingleProjTour/BackEndCode";
-import ProjectLinks from "@/components/SingleProject/ProjectLinks";
+import ProjectDescription from "@/components/SingleProject/ProjectDescription";
+import SectionInfo from "@/components/SingleProject/SectionInfo";
+import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
+import {Wrapper} from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
 
 function SingleProjTour({
   project,
@@ -28,21 +34,38 @@ function SingleProjTour({
   ));
 
   return (
-    <TourSection>
-      <SubName>{isFront ? "Front end" : "Back end"}</SubName>
-      {isFront ? mapFront : mapBack}
+    <>
+      <TourSection>
+        <SubName>{isFront ? "Front end" : "Back end"}</SubName>
+        <SectionInfo>
+          <ProjParagraphs
+            infoType={isFront ? "front" : "back"}
+            project={project}
+          />
+          <ProjectDescription
+            infoType={isFront ? "front" : "back"}
+            project={project}
+          />
+        </SectionInfo>
+        <Wrapper
 
-      <Span />
-      <ProjectLinks isFront={isFront} project={project} />
-    </TourSection>
+        >
+          {isFront ? (
+            <OtherName>Fluxo do usuário</OtherName>
+          ) : (
+            <OtherName>Tabela, documentação e mais</OtherName>
+          )}
+          {isFront ? mapFront : mapBack}
+        </Wrapper>
+        <ProjParagraphs
+          infoType={isFront ? "front" : "back"}
+          project={project}
+          isStart={false}
+        />
+
+      </TourSection>
+    </>
   );
 }
 
-const Span = () => (
-  <span
-    style={{ fontSize: "var(--font-body-sm-2)", color: "var(--cool-grey-60)" }}
-  >
-    Para saber ainda mais, te convido a acessar os links a seguir:{" "}
-  </span>
-);
 export default SingleProjTour;

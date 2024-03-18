@@ -9,7 +9,6 @@ export const ProjBtn = styled(Link)`
     font-size: var(--font-body-sm-1);
     
     color: var(--teal-60);
-    text-decoration: underline;
     transition: color 300ms;
     
     word-break: break-word;
