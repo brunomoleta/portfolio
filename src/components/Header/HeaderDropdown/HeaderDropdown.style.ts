@@ -3,9 +3,7 @@ import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import styled from "styled-components";
 import * as Ariakit from "@ariakit/react";
 
-export const MenuProvider = styled(Ariakit.MenuProvider)`
-    z-index: 1;
-`
+export const MenuProvider = styled(Ariakit.MenuProvider)``
 
 export const DContent = styled(Ariakit.Menu)`
     z-index: 1;
