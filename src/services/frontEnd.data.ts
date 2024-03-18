@@ -18,10 +18,10 @@ import SearchD from "@/assets/Durval/search-multi.png";
 import LoginD from "@/assets/Durval/login.png";
 import DashD from "@/assets/Durval/dashboard-multi.png";
 
-import { IImage } from "@/types/types";
+import { IFrontData } from "@/types/types";
 import { altTemplateMulti, threeMobiles, twoMobiles } from "@/services/service";
 
-export const EasyBankFront: IImage[] = [
+export const EasyBankFront: IFrontData[] = [
   {
     image: HomeEB,
     alt: altTemplateMulti("a homepage"),
@@ -79,7 +79,7 @@ export const EasyBankFront: IImage[] = [
   },
 ];
 
-export const DurvalFront: IImage[] = [
+export const DurvalFront: IFrontData[] = [
   {
     image: HomeD,
     alt: altTemplateMulti("a página inicial"),
@@ -141,7 +141,7 @@ export const DurvalFront: IImage[] = [
     alt: altTemplateMulti("o dashboard do usuário"),
     small: "dashboard do usuário logado",
     explain:
-      "central das informações do usuário logado." +
+      "Central das informações do usuário logado." +
       " A partir daqui este pode ler, criar, editar e remover" +
       " seus endereços, formas de pagamento e anúncios.",
   },
