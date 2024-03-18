@@ -1,33 +1,25 @@
 import React from "react";
-import { Name } from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import {
-  About,
+  ProjName,
+} from "@/components/Main/hero/heroHeading/HeroHeading.style";
+import {
   HeadInfoWrapper,
-  HeadWrapper,
 } from "@/components/SingleProject/SingleProject.style";
 import ProjectDescription from "@/components/SingleProject/ProjectDescription";
 import { IProject } from "@/types/types";
+import SectionInfo from "@/components/SingleProject/SectionInfo";
+import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
 
 function SingleProjHeader({ project }: { project: IProject }) {
-  const { title, about1, about2 } = project;
+  const { title } = project;
 
   return (
     <HeadInfoWrapper>
-      <Name
-        style={{
-          marginBlockEnd: "var(--s1)",
-          borderBlockEnd: "4px solid var(--teal-30)",
-        }}
-      >
-        {title}
-      </Name>
-      <HeadWrapper>
-        <About style={{ color: "var(--cool-grey-60)" }} as="section">
-          <p>{about1}</p>
-          <p>{about2}</p>
-        </About>
-        <ProjectDescription project={project} />
-      </HeadWrapper>
+      <ProjName>{title}</ProjName>
+      <SectionInfo>
+        <ProjParagraphs infoType="general" project={project} />
+        <ProjectDescription  infoType="general" project={project} />
+      </SectionInfo>
     </HeadInfoWrapper>
   );
 }

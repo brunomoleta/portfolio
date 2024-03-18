@@ -3,11 +3,11 @@ import {
   ImageElement,
   ImageWrapper,
 } from "@/components/SingleProject/SingleProject.style";
-import { IImage } from "@/types/types";
+import { IFrontData } from "@/types/types";
 import { upper } from "@/services/service";
 import { Describe } from "@/components/Main/DecorSection/DecorSection.style";
 
-function FrontImage({ content }: { content: IImage }) {
+function FrontImage({ content }: { content: IFrontData }) {
   const { image, alt, small, explain } = content;
   return (
     <>
