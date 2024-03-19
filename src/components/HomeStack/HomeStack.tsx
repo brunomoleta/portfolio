@@ -1,7 +1,7 @@
 import React from "react";
 import { SectionTitle } from "../Main/Projects/projectCard/ProjectCard.style";
 import { Stack } from "../Main/Stack";
-import { backEndList, frontEndList } from "../../services/stack.data";
+import { backEndList, frontEndList } from "@/services/stack.data";
 
 function HomeStack() {
   return (
