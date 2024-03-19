@@ -1,25 +1,20 @@
 import React from "react";
-import { HamburgerMenuIcon } from "@radix-ui/react-icons";
-import {
-  DContent,
-  DSubTrigger,
-  MenuProvider,
-} from "@/components/Header/HeaderDropdown/HeaderDropdown.style";
+import { DContent } from "@/components/Header/HeaderDropdown/HeaderDropdown.style";
 import DropdownItem from "@/components/Header/HeaderDropdown/DropdownItem";
-import {dropdownList} from "@/services/header.data";
+import { dropdownList } from "@/services/header.data";
+import * as Ariakit from "@ariakit/react";
+import HeaderBtn from "@/components/Header/HeaderDropdown/HeaderBtn";
 
 function HeaderDropdown() {
   return (
-    <MenuProvider>
-      <DSubTrigger>
-        <HamburgerMenuIcon height={30} width={30}/>
-      </DSubTrigger>
-      <DContent gutter={32}>
+    <Ariakit.MenuProvider>
+      <HeaderBtn />
+      <DContent gutter={50}>
         {dropdownList.map((item, index) => (
           <DropdownItem key={index} name={item.name} href={item.href} />
         ))}
       </DContent>
-    </MenuProvider>
+    </Ariakit.MenuProvider>
   );
 }
 
