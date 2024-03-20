@@ -19,9 +19,9 @@ export const Trigger = styled(Accordion.Trigger)`
 
 export const TechName = styled.h3`
     font-weight: 700;
-    font-size: clamp(var(--font-body-1, 2svw, var(--font-body-3)));
+    font-size: clamp(1rem, 2svw + 1rem, var(--font-body-4));
     margin-inline-start: var(--s0);
-    
+
 `
 export const TechImage = styled(Image)`
     margin-block: var(--s-1);

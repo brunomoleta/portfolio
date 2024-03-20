@@ -30,6 +30,9 @@ type HeadingProps = {
 export const Heading = styled.h3<HeadingProps>`
   font-weight: normal;
   color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-50)")};
+  
+  font-size: clamp(var(--font-body-4),4svw + 1rem, var(--font-body-sm-1));
+  
 `;
 
 export const StackHeader = styled.div`
