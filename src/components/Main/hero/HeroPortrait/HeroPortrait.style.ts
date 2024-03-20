@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Image from "next/image";
 import {motion} from "framer-motion";
 
-export const Portrait = styled(motion(Image))`
+export const Portrait = styled(Image)`
     width: 500px;
     height: auto;
     

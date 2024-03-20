@@ -17,5 +17,6 @@ export const ProjBtn = styled(Link)`
     &:hover {
         outline: revert;
         color: var(--teal-90);
+        text-decoration: underline;
     }
 `

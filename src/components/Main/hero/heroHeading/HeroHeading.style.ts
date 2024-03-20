@@ -30,23 +30,16 @@ export const ProjName = styled(Name)`
 `
 
 export const SubName = styled.h1`
-    font-size: var(--font-body-3);
+    font-size: clamp(var(--font-body-3), 4svw + 1rem, var(--font-body-1));
     line-height: 120%;
     min-width: 100%;
     
     margin-block-end: var(--s1);
     border-block-end: 3px solid var(--teal-50);
-    @media (min-width: 550px) {
-        font-size: var(--font-body-2);
-    }
 `
 export const OtherName = styled.h3`
-    font-size: var(--font-body-4);
+    font-size: clamp(var(--font-body-4), 6svw + 1rem, var(--font-body-2));
     line-height: 120%;
     width: fit-content;
     border-block-end: 3px solid var(--teal-50);
-    @media (min-width: 550px) {
-        font-size: var(--font-body-3);
-    }
 `
-
