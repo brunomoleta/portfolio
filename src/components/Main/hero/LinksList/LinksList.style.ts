@@ -12,3 +12,17 @@ export const ProjList = styled(LinksListStyle)`
     justify-content: space-around;
     gap: var(--s2);
 `
+
+export const WholeContainer = styled.div`
+    position: relative;
+    height: 100%;
+`
+
+export const Container = styled.div`
+    display: flex;
+    flex-wrap: wrap;
+    position: sticky;
+    top: 0;
+    height: fit-content;
+    padding-block-start: var(--s-1);
+`

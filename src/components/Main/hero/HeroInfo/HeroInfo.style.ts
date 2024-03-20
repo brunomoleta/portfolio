@@ -5,7 +5,6 @@ export const Wrapper = styled.div`
     display: flex;
     flex-flow: column;
     
-    justify-content: space-between;
     margin-block-start: 6px;
 `
 export const HeroText = styled.article`
