@@ -20,12 +20,9 @@ export const HHeading = styled.section`
 `;
 
 export const Name = styled.h1`
-    font-size: var(--font-body-1);
+    font-size: clamp(var(--font-body-4), 3vw + 1rem, var(--font-heading-4));
     line-height: 120%;
     max-width: 100%;
-    @media (min-width: 550px) {
-        font-size: var(--font-heading-4);
-    }
 `
 export const ProjName = styled(Name)`
   margin-block-end: var(--s1);

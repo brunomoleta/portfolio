@@ -1,6 +1,6 @@
 import React from "react";
 import {
-    InfoWrapper,
+    InfoWrapper, ProjTitle,
     Subtitle,
     Title,
 } from "@/components/Main/Projects/projectCard/ProjectCard.style";
@@ -10,7 +10,7 @@ function ProjectInfo({ item }: { item: IProject }) {
   const { title, subTitle } = item;
   return (
     <InfoWrapper>
-      <Title>{title}</Title>
+      <ProjTitle>{title}</ProjTitle>
       <Subtitle>{subTitle}</Subtitle>
     </InfoWrapper>
   );

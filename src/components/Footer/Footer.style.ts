@@ -14,7 +14,7 @@ export const StyledFooter = styled.footer`
 
 export const FootHeading = styled.h3`
     font-weight: 300;
-    font-size: var(--font-heading-5);
+    font-size: clamp(var(--font-heading-6) ,4svw + 1rem,var(--font-heading-5));
     margin-inline-end: auto;
 `
 

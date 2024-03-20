@@ -13,14 +13,14 @@ export const ProjectArticle = styled.article`
   max-width: 460px;
 
   display: grid;
-  grid-template-rows: 15ex 600px auto auto;
+  grid-template-rows: 17ex 600px auto auto;
 
   box-shadow: 4px 4px 12px 0 rgba(141, 141, 141, 0.25);
 `;
 export const InfoWrapper = styled.div`
   display: flex;
   flex-flow: column;
-  gap: var(--s-4);
+  gap: var(--s-2);
 `;
 
 export const ImageWrapper = styled(Link)`
@@ -66,10 +66,16 @@ export const Subtitle = styled.h4`
   line-height: 130%;
 `;
 export const Title = styled.h3`
-  font-weight: 700;
-  font-size: clamp(var(--font-body-sm-1), 4svw, var(--font-body-sm-3));
+    font-weight: 700;
+    font-size: clamp(
+            var(--font-body-3), 
+            2svw + 1rem, 
+            var(--font-heading-6));
 `;
 
-export const SectionTitle = styled(Title)`
-  font-size: var(--font-body-3);
+export const ProjTitle = styled(Title)`
+    font-size: clamp(
+            var(--font-body-4),
+            2svw + 1rem,
+            var(--font-heading-7));
 `;
