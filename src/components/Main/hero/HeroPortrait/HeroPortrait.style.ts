@@ -10,6 +10,12 @@ export const Portrait = styled(motion(Image))`
     opacity: .9;
     
     border-radius: var(--s-1);
+`
+export const ImageWrapper = styled(motion.div)`
+    position: sticky;
+    top: 0;
+    padding-block-start: var(--s0);
     
-    margin-block-start: var(--s0);
+    overflow: auto;
+    
 `
