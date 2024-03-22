@@ -13,14 +13,26 @@ export const ProjectArticle = styled.article`
   max-width: 460px;
 
   display: grid;
-  grid-template-rows: 17ex 600px auto auto;
+  grid-template-rows: 600px auto;
 
   box-shadow: 4px 4px 12px 0 rgba(141, 141, 141, 0.25);
+    
+  @media (min-width: 650px){
+      grid-template-rows: unset;
+      grid-template-columns: 48% 48%;
+      max-width: 50rem;
+      gap: 4%;
+  }  
 `;
 export const InfoWrapper = styled.div`
   display: flex;
   flex-flow: column;
   gap: var(--s-2);
+  margin-block-start: var(--s1);  
+    @media (min-width: 650px){
+        margin-block-start: unset;  
+        
+    }
 `;
 
 export const ImageWrapper = styled(Link)`
@@ -28,9 +40,9 @@ export const ImageWrapper = styled(Link)`
 
     width: 100%;
     height: 100%;
-
-    max-width: 400px;
     
+    min-height: 600px;
+        
     overflow: hidden;
 
     &:hover {
@@ -42,6 +54,10 @@ export const ImageWrapper = styled(Link)`
             transition: transform 350ms ease-in-out;
             border-radius: var(--s-2);
         }
+    }
+    
+    @media (min-width: 650px){
+        max-width: unset;
     }
 `;
 
@@ -56,7 +72,6 @@ export const BaseImage = styled(Image)`
 
 `
 export const ProjectImage = styled(BaseImage)`
-  max-height: 600px;
 `;
 
 export const Subtitle = styled.h4`
