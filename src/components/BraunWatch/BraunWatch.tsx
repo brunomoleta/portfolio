@@ -1,5 +1,5 @@
 import React from "react";
-import styles from "./BraunWatch.module.css"
+import styles from "./BraunWatch.module.css";
 function BraunWatch() {
   return (
     <div className={styles.radio} aria-label="Braun radio illustration">

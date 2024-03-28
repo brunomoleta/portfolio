@@ -1,7 +1,5 @@
 import React from "react";
-import {
-  HeroText,
-} from "@/components/Main/hero/HeroInfo/HeroInfo.style";
+import { HeroText } from "@/components/Main/hero/HeroInfo/HeroInfo.style";
 import HeroParagraph from "@/components/Main/hero/HeroParagraph";
 import { Paragraph1, Paragraph2, Paragraph3 } from "@/services/hero.data";
 

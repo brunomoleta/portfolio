@@ -3,8 +3,7 @@ import React from "react";
 import * as Accordion from "@radix-ui/react-accordion";
 import ATrigger from "@/components/Main/Stack/ATrigger";
 import AContent from "@/components/Main/Stack/AContent";
-import {ITechItem} from "@/types/types";
-
+import { ITechItem } from "@/types/types";
 
 function AccordionFull({ techList }: { techList: ITechItem[] }) {
   return (

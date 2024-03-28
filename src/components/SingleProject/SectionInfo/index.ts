@@ -1,2 +1,2 @@
-export * from './SectionInfo';
-export { default } from './SectionInfo';
+export * from "./SectionInfo";
+export { default } from "./SectionInfo";

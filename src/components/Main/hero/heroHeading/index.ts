@@ -1,2 +1,2 @@
-export * from './HeroHeading';
-export {default} from './HeroHeading';
+export * from "./HeroHeading";
+export { default } from "./HeroHeading";

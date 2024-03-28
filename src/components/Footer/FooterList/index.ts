@@ -1,2 +1,2 @@
-export * from './FooterList';
-export { default } from './FooterList';
+export * from "./FooterList";
+export { default } from "./FooterList";

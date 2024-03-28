@@ -1,2 +1,2 @@
-export * from './ProjParagraphs';
-export { default } from './ProjParagraphs';
+export * from "./ProjParagraphs";
+export { default } from "./ProjParagraphs";

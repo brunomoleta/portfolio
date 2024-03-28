@@ -1,2 +1,2 @@
-export * from './FooterIcons';
-export { default } from './FooterIcons';
+export * from "./FooterIcons";
+export { default } from "./FooterIcons";

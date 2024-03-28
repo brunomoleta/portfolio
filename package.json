@@ -6,7 +6,9 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "format": "prettier --write .",
+    "lint": "next lint",
+    "f-l": "pnpm format && pnpm lint"
   },
   "dependencies": {
     "@ariakit/react": "^0.4.2",
@@ -19,6 +21,7 @@
     "react": "^18",
     "react-dom": "^18",
     "react-toastify": "^10.0.4",
+    "react-wrap-balancer": "^1.1.0",
     "styled-components": "^6.1.8"
   },
   "devDependencies": {
@@ -30,6 +33,6 @@
     "eslint-config-next": "14.1.0",
     "new-component": "^5.0.2",
     "prettier": "^3.2.5",
-    "typescript": "^5"
+    "typescript": "5.3.3"
   }
 }

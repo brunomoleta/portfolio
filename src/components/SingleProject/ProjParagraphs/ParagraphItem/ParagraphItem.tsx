@@ -1,7 +1,11 @@
 import React from "react";
 import { Header } from "@/components/SingleProject/SingleProjHeader/SingleProjHeader.style";
 import { upper } from "@/services/service";
-import {ContentList, Item} from "@/components/Main/Stack/AContent/AContent.style";
+import {
+  ContentList,
+  Item,
+} from "@/components/Main/Stack/AContent/AContent.style";
+import Balancer from "react-wrap-balancer";
 
 function ParagraphItem({
   title,
@@ -12,13 +16,17 @@ function ParagraphItem({
 }) {
   return (
     <div>
-      <Header>{upper(title)}:</Header>
-      {typeof content === "string" && <p>{content}</p>}
-      {Array.isArray(content) && <ContentList>
-        {content.map((item, index) => (
-            <Item key={index}>{item}</Item>
-        ))}
-      </ContentList>}
+      <Balancer>
+        <Header>{upper(title)}:</Header>
+        {typeof content === "string" && <p>{content}</p>}
+        {Array.isArray(content) && (
+          <ContentList>
+            {content.map((item, index) => (
+              <Item key={index}>{item}</Item>
+            ))}
+          </ContentList>
+        )}
+      </Balancer>
     </div>
   );
 }

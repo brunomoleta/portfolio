@@ -6,9 +6,7 @@ import { ChildrenProps } from "@/types/types";
 function HeroParagraph({ children }: ChildrenProps) {
   return (
     <Paragraph>
-      <Balancer ratio={0}>
-          {children}
-      </Balancer>
+      <Balancer ratio={0}>{children}</Balancer>
     </Paragraph>
   );
 }

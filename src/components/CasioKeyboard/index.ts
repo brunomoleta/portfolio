@@ -1,2 +1,2 @@
-export * from './CasioKeyboard';
-export { default } from './CasioKeyboard';
+export * from "./CasioKeyboard";
+export { default } from "./CasioKeyboard";

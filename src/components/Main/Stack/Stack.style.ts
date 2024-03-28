@@ -17,12 +17,11 @@ export const Describe = styled.small`
   margin-inline-end: auto;
   font-size: var(--font-body-sm-2);
   line-height: 130%;
-  
+
   display: flex;
   flex-flow: column;
-  gap:var(--s-1);
+  gap: var(--s-1);
 `;
-
 
 type HeadingProps = {
   isBlack?: boolean;
@@ -30,9 +29,8 @@ type HeadingProps = {
 export const Heading = styled.h3<HeadingProps>`
   font-weight: normal;
   color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-50)")};
-  
-  font-size: clamp(var(--font-body-4),4svw + 1rem, var(--font-body-sm-1));
-  
+
+  font-size: clamp(var(--font-body-4), 4svw + 1rem, var(--font-body-sm-1));
 `;
 
 export const StackHeader = styled.div`

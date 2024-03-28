@@ -1,2 +1,2 @@
-export * from './FrontImage';
-export { default } from './FrontImage';
+export * from "./FrontImage";
+export { default } from "./FrontImage";

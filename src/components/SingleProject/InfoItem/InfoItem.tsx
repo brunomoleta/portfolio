@@ -1,6 +1,6 @@
 import React from "react";
 import { Item, PItem } from "@/components/SingleProject/SingleProject.style";
-import {upper} from "@/services/service";
+import { upper } from "@/services/service";
 
 function InfoItem({
   children,

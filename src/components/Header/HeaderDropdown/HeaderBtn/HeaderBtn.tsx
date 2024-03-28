@@ -5,7 +5,7 @@ import { DSubTrigger } from "@/components/Header/HeaderDropdown/HeaderDropdown.s
 function HeaderBtn() {
   return (
     <DSubTrigger>
-        <HamburgerMenuIcon height={30} width={30} />
+      <HamburgerMenuIcon height={30} width={30} />
     </DSubTrigger>
   );
 }

@@ -1,2 +1,2 @@
-export * from './InfoItem';
-export { default } from './InfoItem';
+export * from "./InfoItem";
+export { default } from "./InfoItem";

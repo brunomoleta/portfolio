@@ -1,2 +1,2 @@
-export * from './SProjectBtns';
-export { default } from './SProjectBtns';
+export * from "./SProjectBtns";
+export { default } from "./SProjectBtns";

@@ -1,2 +1,2 @@
-export * from './BraunWatch';
-export { default } from './BraunWatch';
+export * from "./BraunWatch";
+export { default } from "./BraunWatch";
