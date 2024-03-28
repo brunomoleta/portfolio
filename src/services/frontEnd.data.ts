@@ -98,14 +98,14 @@ export const DurvalFront: IFrontData[] = [
   {
     image: SingleD,
     alt: altTemplateMulti("o detalhamento de um produto específico"),
-    small: "inicial",
+    small: "produto único",
     explain:
       "Ao clicar no Card de algum produto abre a página dele com informações detalhadas.",
   },
   {
     image: CartD,
     alt: altTemplateMulti("o Carrinho de compras em aberto"),
-    small: "carrinho de compras.",
+    small: "carrinho de compras",
     explain:
       "Ao clicar no botão 'adicionar no carrinho' o produto é... adicionado ao carrinho. " +
       " Dentro dele é possível aumentar ou diminuir a quantidade de itens, remover um equipamento" +
