@@ -1,5 +1,5 @@
 import { HeroHeading } from "./heroHeading";
-import { heroHeading1, heroHeading2 } from "@/services/data";
+import { heroHeading1 } from "@/services/data";
 import { Name } from "@/components/Main/hero/heroHeading/HeroHeading.style";
 import HeroInfo from "@/components/Main/hero/HeroInfo";
 import HeroPortrait from "@/components/Main/hero/HeroPortrait";
@@ -12,7 +12,7 @@ export const Hero = () => {
         <Name>
           {heroHeading1}
           <br />
-          {heroHeading2}
+          Desenvolvedor Full&nbsp;Stack.
         </Name>
         <HeroPortrait />
       </Wrapper>
