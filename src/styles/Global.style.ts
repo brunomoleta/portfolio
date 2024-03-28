@@ -224,6 +224,10 @@ const GlobalStyles = createGlobalStyle`
         border-block-end: 4px solid var(--teal-50);
         border-radius: 4px;
     }
+    p {
+        overflow-wrap: break-word;
+        hyphens: auto;
+    }
 `;
 
 export default GlobalStyles;
