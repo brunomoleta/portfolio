@@ -6,7 +6,7 @@ export const linkedin =
   "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/";
 
 export const heroHeading1 = "Bruno Moleta.";
-export const heroHeading2 = "Desenvolvedor Full-Stack.";
+
 export const heroParagraph1 =
   "Sou um profissional versátil e dinâmico, com graduação em arquitetura, passagem pelo universo de startups e formação em desenvolvimento web full stack pela Kenzie Academy Brasil. ";
 
