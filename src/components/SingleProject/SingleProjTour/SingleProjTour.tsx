@@ -11,7 +11,7 @@ import BackEndCode from "@/components/SingleProject/SingleProjTour/BackEndCode";
 import ProjectDescription from "@/components/SingleProject/ProjectDescription";
 import SectionInfo from "@/components/SingleProject/SectionInfo";
 import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
-import {Wrapper} from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
+import { Wrapper } from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
 
 function SingleProjTour({
   project,
@@ -47,9 +47,7 @@ function SingleProjTour({
             project={project}
           />
         </SectionInfo>
-        <Wrapper
-
-        >
+        <Wrapper>
           {isFront ? (
             <OtherName>Fluxo do usuário</OtherName>
           ) : (
@@ -62,7 +60,6 @@ function SingleProjTour({
           project={project}
           isStart={false}
         />
-
       </TourSection>
     </>
   );

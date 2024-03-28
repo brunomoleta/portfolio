@@ -6,31 +6,31 @@ import { motion } from "framer-motion";
 import { Menu } from "@ariakit/react";
 
 export const DContent = styled(motion(Menu))`
+  z-index: 1;
+  height: 80svh;
+  min-width: 100%;
+  width: 90svw;
+  max-width: 350px;
 
-    z-index: 1;
-    height: 80svh;
-    min-width: 100%;
-    width: 90svw;
-    max-width: 350px;
-    
-    background-color: white;
-    border-radius: 6px;
+  background-color: white;
+  border-radius: 6px;
 
-    padding: 8px;
-    padding-block: 16px;
+  padding: 8px;
+  padding-block: 16px;
 
-    box-shadow: 0 10px 38px -10px rgba(22, 23, 24, 0.35),
+  box-shadow:
+    0 10px 38px -10px rgba(22, 23, 24, 0.35),
     0 10px 20px -15px rgba(22, 23, 24, 0.2);
 
-    transition: opacity 500ms ease-in-out;
-    opacity: 0;
-    &[data-open] {
-        opacity: 1;
-    }
+  transition: opacity 500ms ease-in-out;
+  opacity: 0;
+  &[data-open] {
+    opacity: 1;
+  }
 
-    &[aria-expanded="true"] {
-        opacity: 1;
-    }
+  &[aria-expanded="true"] {
+    opacity: 1;
+  }
 `;
 
 export const DSubTrigger = styled(Ariakit.MenuButton)`

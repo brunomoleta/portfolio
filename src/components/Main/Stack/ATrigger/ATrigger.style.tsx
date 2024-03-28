@@ -1,30 +1,26 @@
-"use client"
+"use client";
 import * as Accordion from "@radix-ui/react-accordion";
 import styled from "styled-components";
 import Image from "next/image";
 export const Trigger = styled(Accordion.Trigger)`
-    min-width: 100%;
-    
-    display: flex;
-    align-items: center;
-    
+  min-width: 100%;
 
-    border-block-end: 2px solid var(--cool-grey-40);
-    
-    transition: rotate 300ms;
-    &[data-state="open"]> svg{
-        transform: rotate(45deg);
-    }
-`
+  display: flex;
+  align-items: center;
+
+  border-block-end: 2px solid var(--cool-grey-40);
+
+  transition: rotate 300ms;
+  &[data-state="open"] > svg {
+    transform: rotate(45deg);
+  }
+`;
 
 export const TechName = styled.h3`
-    font-weight: 700;
-    font-size: clamp(1rem, 2svw + 1rem, var(--font-body-4));
-    margin-inline-start: var(--s0);
-
-`
+  font-weight: 700;
+  font-size: clamp(1rem, 2svw + 1rem, var(--font-body-4));
+  margin-inline-start: var(--s0);
+`;
 export const TechImage = styled(Image)`
-    margin-block: var(--s-1);
-`
-
-
+  margin-block: var(--s-1);
+`;

@@ -1,2 +1,2 @@
-export * from './HeroLink';
-export { default } from './HeroLink';
+export * from "./HeroLink";
+export { default } from "./HeroLink";

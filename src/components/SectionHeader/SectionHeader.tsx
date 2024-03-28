@@ -14,7 +14,9 @@ function SectionHeader({
   return (
     <StackHeader>
       <ArrowRightIcon style={{ color: "var(--cool-grey-60)" }} />
-      <Heading isBlack={isBlack} as={changeH}>{word.toUpperCase()}</Heading>
+      <Heading isBlack={isBlack} as={changeH}>
+        {word.toUpperCase()}
+      </Heading>
     </StackHeader>
   );
 }

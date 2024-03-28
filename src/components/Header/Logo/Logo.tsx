@@ -1,5 +1,5 @@
-import React from 'react';
-import { StyledLogo } from './Logo.style';
+import React from "react";
+import { StyledLogo } from "./Logo.style";
 
 function Logo() {
   return <StyledLogo href="/">B.</StyledLogo>;

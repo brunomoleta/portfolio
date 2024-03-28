@@ -1,2 +1,2 @@
-export * from './SingleProjTour';
-export { default } from './SingleProjTour';
+export * from "./SingleProjTour";
+export { default } from "./SingleProjTour";

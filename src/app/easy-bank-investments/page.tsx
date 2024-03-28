@@ -6,9 +6,9 @@ import SProjectBtns from "@/components/SingleProject/SProjectBtns";
 export default function EasyBankInvestments() {
   return (
     <>
-        <SingleProject buttons={<SProjectBtns digit={0}/>}>
-            <SProjSection project={projects[1]} />
-        </SingleProject>
+      <SingleProject buttons={<SProjectBtns digit={0} />}>
+        <SProjSection project={projects[1]} />
+      </SingleProject>
     </>
   );
 }

@@ -4,7 +4,6 @@ import SectionHeader from "@/components/SectionHeader";
 
 import { ProjArticle } from "@/components/SingleProject/SingleProject.style";
 
-
 function SingleProject({
   children,
   buttons,
@@ -18,7 +17,7 @@ function SingleProject({
         <SectionHeader changeH="h3" word="projeto" />
         {children}
       </ProjArticle>
-        {buttons}
+      {buttons}
     </>
   );
 }

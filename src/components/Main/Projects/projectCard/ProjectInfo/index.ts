@@ -1,2 +1,2 @@
-export * from './ProjectInfo';
-export { default } from './ProjectInfo';
+export * from "./ProjectInfo";
+export { default } from "./ProjectInfo";

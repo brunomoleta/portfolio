@@ -1,2 +1,2 @@
-export * from './ATrigger';
-export { default } from './ATrigger';
+export * from "./ATrigger";
+export { default } from "./ATrigger";

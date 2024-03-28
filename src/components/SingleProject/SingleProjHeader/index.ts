@@ -1,2 +1,2 @@
-export * from './SingleProjHeader';
-export { default } from './SingleProjHeader';
+export * from "./SingleProjHeader";
+export { default } from "./SingleProjHeader";

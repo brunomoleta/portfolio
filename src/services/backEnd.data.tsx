@@ -51,10 +51,11 @@ export const EasyBankBack: IBackData[] = [
       </IFrameWrapper>
     ),
     small: table,
-    explain: "A relação principal do projeto é o de 1 assessor(advisor) para N investidores(investor)." +
-        "Cada assessor está associado a uma especialidade(investment_type), por exemplo: renda fixa. " +
-        "Há também a relação de N produtos para N usuários que não foi implementada na API até o momento. " +
-        "E cada produto está associado a uma de especialidade.",
+    explain:
+      "A relação principal do projeto é o de 1 assessor(advisor) para N investidores(investor)." +
+      "Cada assessor está associado a uma especialidade(investment_type), por exemplo: renda fixa. " +
+      "Há também a relação de N produtos para N usuários que não foi implementada na API até o momento. " +
+      "E cada produto está associado a uma de especialidade.",
   },
   {
     code: <CodeFormat code={sessionService} />,
@@ -74,18 +75,17 @@ export const EasyBankBack: IBackData[] = [
   },
   {
     code: (
-        <IFrameWrapper>
-          <Iframe
-              allowTransparency
-              allowFullScreen
-              src="https://investment-fullstack.onrender.com/doc"
-              id="easybank-doc"
-          ></Iframe>
-        </IFrameWrapper>
+      <IFrameWrapper>
+        <Iframe
+          allowTransparency
+          allowFullScreen
+          src="https://investment-fullstack.onrender.com/doc"
+          id="easybank-doc"
+        ></Iframe>
+      </IFrameWrapper>
     ),
     small: "documentação swagger UI",
-    explain:
-        "Documentação do back end:",
+    explain: "Documentação do back end:",
   },
 ];
 
@@ -104,11 +104,11 @@ export const DurvalBack: IBackData[] = [
     small: "inicial",
     explain:
       "As entidades mais importantes são de usuário(user) e produto(product) com uma relação de 1:N. " +
-        "Além disso cada pessoa pode ter N endereços(addresses) e N payment_methods(métodos de pagamento). " +
-        "Já o produto tem uma relação de N:N com a categoria(category), ou seja N produtos podem ter" +
-        " a categoria 'cordas'. Enquanto a marca(brand) é de 1:N, exemplo: a marca Tagima pode se associar" +
-        " a inúmeros produtos mas o produto 'Guitarra Tagima' só tem a marca Tagima. " +
-        ""
+      "Além disso cada pessoa pode ter N endereços(addresses) e N payment_methods(métodos de pagamento). " +
+      "Já o produto tem uma relação de N:N com a categoria(category), ou seja N produtos podem ter" +
+      " a categoria 'cordas'. Enquanto a marca(brand) é de 1:N, exemplo: a marca Tagima pode se associar" +
+      " a inúmeros produtos mas o produto 'Guitarra Tagima' só tem a marca Tagima. " +
+      "",
   },
   {
     code: (

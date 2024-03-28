@@ -1,2 +1,2 @@
-export * from './SProjSection';
-export { default } from './SProjSection';
+export * from "./SProjSection";
+export { default } from "./SProjSection";

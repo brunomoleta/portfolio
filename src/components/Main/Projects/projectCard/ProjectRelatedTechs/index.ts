@@ -1,2 +1,2 @@
-export * from './ProjectRelatedTechs';
-export { default } from './ProjectRelatedTechs';
+export * from "./ProjectRelatedTechs";
+export { default } from "./ProjectRelatedTechs";

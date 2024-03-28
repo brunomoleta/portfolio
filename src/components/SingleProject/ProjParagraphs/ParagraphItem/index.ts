@@ -1,2 +1,2 @@
-export * from './ParagraphItem';
-export { default } from './ParagraphItem';
+export * from "./ParagraphItem";
+export { default } from "./ParagraphItem";

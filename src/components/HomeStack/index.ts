@@ -1,2 +1,2 @@
-export * from './HomeStack';
-export { default } from './HomeStack';
+export * from "./HomeStack";
+export { default } from "./HomeStack";

@@ -1,2 +1,2 @@
-export * from './DecorSection';
-export { default } from './DecorSection';
+export * from "./DecorSection";
+export { default } from "./DecorSection";

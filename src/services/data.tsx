@@ -1,4 +1,3 @@
-
 export const github = "https://github.com/brunomoleta";
 export const cvLink =
   "https://drive.google.com/file/d/185PjPiiXbeFa_8AJ71jofswnQvrDvMvk/view?usp=drive_link";
@@ -37,5 +36,8 @@ export const linksList = [
   },
 ];
 
+export const preProjects =
+  "Estes são os melhores projetos de Bruno os quais creio que " +
+  "merecem um momento de sua atenção:";
 
 export const whatsappURL = "https://api.whatsapp.com/send?phone=5541992238239";

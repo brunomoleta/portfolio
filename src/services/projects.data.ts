@@ -160,12 +160,12 @@ export const projects: IProject[] = [
       "Foi uma sensação empoderadora concluir um back end por conta própria aprendendo " +
         "um framework novo;",
       "Muito legal o momento que percebi que, ao buscar as informações de um usuário através" +
-      " de somente o token, não tem como um usuário que não é o dono do token acessar os dados do mesmo;",
+        " de somente o token, não tem como um usuário que não é o dono do token acessar os dados do mesmo;",
     ],
     BnextSteps: [
-        "Entender melhor sobre como funcionam os Roles no Nest.js para aplicar diferentes" +
+      "Entender melhor sobre como funcionam os Roles no Nest.js para aplicar diferentes" +
         " permissões em diferentes rotas;",
-        "Gerar baterias de testes unitários automatizados;"
+      "Gerar baterias de testes unitários automatizados;",
     ],
 
     frontendTags: [

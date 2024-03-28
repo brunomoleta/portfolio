@@ -25,7 +25,7 @@ interface ICommon {
   FnextSteps: string[];
   BnextSteps: string[];
 
-  target: string
+  target: string;
 }
 
 export interface IFrontData {
