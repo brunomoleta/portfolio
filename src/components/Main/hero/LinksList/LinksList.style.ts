@@ -11,7 +11,6 @@ export const LinksListStyle = styled.ul`
 export const ProjList = styled(LinksListStyle)`
   gap: var(--s2);
   display: grid;
-  justify-content: center;
 `;
 
 export const WholeContainer = styled.div`

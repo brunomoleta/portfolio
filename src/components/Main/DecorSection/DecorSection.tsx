@@ -7,6 +7,7 @@ import {
 } from "@/components/Main/DecorSection/DecorSection.style";
 import BraunWatch from "@/components/BraunWatch";
 import CasioKeyboard from "@/components/CasioKeyboard";
+import Link from "next/link";
 
 function DecorSection() {
   return (
@@ -17,7 +18,14 @@ function DecorSection() {
           <DecorItem decor={<CasioKeyboard />} />
         </DecorWrapper>
         <Describe>
-          Ilustrações feitas 100% em CSS e HTML por Sarah Fossheim.
+          Ilustrações feitas 100% em CSS e HTML por{" "}
+          <Link
+            style={{ textDecoration: "underline" }}
+            target="_blank"
+            href={"https://codepen.io/collection/nwzQJq"}
+          >
+            Sarah Fossheim.
+          </Link>
         </Describe>
       </DecorSectionStyle>
     </>

@@ -3,24 +3,22 @@ import { ProjBtn } from "@/components/Main/Projects/projectCard/ProjectBtn/Proje
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { Container } from "@/components/SingleProject/SProjectBtns/SProjectBtns.style";
 import Balancer from "react-wrap-balancer";
+import { projects } from "@/services/projects.data";
 
 function SProjectBtns({ digit }: { digit: number }) {
   return (
-    <Container>
       <Balancer>
+    <Container>
         <ProjBtn href={"/#inicio"}>
           <ArrowLeftIcon />
           Voltar para página inicial
         </ProjBtn>
-        <ProjBtn
-          href={digit === 0 ? "/durval-music-shop" : "/easy-bank-investments"}
-        >
+        <ProjBtn href={`/${projects[digit].url}`}>
           <ArrowRightIcon />
-          Ir para o projeto{" "}
-          {digit === 0 ? "Durval Music Shop" : "Easybank Investments"} :)
+          Ir para o projeto {projects[digit].title}
         </ProjBtn>
-      </Balancer>
     </Container>
+      </Balancer>
   );
 }
 
