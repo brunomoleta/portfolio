@@ -24,6 +24,7 @@ export const DContent = styled(motion(Menu))`
 
   transition: opacity 500ms ease-in-out;
   opacity: 0;
+
   &[data-open] {
     opacity: 1;
   }
@@ -47,6 +48,10 @@ export const DSubTrigger = styled(Ariakit.MenuButton)`
   &:hover,
   &:active {
     color: var(--teal-60);
+  }
+
+  @media (min-width: 550px) {
+    display: none;
   }
 `;
 export const DItem = styled(Ariakit.MenuItem)`
@@ -73,3 +78,5 @@ export const DSeparator = styled(DropdownMenu.Separator)`
   height: 2px;
   color: var(--teal-50);
 `;
+
+export const MenuDropdown = styled(Ariakit.MenuProvider)``;
