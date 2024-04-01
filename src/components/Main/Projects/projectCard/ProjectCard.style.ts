@@ -12,20 +12,22 @@ export const ProjectArticle = styled.article`
 
   max-width: 460px;
 
-  display: grid;
-  grid-template-rows: 600px auto;
-
+  display: flex;
+  flex-flow: column-reverse;
+  gap: 4%;
+  padding-block-start: var(--s3);
   box-shadow: 4px 4px 12px 0 rgba(141, 141, 141, 0.25);
 
   @media (min-width: 650px) {
+    padding-block-start: var(--s1);
+    display: grid;
     grid-template-rows: unset;
     grid-template-columns: 48% 48%;
-    max-width: 50rem;
+    max-width: 48rem;
     gap: 4%;
   }
 `;
 export const InfoWrapper = styled.div`
-  margin-block-start: var(--s1);
   @media (min-width: 650px) {
     margin-block-start: unset;
   }
