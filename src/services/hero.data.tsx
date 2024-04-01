@@ -4,21 +4,23 @@ import React from "react";
 export const Paragraph1: React.FC = () => {
   return (
     <>
-      Sou um profissional{" "}
-      <Emphasis>multidisciplinar, versátil e dinâmico</Emphasis>, com graduação
-      em arquitetura e urbanismo, passagem pelo universo de startups e formação
-      em desenvolvimento web full stack pela Kenzie Academy Brasil.
+      Acredito ser um profissional{" "}
+      <Emphasis>multidisciplinar, versátil e dinâmico</Emphasis>. Me graduei em
+      Arquitetura e Urbanismo, fiz parte de uma incubadora de startups e fui
+      desenvolvi conhecimento web full stack na Kenzie Academy Brasil.
     </>
   );
 };
 export const Paragraph2: React.FC = () => {
   return (
     <>
-      O que mais gosto em ser dev é o fato de que você está sempre{" "}
-      <Emphasis>absorvendo coisas novas</Emphasis>, tanto através de outras
-      pessoas quanto dos seus erros ao codar. Além disso considero pontos fortes
-      em minha trajetória a{" "}
-      <Emphasis>capacidade de comunicação e a iniciativa</Emphasis>.
+      O que me move é absorver coisas novas, similar a uma{" "}
+      <Emphasis>esponja que filtra o que lhe serve e o absorve</Emphasis>. Tanto
+      através de outras pessoas, da I.A. e dos próprios erros. Além disso,
+      considero pontos fortes em minha trajetória a{" "}
+      <Emphasis>
+        capacidade de comunicação, em diversos idiomas, e a autonomia.
+      </Emphasis>
     </>
   );
 };

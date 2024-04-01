@@ -9,14 +9,14 @@ export const Hero = () => {
   return (
     <HeroHeading>
       <Wrapper>
-        <Name>
+        <Name style={{ fontWeight: "700" }}>
           {heroHeading1}
           <br />
           Desenvolvedor Full&nbsp;Stack.
         </Name>
-        <HeroPortrait />
+        <HeroInfo />
       </Wrapper>
-      <HeroInfo />
+      <HeroPortrait />
     </HeroHeading>
   );
 };
