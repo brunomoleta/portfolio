@@ -6,12 +6,13 @@ import AContent from "@/components/Main/Stack/AContent";
 import { ITechItem } from "@/types/types";
 
 function AccordionFull({ techList }: { techList: ITechItem[] }) {
+  const defaultValues = techList.map((tech) => tech.name);
   return (
     <Accordion.Root
       style={{ width: "100%" }}
-      type="single"
-      defaultValue={techList[0].name}
-      collapsible
+      title="tecnologias"
+      defaultValue={defaultValues}
+      type="multiple"
     >
       {techList.map((tech, index) => (
         <Accordion.Item key={index} value={tech.name}>

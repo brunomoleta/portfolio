@@ -11,12 +11,12 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
   return (
     <>
       <ProjectArticle>
-        <ProjectIllustration destination={href} illustration={illustration} />
         <div style={{ position: "relative" }}>
           <ProjectInfo item={item} />
           <ProjectRelatedTechs tags={tags} />
           <ProjectBtn destination={href} />
         </div>
+        <ProjectIllustration destination={href} illustration={illustration} />
       </ProjectArticle>
     </>
   );

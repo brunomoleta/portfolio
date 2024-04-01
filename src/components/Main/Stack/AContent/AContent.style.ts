@@ -6,14 +6,12 @@ export const AContainer = styled(Accordion.Content)`
 `;
 export const ContentList = styled.ul`
   padding-block: var(--s1);
-  padding-inline-end: var(--s-1);
   margin-inline: var(--s3) 0;
 
   display: grid;
   gap: var(--s0);
 
   @media (min-width: 900px) {
-    margin: auto;
     width: fit-content;
   }
 `;

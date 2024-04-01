@@ -47,6 +47,9 @@ export interface IAuthors {
 }
 
 export interface IProject extends ICommon {
+  id: number;
+  url: string;
+
   title: string;
   subTitle: string;
 

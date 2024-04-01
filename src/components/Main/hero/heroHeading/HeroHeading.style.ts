@@ -3,17 +3,17 @@ import styled from "styled-components";
 
 export const HHeading = styled.section`
   padding-block: var(--s1);
-  font-weight: 700;
   width: 100%;
 
   display: flex;
   flex-flow: column;
 
   gap: var(--s2);
+  position: relative;
 
   @media (min-width: 900px) {
     display: grid;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 60% 36%;
     gap: 4%;
   }
 `;

@@ -12,6 +12,8 @@ import Gustavo from "../assets/Authors/Gustavo.png";
 
 export const projects: IProject[] = [
   {
+    id: 1,
+    url: "durval-music-shop",
     title: "Durval Music Shop",
     subTitle:
       "E-commerce onde usuários podem comprar ou vender equipamentos musicais. " +
@@ -119,6 +121,8 @@ export const projects: IProject[] = [
     backImages: DurvalBack,
   },
   {
+    id: 2,
+    url: "easy-bank-investments",
     title: "Easybank Investments",
 
     subTitle:

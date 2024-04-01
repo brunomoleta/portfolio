@@ -17,7 +17,6 @@ export const Container = styled.div`
 export const FixedContainer = styled(Container)`
   display: flex;
   flex-flow: revert;
-  justify-content: space-between;
   align-items: center;
 `;
 
