@@ -11,4 +11,6 @@ export const Header = styled.h3`
   font-size: clamp(var(--font-body-sm-1), 6svw + 1rem, var(--font-body-4));
 
   border-bottom: 2px solid var(--teal-30);
+
+  margin-block-end: var(--s-2);
 `;

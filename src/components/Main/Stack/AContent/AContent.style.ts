@@ -6,7 +6,7 @@ export const AContainer = styled(Accordion.Content)`
 `;
 export const ContentList = styled.ul`
   padding-block: var(--s1);
-  margin-inline: var(--s3) 0;
+  margin-inline: var(--s0) 0;
 
   display: grid;
   gap: var(--s0);

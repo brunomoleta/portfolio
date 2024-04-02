@@ -22,7 +22,7 @@ export const projects: IProject[] = [
       "Trazer a vida um e-commerce de equipamentos musicais" +
       " onde o usuário anuncia produtos, faz seu carrinho" +
       " e realiza CRUD de informações pessoais.",
-    target: "músicistas de todas as idades.",
+    target: "Músicistas de todas as idades.",
 
     tags: [
       "react.js",

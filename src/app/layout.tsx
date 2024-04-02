@@ -10,7 +10,7 @@ import { Footer } from "@/components/Footer";
 const inter = Inter({
   subsets: ["latin"],
   weight: ["300", "400", "500", "600", "700", "800"],
-  fallback: ["sistem-ui", "arial"],
+  fallback: ["arial", "sans-serif", "sistem-ui"],
 });
 
 export const metadata: Metadata = {

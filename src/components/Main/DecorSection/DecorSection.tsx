@@ -24,8 +24,9 @@ function DecorSection() {
             target="_blank"
             href={"https://codepen.io/collection/nwzQJq"}
           >
-            Sarah Fossheim.
+            Sarah Fossheim
           </Link>
+          .
         </Describe>
       </DecorSectionStyle>
     </>
