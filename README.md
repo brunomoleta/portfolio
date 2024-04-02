@@ -239,6 +239,7 @@ Each `TourPiece` rendered by `mapFront` and `mapBack` have:
 - [Josh Cameau's blog](https://www.joshwcomeau.com/) - The best frontend blog I know by far.
   Here he offers the e-book for helping you develop a dev portfolio for free;
 - [Radix UI](https://www.radix-ui.com/) - It saved me time from developing components such as the Dropdown;
+- [Dynamic routes on Next.js](https://dev.to/itsamanvishwakarma/how-to-dynamic-routing-in-nextjs-32ga)
 
 <hr style="border-top: 3px solid #bbb;">
 

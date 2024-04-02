@@ -21,7 +21,7 @@ function ProjectStep({ children }: { children: React.ReactNode }) {
       {children}
       <BtnContainer>
         {step === 1 && (
-          <StepButton onClick={() => btnReturn(false)}>Introdução</StepButton>
+          <StepButton onClick={() => btnReturn(false)}>Voltar para seção: Introdução</StepButton>
         )}
         {step < 2 && (
           <StepButton isPrimary onClick={() => btnReturn(true)}>
