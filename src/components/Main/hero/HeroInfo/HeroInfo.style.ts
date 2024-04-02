@@ -26,5 +26,6 @@ export const Emphasis = styled.em`
 `;
 
 export const Paragraph = styled.p`
-  margin-block-end: var(--s0);
+  margin-block-end: var(--s1);
+  text-align: justify;
 `;
