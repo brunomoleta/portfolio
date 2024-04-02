@@ -30,7 +30,7 @@ function HeroPortrait() {
           href={"https://www.instagram.com/yaas.schafer/"}
         >
           Yasmin Schaffer
-        </Link>
+        </Link>.
       </Describe>
     </Container>
   );
