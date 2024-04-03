@@ -15,7 +15,7 @@ function ProjectDescription({
   infoType,
 }: {
   project: IProject;
-  infoType: "front" | "back" | "general";
+  infoType: "front end" | "back end" | "general" | "devops";
 }) {
   const {
     live,
@@ -47,53 +47,38 @@ function ProjectDescription({
       </InfoItem>
     </>
   );
-  const frontStart = (
+  const SectionData = ({
+    project,
+  }: {
+    project: "front end" | "back end" | "devops";
+  }) => (
     <>
       <InfoItem title="tecnologias">
         <ProjectSpecs as="ul">
-          <WrappedItem>{joinArray(frontendTags)}</WrappedItem>
+          <WrappedItem>
+            {joinArray(project === "front end" ? frontendTags : backendTags)}
+          </WrappedItem>
         </ProjectSpecs>
       </InfoItem>
-      <InfoItem title="aplicação">
+      <InfoItem title={project === "front end" ? "aplicação" : "docs"}>
         <ProjBtn style={{ marginInlineStart: "var(--s-2)" }} href={live}>
-          {live}
+          {project === "front end" ? live : doc}
         </ProjBtn>
       </InfoItem>
       <InfoItem title="repositório">
         <ProjBtn style={{ marginInlineStart: "var(--s-2)" }} href={live}>
-          {frontEndRepo}
+          {project === "front end" ? frontEndRepo : backEndRepo}
         </ProjBtn>
       </InfoItem>
     </>
   );
-
-  const backStart = (
-    <>
-      <InfoItem title="tecnologias">
-        <ProjectSpecs as="ul">
-          <WrappedItem>{joinArray(backendTags)}</WrappedItem>
-        </ProjectSpecs>
-      </InfoItem>
-      <InfoItem title="docs">
-        <ProjBtn style={{ marginInlineStart: "var(--s-2)" }} href={live}>
-          {doc}
-        </ProjBtn>
-      </InfoItem>
-      <InfoItem title="repositório">
-        <ProjBtn style={{ marginInlineStart: "var(--s-2)" }} href={live}>
-          {backEndRepo}
-        </ProjBtn>
-      </InfoItem>
-    </>
-  );
-
   return (
     <InfoList>
       {infoType === "general" && general}
 
-      {infoType === "front" && frontStart}
+      {infoType === "front end" && <SectionData project="front end" />}
 
-      {infoType === "back" && backStart}
+      {infoType === "back end" && <SectionData project="back end" />}
     </InfoList>
   );
 }

@@ -1,5 +1,9 @@
 import React from "react";
-import { TourSection } from "@/components/SingleProject/SingleProject.style";
+import {
+  ImageElement,
+  ImageWrapper,
+  TourSection,
+} from "@/components/SingleProject/SingleProject.style";
 import { IProject } from "@/types/types";
 import {
   OtherName,
@@ -12,51 +16,73 @@ import ProjectDescription from "@/components/SingleProject/ProjectDescription";
 import SectionInfo from "@/components/SingleProject/SectionInfo";
 import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
 import { Wrapper } from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
+import { upper } from "@/services/service.ts";
+import JustifyParagraph from "@/components/JustifyParagraph";
+import { Describe } from "@/components/Main/DecorSection/DecorSection.style.ts";
 
 function SingleProjTour({
   project,
-  isFront = true,
+  sectionType,
 }: {
   project: IProject;
-  isFront?: boolean;
+  sectionType: "front end" | "back end" | "devops";
 }) {
-  const { frontImages, backImages } = project;
+  const { frontContent, backContent, devOpsContent } = project;
 
-  const mapFront = frontImages.map((item, index) => (
+  const mapFront = frontContent.map((item, index) => (
     <TourPiece key={index}>
       <FrontImage content={item} />
     </TourPiece>
   ));
-  const mapBack = backImages.map((item, index) => (
+
+  const mapBack = backContent.map((item, index) => (
     <TourPiece key={index}>
       <BackEndCode content={item} />
     </TourPiece>
   ));
 
+  const mapDevops = devOpsContent?.map((item, index) => (
+    <TourPiece key={index}>
+      <JustifyParagraph title={upper(item.small)} text={item.explain} />
+      <div>
+        <ImageWrapper>
+          <ImageElement unoptimized={true} src={item.gif} alt={item.small} />
+        </ImageWrapper>
+        <Describe>Demo: suíte de teste de {upper(item.small)}</Describe>
+        <hr style={{ borderBlockEnd: "4px solid var(--cool-grey-20)" }} />
+      </div>
+    </TourPiece>
+  ));
+
+  const frontWord = "Fluxo do usuário";
+  const backWord = "Tabela, documentação e mais";
+  const opsWord = "Testes automatizados";
+
+  const returnWord = (word: string) => {
+    if (word === "front end") return frontWord;
+    if (word === "back end") return backWord;
+    return opsWord;
+  };
+  const returnContent = (content: string) => {
+    if (content === "front end") return mapFront;
+    if (content === "back end") return mapBack;
+    return mapDevops;
+  };
+
   return (
     <>
       <TourSection>
-        <SubName>{isFront ? "Front end" : "Back end"}</SubName>
+        <SubName>{upper(sectionType)}</SubName>
         <SectionInfo>
-          <ProjParagraphs
-            infoType={isFront ? "front" : "back"}
-            project={project}
-          />
-          <ProjectDescription
-            infoType={isFront ? "front" : "back"}
-            project={project}
-          />
+          <ProjParagraphs infoType={sectionType} project={project} />
+          <ProjectDescription infoType={sectionType} project={project} />
         </SectionInfo>
         <Wrapper>
-          {isFront ? (
-            <OtherName>Fluxo do usuário</OtherName>
-          ) : (
-            <OtherName>Tabela, documentação e mais</OtherName>
-          )}
-          {isFront ? mapFront : mapBack}
+          <OtherName>{returnWord(sectionType)}</OtherName>
+          {returnContent(sectionType)}
         </Wrapper>
         <ProjParagraphs
-          infoType={isFront ? "front" : "back"}
+          infoType={sectionType}
           project={project}
           isStart={false}
         />

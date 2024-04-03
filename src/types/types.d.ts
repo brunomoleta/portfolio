@@ -1,5 +1,6 @@
 import React from "react";
 import { StaticImageData } from "next/image";
+import { DurvalTests } from "@/services/tests.data.ts";
 
 export interface ChildrenProps {
   children: ReactNode;
@@ -41,6 +42,12 @@ export interface IBackData {
   small: string;
 }
 
+export interface ITestsData {
+  explain: string;
+  small: string;
+  gif: StaticImageData;
+}
+
 export interface IAuthors {
   name: string;
   image: StaticImageData;
@@ -69,8 +76,10 @@ export interface IProject extends ICommon {
   authors: IAuthors[];
   href: string;
 
-  frontImages: IFrontData[];
-  backImages: IBackData[];
+  frontContent: IFrontData[];
+  backContent: IBackData[];
+
+  devOpsContent?: ITestsData[];
 
   date: string;
 }

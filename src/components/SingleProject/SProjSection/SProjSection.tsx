@@ -18,12 +18,17 @@ function SProjSection({ project }: { project: IProject }) {
       )}
       {step === 1 && (
         <ProjectStep>
-          <SingleProjTour isFront={true} project={project} />
+          <SingleProjTour sectionType="front end" project={project} />
         </ProjectStep>
       )}
       {step === 2 && (
         <ProjectStep>
-          <SingleProjTour isFront={false} project={project} />
+          <SingleProjTour sectionType="back end" project={project} />
+        </ProjectStep>
+      )}
+      {step === 3 && (
+        <ProjectStep>
+          <SingleProjTour sectionType="devops" project={project} />
         </ProjectStep>
       )}
     </>
