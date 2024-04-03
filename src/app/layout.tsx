@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "@fontsource-variable/hanken-grotesk";
+import "@fontsource-variable/hanken-grotesk/wght.css";
 import "./custom.variables.css";
 import { Providers } from "@/providers/Providers";
 import React from "react";

@@ -78,7 +78,7 @@ export const Subtitle = styled.h4`
   margin-block-start: var(--s-1);
 `;
 export const Title = styled.h3`
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   font-size: clamp(var(--font-body-3), 2svw + 1rem, var(--font-heading-6));
 `;
 

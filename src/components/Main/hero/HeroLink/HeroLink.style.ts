@@ -9,7 +9,7 @@ export const ListItem = styled(Link)`
   border: 2px solid var(--cool-grey-90);
   border-radius: 16px;
 
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 
   width: fit-content;
 

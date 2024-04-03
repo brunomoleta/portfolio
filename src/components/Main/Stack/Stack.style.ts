@@ -27,7 +27,7 @@ type HeadingProps = {
   isBlack?: boolean;
 };
 export const Heading = styled.h3<HeadingProps>`
-  font-weight: normal;
+  font-weight: var(--weight-normal);
   color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-50)")};
 
   font-size: clamp(var(--font-body-4), 4svw + 1rem, var(--font-body-sm-1));

@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const Span = styled.span`
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   font-size: var(--font-body-sm-2);
 `;
 
