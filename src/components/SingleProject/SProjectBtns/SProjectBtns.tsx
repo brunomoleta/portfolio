@@ -1,7 +1,7 @@
 "use client";
 import { useRouter } from "next/navigation";
 import React from "react";
-import { ProjBtn } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style";
+import { Btn } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { Container } from "@/components/SingleProject/SProjectBtns/SProjectBtns.style";
 import Balancer from "react-wrap-balancer";
@@ -14,11 +14,15 @@ function SProjectBtns({ digit }: { digit: number }) {
   const router = useRouter();
   const { step, setStep } = useUtilsContext() as Utils;
 
+  React.useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [step]);
+
   let num = digit;
   if (digit === projects.length) {
     num = 0;
   }
-  if (step !== 2) {
+  if (step !== 3) {
     return null;
   }
   const handleNavigation = (url: string) => {
@@ -29,10 +33,10 @@ function SProjectBtns({ digit }: { digit: number }) {
   return (
     <Balancer>
       <Container>
-        <ProjBtn onClick={() => handleNavigation("/")} href={"/"}>
+        <Btn onClick={() => setStep(0)}>
           <ArrowLeftIcon />
-          Voltar para página inicial
-        </ProjBtn>
+          Voltar para início do projeto
+        </Btn>
         <StepButton
           isPrimary
           onClick={() => handleNavigation(`/${projects[num].url}`)}

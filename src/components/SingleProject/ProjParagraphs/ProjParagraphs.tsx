@@ -10,7 +10,7 @@ function ProjParagraphs({
   isStart = true,
 }: {
   project: IProject;
-  infoType: "front" | "back" | "general";
+   infoType: "front end" | "back end" | "general" | "devops";
   isStart?: boolean;
 }) {
   const {
@@ -76,11 +76,11 @@ function ProjParagraphs({
     <About style={{ color: "var(--cool-grey-60)" }} as="section">
       {infoType === "general" && isStart && general}
 
-      {infoType === "front" && isStart && frontStart}
-      {infoType === "front" && !isStart && frontEndEnd}
+      {infoType === "front end" && isStart && frontStart}
+      {infoType === "front end" && !isStart && frontEndEnd}
 
-      {infoType === "back" && isStart && backStart}
-      {infoType === "back" && !isStart && backEndEnd}
+      {infoType === "back end" && isStart && backStart}
+      {infoType === "back end" && !isStart && backEndEnd}
     </About>
   );
 }
