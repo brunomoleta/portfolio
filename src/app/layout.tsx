@@ -1,17 +1,11 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import "@fontsource-variable/hanken-grotesk";
 import "./custom.variables.css";
 import { Providers } from "@/providers/Providers";
 import React from "react";
 import { Header } from "@/components/Header";
 import { PageMain } from "@/components/Main";
 import { Footer } from "@/components/Footer";
-
-const inter = Inter({
-  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700", "800"],
-  fallback: ["arial", "sans-serif", "sistem-ui"],
-});
 
 export const metadata: Metadata = {
   title: "Bruno Moleta's portfolio",
@@ -25,7 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="pt-BR">
-      <body className={inter.className}>
+      <body>
         <Providers>
           <Header />
           <PageMain>{children}</PageMain>
