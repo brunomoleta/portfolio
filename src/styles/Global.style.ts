@@ -24,7 +24,7 @@ const GlobalStyles = createGlobalStyle`
     html,
     body {
         height: 100%;
-        font-family: Inter, sans-serif;
+        font-family: 'Hanken Grotesk Variable', 'Inter', 'Helvetica',sans-serif;
     }
 
     ol {
