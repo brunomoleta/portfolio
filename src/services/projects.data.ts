@@ -9,6 +9,7 @@ import Bruno from "../assets/Authors/retrato-400x400.png";
 import Joao from "../assets/Authors/Joao-Pedro.png";
 import Filipe from "../assets/Authors/Filipe.png";
 import Gustavo from "../assets/Authors/Gustavo.png";
+import { DurvalTests } from "@/services/tests.data.ts";
 
 export const projects: IProject[] = [
   {
@@ -116,9 +117,11 @@ export const projects: IProject[] = [
     ],
 
     date: "Novembro/2023",
-    frontImages: DurvalFront,
+    frontContent: DurvalFront,
 
-    backImages: DurvalBack,
+    backContent: DurvalBack,
+
+    devOpsContent: DurvalTests,
   },
   {
     id: 2,
@@ -224,7 +227,8 @@ export const projects: IProject[] = [
     ],
     date: "Fevereiro/2024",
 
-    frontImages: EasyBankFront,
-    backImages: EasyBankBack,
+    frontContent: EasyBankFront,
+    backContent: EasyBankBack,
+    devOpsContent: DurvalTests,
   },
 ];

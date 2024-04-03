@@ -167,8 +167,8 @@ export const DurvalFront: IFrontData[] = [
     alt: altTemplateMulti(
       "operações de leitura, criação, edição e deleção do dashboard",
     ),
-    small:
+    small: "Páginas de tratamento de exceção.",
+    explain:
       "1ª: Carrinho vazio, 2ª: Busca por palavra-chave sem sucesso, 3ª: Usuário digita um endereço de url que não existe.",
-    explain: "Páginas de tratamento de exceção.",
   },
 ];
