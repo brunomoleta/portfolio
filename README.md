@@ -183,8 +183,8 @@ function SProjSection({ project }: { project: IProject }) {
   return (
     <Wrapper>
       <SingleProjHeader project={project} />{" "}
-      <SingleProjTour isFront={true} project={project} />
-      <SingleProjTour isFront={false} project={project} />
+      <SingleProjTour sectionType={true} project={project} />
+      <SingleProjTour sectionType={false} project={project} />
     </Wrapper>
   );
 }
@@ -195,19 +195,19 @@ and the SingleProjTour renders each `argument` of the tour:
 ```tsx
 function SingleProjTour({
   project,
-  isFront = true,
+  sectionType = true,
 }: {
   project: IProject;
-  isFront?: boolean;
+  sectionType?: boolean;
 }) {
-  const { frontImages, backImages } = project;
+  const { frontContent, backContent } = project;
 
-  const mapFront = frontImages.map((item, index) => (
+  const mapFront = frontContent.map((item, index) => (
     <TourPiece key={index}>
       <FrontImage content={item} />
     </TourPiece>
   ));
-  const mapBack = backImages.map((item, index) => (
+  const mapBack = backContent.map((item, index) => (
     <TourPiece key={index}>
       <BackEndCode content={item} />
     </TourPiece>
@@ -215,10 +215,10 @@ function SingleProjTour({
 
   return (
     <TourSection>
-      <SubName>{isFront ? "Front end" : "Back end"}</SubName>
-      {isFront ? mapFront : mapBack}
+      <SubName>{sectionType ? "Front end" : "Back end"}</SubName>
+      {sectionType ? mapFront : mapBack}
       <Span />
-      <ProjectLinks isFront={isFront} project={project} />
+      <ProjectLinks sectionType={sectionType} project={project} />
     </TourSection>
   );
 }
