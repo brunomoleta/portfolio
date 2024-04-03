@@ -12,7 +12,7 @@ export const HeroText = styled.article`
   line-height: 125%;
   max-width: 100%;
 
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 
   max-inline-size: var(--max-inline-size);
 
@@ -21,7 +21,7 @@ export const HeroText = styled.article`
   }
 `;
 export const Emphasis = styled.em`
-  font-weight: 600;
+  font-weight: var(--weight-semibold);
   border-block-end: 2.5px solid var(--teal-30);
 `;
 

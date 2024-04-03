@@ -1,7 +1,16 @@
-:root {
+html {
   --page-max-width: 1150px;
 
   --border-thickness: 2px;
+
+  /*queries*/
+  --mobile: 600;
+  --tablet: 900;
+  --laptop: 1300;
+
+  --phoneAndBigger: var(--mobile) / 16rem;
+  --tabletAndBigger: var(--tablet) / 16rem;
+  --laptopAndBigger: var(--laptop) / 16rem;
 
   /*colors*/
 
@@ -69,6 +78,13 @@
   --font-body-sm-2: 0.875rem;
   --font-body-sm-3: 0.75rem;
   --font-body-sm-4: 0.625rem;
+
+  /*font-weight*/
+  --weight-light: 300;
+  --weight-normal: 400;
+  --weight-medium: 500;
+  --weight-semibold: 600;
+  --weight-bold: 700;
 
   /*clamp*/
   --font-heading-clamp: clamp(var(--font-body-2), 12svw, var(--font-body-1));

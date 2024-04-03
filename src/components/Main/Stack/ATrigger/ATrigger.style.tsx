@@ -17,7 +17,7 @@ export const Trigger = styled(Accordion.Trigger)`
 `;
 
 export const TechName = styled.h3`
-  font-weight: 700;
+  font-weight: var(--weight-bold);
   font-size: clamp(1rem, 2svw + 1rem, var(--font-body-4));
   margin-inline-start: var(--s0);
 `;

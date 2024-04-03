@@ -8,7 +8,7 @@ export const StyledLogo = styled(Link)`
   line-height: 110%;
 
   font-size: clamp(var(--font-heading-6), 10svw, var(--font-heading-7));
-  font-weight: 700;
+  font-weight: var(--weight-bold);
 
   transition: color 300ms;
 

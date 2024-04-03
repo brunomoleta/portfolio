@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const Header = styled.h3`
   color: black;
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 
   width: fit-content;
 

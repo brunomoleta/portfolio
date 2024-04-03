@@ -55,7 +55,7 @@ export const DSubTrigger = styled(Ariakit.MenuButton)`
   }
 `;
 export const DItem = styled(Ariakit.MenuItem)`
-  font-weight: 500;
+  font-weight: var(--weight-medium);
   background-color: var(--cool-grey-5);
 
   padding-block: var(--s0) 8px;

@@ -9,6 +9,7 @@ const GlobalStyles = createGlobalStyle`
     *::before,
     *::after {
         box-sizing: border-box;
+        -webkit-font-smoothing: antialiased;
     }
 
     /*

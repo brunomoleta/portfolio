@@ -7,7 +7,7 @@ export const HLinks = styled.ul`
   display: flex;
   flex-wrap: wrap;
   gap: var(--s1);
-  font-weight: 500;
+  font-weight: var(--weight-medium);
 
   @media (max-width: 850px) {
     gap: var(--s0);
