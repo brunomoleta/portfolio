@@ -1,18 +1,21 @@
 import React from "react";
 import { About } from "@/components/SingleProject/SingleProject.style";
 
-import { IProject } from "@/types/types";
 import ParagraphItem from "@/components/SingleProject/ProjParagraphs/ParagraphItem";
+import { useUtilsContext } from "@/providers/useContext";
+import { Utils } from "@/types/utils";
+import Spinner from "@/components/Spinner";
 
 function ProjParagraphs({
-  project,
   infoType,
   isStart = true,
 }: {
-  project: IProject;
-   infoType: "front end" | "back end" | "general" | "devops";
+  infoType: "front end" | "back end" | "general" | "devops";
   isStart?: boolean;
 }) {
+  const { project } = useUtilsContext() as Utils;
+  if (!project) return <Spinner />;
+
   const {
     Bresponsibilities,
     Fresponsibilities,
