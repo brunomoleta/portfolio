@@ -3,6 +3,12 @@ import styled from "styled-components";
 import Image from "next/image";
 import Link from "next/link";
 
+export const Wrapper = styled.div`
+  display: flex;
+  flex-flow: column;
+  gap: 2ch;
+`;
+
 export const ProjectArticle = styled.article`
   width: 100%;
 
@@ -84,4 +90,6 @@ export const Title = styled.h3`
 
 export const ProjTitle = styled(Title)`
   font-size: clamp(var(--font-body-4), 2svw + 1rem, var(--font-heading-7));
+  border-bottom: 3px solid var(--teal-40);
+  width: fit-content;
 `;
