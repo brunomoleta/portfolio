@@ -17,8 +17,7 @@ import SectionInfo from "@/components/SingleProject/SectionInfo";
 import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
 import { Wrapper } from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
 import { upper } from "@/services/service.ts";
-import JustifyParagraph from "@/components/JustifyParagraph";
-import { Describe } from "@/components/Main/DecorSection/DecorSection.style.ts";
+import TestCode from "@/components/SingleProject/SingleProjTour/TestCode";
 
 function SingleProjTour({
   project,
@@ -43,14 +42,7 @@ function SingleProjTour({
 
   const mapDevops = devOpsContent?.map((item, index) => (
     <TourPiece key={index}>
-      <JustifyParagraph title={upper(item.small)} text={item.explain} />
-      <div>
-        <ImageWrapper>
-          <ImageElement unoptimized={true} src={item.gif} alt={item.small} />
-        </ImageWrapper>
-        <Describe>Demo: suíte de teste de {upper(item.small)}</Describe>
-        <hr style={{ borderBlockEnd: "4px solid var(--cool-grey-20)" }} />
-      </div>
+      <TestCode content={item}/>
     </TourPiece>
   ));
 
