@@ -1,8 +1,7 @@
 "use client";
-import Link from "next/link";
 import styled from "styled-components";
 
-export const StyledLogo = styled(Link)`
+export const StyledLogo = styled.button`
   font-family: inherit;
 
   line-height: 110%;
