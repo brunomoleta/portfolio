@@ -38,7 +38,4 @@ export const Btn = styled.button`
   }
 `;
 
-export const PButton = styled(ProjBtn)`
-  position: absolute;
-  bottom: 0;
-`;
+export const PButton = styled(ProjBtn)``;
