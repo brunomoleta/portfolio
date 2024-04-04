@@ -1,9 +1,5 @@
 import React from "react";
-import {
-  ImageElement,
-  ImageWrapper,
-  TourSection,
-} from "@/components/SingleProject/SingleProject.style";
+import { TourSection } from "@/components/SingleProject/SingleProject.style";
 import { IProject } from "@/types/types";
 import {
   OtherName,
@@ -42,7 +38,7 @@ function SingleProjTour({
 
   const mapDevops = devOpsContent?.map((item, index) => (
     <TourPiece key={index}>
-      <TestCode content={item}/>
+      <TestCode content={item} />
     </TourPiece>
   ));
 
