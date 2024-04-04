@@ -87,7 +87,7 @@ export const projects: IProject[] = [
       "typescript",
       "react context",
     ],
-    backendTags: ["node.js", "postgreSQL", "prismaORM ", "git", "express.js"],
+    backendTags: ["node.js", "postgreSQL", "prisma ORM ", "git", "express.js"],
     illustration: DurvalMobileHome,
 
     live: "https://durval-music-shop.vercel.app/",

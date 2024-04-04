@@ -2,18 +2,22 @@
 import React from "react";
 import SingleProjHeader from "@/components/SingleProject/SingleProjHeader";
 import SingleProjTour from "@/components/SingleProject/SingleProjTour";
-import { IProject } from "@/types/types";
 import { useUtilsContext } from "@/providers/useContext";
 import { Utils } from "@/types/utils";
 import ProjectStep from "@/components/ProjectStep";
+import Spinner from "@/components/Spinner";
 
-function SProjSection({ project }: { project: IProject }) {
+function SProjSection() {
   const { step } = useUtilsContext() as Utils;
+
+  const { project } = useUtilsContext() as Utils;
+  if (!project) return <Spinner />;
+
   return (
     <>
       {step === 0 && (
         <ProjectStep>
-          <SingleProjHeader project={project} />
+          <SingleProjHeader />
         </ProjectStep>
       )}
       {step === 1 && (

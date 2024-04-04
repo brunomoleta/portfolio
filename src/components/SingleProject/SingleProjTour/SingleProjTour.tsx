@@ -74,8 +74,8 @@ function SingleProjTour({
       <TourSection>
         <SubName>{upper(sectionType)}</SubName>
         <SectionInfo>
-          <ProjParagraphs infoType={sectionType} project={project} />
-          <ProjectDescription infoType={sectionType} project={project} />
+          <ProjParagraphs infoType={sectionType} />
+          <ProjectDescription infoType={sectionType} />
         </SectionInfo>
         <Wrapper>
           <OtherName>{returnWord(sectionType)}</OtherName>
@@ -83,7 +83,6 @@ function SingleProjTour({
         </Wrapper>
         <ProjParagraphs
           infoType={sectionType}
-          project={project}
           isStart={false}
         />
       </TourSection>

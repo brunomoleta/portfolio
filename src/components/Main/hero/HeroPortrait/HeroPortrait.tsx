@@ -17,10 +17,7 @@ function HeroPortrait() {
         animate={{ opacity: 1, x: "0px" }}
         transition={{ duration: 1, ease: "easeInOut" }}
       >
-        <Portrait
-          alt="portrait of Bruno from the chest and above, with a caqui shirt, looking at the camera"
-          src={Bruno}
-        />
+        <Portrait alt="Bruno Moleta sorrindo." src={Bruno} />
       </ImageWrapper>
       <Describe style={{ fontWeight: "revert" }}>
         Fotografia feita por{" "}
