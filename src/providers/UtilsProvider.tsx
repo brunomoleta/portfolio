@@ -1,8 +1,4 @@
-import React, {
-  createContext,
-  ReactNode,
-  useState,
-} from "react";
+import React, { createContext, ReactNode, useState } from "react";
 import { Utils } from "@/types/utils";
 import { IProject } from "@/types/types";
 

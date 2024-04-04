@@ -81,10 +81,7 @@ function SingleProjTour({
           <OtherName>{returnWord(sectionType)}</OtherName>
           {returnContent(sectionType)}
         </Wrapper>
-        <ProjParagraphs
-          infoType={sectionType}
-          isStart={false}
-        />
+        <ProjParagraphs infoType={sectionType} isStart={false} />
       </TourSection>
     </>
   );
