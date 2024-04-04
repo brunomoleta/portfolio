@@ -4,14 +4,14 @@ import { StyledLogo } from "./Logo.style";
 import { useUtilsContext } from "@/providers/useContext";
 import { Utils } from "@/types/utils";
 import { useRouter } from "next/navigation";
-import {wait} from "next/dist/lib/wait";
+import { wait } from "next/dist/lib/wait";
 
 function Logo() {
   const { setStep } = useUtilsContext() as Utils;
   const router = useRouter();
   const handleClick = () => {
     router.push("/");
-    wait(200)
+    wait(200);
     setStep(0);
   };
 

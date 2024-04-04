@@ -15,8 +15,9 @@
 
 .wrapper svg {
   /*
-    Ensure that the child is block so
-    that it spins symmetrically
-  */
+      Ensure that the child is block so
+      that it spins symmetrically
+    */
   display: block;
+  margin: auto;
 }

@@ -182,7 +182,7 @@ export const projects: IProject[] = [
       "radix-ui",
       "typescript",
     ],
-    backendTags: ["Nest.js", "Node.js", "PrimaORM", "PostgreSQL"],
+    backendTags: ["Nest.js", "Node.js", "Prisma ORM", "PostgreSQL"],
 
     Fresponsibilities: [
       "Desde a adaptação do figma do site frontendmentor.io, produção de funcionalidades até" +

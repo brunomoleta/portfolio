@@ -20,10 +20,7 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
           <ProjectRelatedTechs heading="Back end" tags={backendTags} />
           <ProjectBtn destination={href} />
         </Wrapper>
-        <ProjectIllustration
-          destination={href}
-          illustration={illustration}
-        />
+        <ProjectIllustration destination={href} illustration={illustration} />
       </ProjectArticle>
     </>
   );
