@@ -39,7 +39,7 @@ export const InfoWrapper = styled.div`
   }
 `;
 
-export const ImageWrapper = styled(Link)`
+export const ImageWrapper = styled.button`
   position: relative;
 
   width: 100%;
@@ -50,11 +50,10 @@ export const ImageWrapper = styled(Link)`
   overflow: hidden;
 
   &:hover {
-    outline: 2px solid transparent;
-    outline-offset: 2px;
+    outline-offset: 12px;
 
     img {
-      transform: scale(1.05);
+      transform: scale(1.04);
       transition: transform 350ms ease-in-out;
       border-radius: var(--s-2);
     }

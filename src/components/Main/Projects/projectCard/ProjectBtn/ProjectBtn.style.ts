@@ -38,4 +38,21 @@ export const Btn = styled.button`
   }
 `;
 
-export const PButton = styled(ProjBtn)``;
+export const PButton = styled.button`
+  display: flex;
+  align-items: center;
+  gap: var(--s-1);
+  font-size: var(--font-body-sm-1);
+
+  color: var(--teal-60);
+  transition: color 300ms;
+
+  word-break: break-word;
+
+  text-decoration: underline;
+
+  &:hover {
+    outline: revert;
+    color: var(--teal-90);
+  }
+`;
