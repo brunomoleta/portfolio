@@ -25,6 +25,12 @@ export const projects: IProject[] = [
       " e realiza CRUD de informações pessoais.",
     target: "Músicistas de todas as idades.",
 
+    testGoals:
+      "Realizar automatização " +
+      "das funcionalidade de login, cadastro e busca de produtos de ponta a ponta. " +
+      "Assim, " +
+      "ao mudar o código, basta fazer esta verificação para assegurar " +
+      "que código novo é independente do existente.",
     tags: [
       "react.js",
       "node.js",
@@ -122,6 +128,7 @@ export const projects: IProject[] = [
     backContent: DurvalBack,
 
     devOpsContent: DurvalTests,
+    devopsTags: ["cypress.js"],
   },
   {
     id: 2,
@@ -183,6 +190,7 @@ export const projects: IProject[] = [
       "typescript",
     ],
     backendTags: ["Nest.js", "Node.js", "Prisma ORM", "PostgreSQL"],
+    devopsTags: ["cypress.js"],
 
     Fresponsibilities: [
       "Desde a adaptação do figma do site frontendmentor.io, produção de funcionalidades até" +
@@ -229,6 +237,13 @@ export const projects: IProject[] = [
 
     frontContent: EasyBankFront,
     backContent: EasyBankBack,
+
     devOpsContent: DurvalTests,
+    testGoals:
+      "Realizar automatização " +
+      "das funcionalidade de login, cadastro e busca de produtos de ponta a ponta. " +
+      "Assim, " +
+      "ao mudar o código, basta fazer esta verificação para assegurar " +
+      "que código novo é independente do existente.",
   },
 ];

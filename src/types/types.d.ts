@@ -67,6 +67,7 @@ export interface IProject extends ICommon {
   tags: string[];
   frontendTags: string[];
   backendTags: string[];
+  devopsTags: string[];
 
   illustration: StaticImageData;
   live: string;
@@ -80,6 +81,7 @@ export interface IProject extends ICommon {
   backContent: IBackData[];
 
   devOpsContent?: ITestsData[];
+  testGoals: string;
 
   date: string;
 }

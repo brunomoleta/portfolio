@@ -1,3 +1,4 @@
+"use client";
 import { IProject } from "@/types/types";
 import React from "react";
 import {
@@ -8,9 +9,22 @@ import ProjectRelatedTechs from "@/components/Main/Projects/projectCard/ProjectR
 import ProjectIllustration from "@/components/Main/Projects/projectCard/ProjectIllustration";
 import ProjectInfo from "@/components/Main/Projects/projectCard/ProjectInfo";
 import ProjectBtn from "@/components/Main/Projects/projectCard/ProjectBtn";
+import Spinner from "@/components/Spinner";
+import { useRouter } from "next/navigation";
 
 export const ProjectCard = ({ item }: { item: IProject }) => {
-  const { illustration, backendTags, frontendTags, href } = item;
+  const { illustration, backendTags, frontendTags, href, title } = item;
+
+  const [loading, setLoading] = React.useState(false);
+  const router = useRouter();
+
+  const handleClick = () => {
+    setLoading(true);
+    setTimeout(() => {
+      setLoading(false);
+      router.push(href);
+    }, 1.6 * 1000);
+  };
   return (
     <>
       <ProjectArticle>
@@ -18,9 +32,16 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
           <ProjectInfo item={item} />
           <ProjectRelatedTechs heading="Front end" tags={frontendTags} />
           <ProjectRelatedTechs heading="Back end" tags={backendTags} />
-          <ProjectBtn destination={href} />
+          <ProjectBtn disabled={loading} onClick={handleClick} />
         </Wrapper>
-        <ProjectIllustration destination={href} illustration={illustration} />
+        {loading && <Spinner />}
+        <ProjectIllustration
+          isLoading={loading}
+          disabled={loading}
+          onClick={handleClick}
+          aria-label={`Aplicação ${title} rodando em dispositivo móvel`}
+          illustration={illustration}
+        />
       </ProjectArticle>
     </>
   );
