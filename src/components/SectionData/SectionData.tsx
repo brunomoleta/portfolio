@@ -1,4 +1,4 @@
-'use client'
+"use client";
 import React from "react";
 import InfoItem from "@/components/SingleProject/InfoItem";
 import {

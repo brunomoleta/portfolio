@@ -3,17 +3,17 @@ import ParagraphItem from "@/components/SingleProject/ProjParagraphs/ParagraphIt
 import { useUtilsContext } from "@/providers/useContext";
 import { Utils } from "@/types/utils";
 import Spinner from "@/components/Spinner";
-import {frontEndFullData} from "@/services/frontEndFull.data.ts";
-import {backEndFullData} from "@/services/backEndFull.data.ts";
+import { frontEndFullData } from "@/services/frontEndFull.data.ts";
+import { backEndFullData } from "@/services/backEndFull.data.ts";
 
 function TopInfo({ category }: { category: string }) {
   const { project } = useUtilsContext() as Utils;
   if (!project) return <Spinner />;
-    const frontend = frontEndFullData[project.id - 1];
-    const backend = backEndFullData[project.id - 1];
+  const frontend = frontEndFullData[project.id - 1];
+  const backend = backEndFullData[project.id - 1];
 
-    const { fResponsibilities, fChallenges } = frontend;
-    const { bResponsibilities } = backend;
+  const { fResponsibilities, fChallenges } = frontend;
+  const { bResponsibilities } = backend;
   return (
     <>
       <ParagraphItem
