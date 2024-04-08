@@ -1,12 +1,12 @@
 import React, { createContext, ReactNode, useState } from "react";
 import { Utils } from "@/types/utils";
-import { IProject } from "@/types/types";
+import { ICommon } from "@/types/types";
 
 export const UtilsContext = createContext({});
 
 const UtilsProvider = (props: { children: ReactNode }) => {
   const [step, setStep] = useState(0);
-  const [project, setProject] = useState<null | IProject>(null);
+  const [project, setProject] = useState<ICommon | null>(null);
   const values: Utils = {
     step,
     setStep,

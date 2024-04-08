@@ -1,6 +1,5 @@
 import React from "react";
 import { StaticImageData } from "next/image";
-import { DurvalTests } from "@/services/tests.data.ts";
 
 export interface ChildrenProps {
   children: ReactNode;
@@ -13,20 +12,62 @@ export interface ITechItem {
 }
 
 interface ICommon {
-  goals: string;
-  Fresponsibilities: string[];
-  Bresponsibilities: string[];
+  id: number;
+  url: string;
+  step: number;
+}
 
-  FChallenges: string[];
+export interface IBackData {
+  code: React.ReactNode;
+  explain: string;
+  small: string;
+}
+
+export interface BackEndFull {
+  id: number;
+  step: number;
+
+  bResponsibilities: string[];
   BChallenges: string[];
+  bLearning: string[];
+  bNextSteps: string[];
 
-  Flearning: string[];
-  Blearning: string[];
+  doc: string;
+  backContent: IBackData[];
 
-  FnextSteps: string[];
-  BnextSteps: string[];
+  backEndRepo;
+}
 
+export interface ITestsData {
+  explain: string;
+  small: string;
+  gif: StaticImageData;
+}
+
+export interface TestsFull {
+  id: number;
+  step: number;
+  devOpsContent?: ITestsData[];
+  testGoals: string;
+  devopsTags: string[];
+}
+
+export interface IAuthors {
+  name: string;
+  image: StaticImageData;
+}
+
+export interface Intro {
+  id: number;
+  step: number;
+  url: string;
+  authors: IAuthors[];
+  about1: string;
+  about2: string;
+  motivation: string;
   target: string;
+  date: string;
+  goals: string;
 }
 
 export interface IFrontData {
@@ -36,54 +77,32 @@ export interface IFrontData {
   explain: string;
 }
 
-export interface IBackData {
-  code: React.ReactNode;
-  explain: string;
-  small: string;
-}
-
-export interface ITestsData {
-  explain: string;
-  small: string;
-  gif: StaticImageData;
-}
-
-export interface IAuthors {
-  name: string;
-  image: StaticImageData;
-}
-
-export interface IProject extends ICommon {
+export interface FrontEndFull {
   id: number;
-  url: string;
+  step: number;
+
+  live: string;
+  frontEndRepo: string;
+  frontContent: IFrontData[];
+  fResponsibilities: string[];
+  fChallenges: string[];
+  fLearning: string[];
+  fNextSteps: string[];
+}
+
+export interface IProject {
+  id: number;
 
   title: string;
   subTitle: string;
 
-  about1: string;
-  about2: string;
-  motivation: string;
-
-  tags: string[];
   frontendTags: string[];
   backendTags: string[];
   devopsTags: string[];
 
   illustration: StaticImageData;
-  live: string;
-  doc: string;
-  backEndRepo: string;
-  frontEndRepo: string;
-  authors: IAuthors[];
+
   href: string;
-
-  frontContent: IFrontData[];
-  backContent: IBackData[];
-
-  devOpsContent?: ITestsData[];
-  testGoals: string;
-
-  date: string;
 }
 
 export interface HeroLinkProps
