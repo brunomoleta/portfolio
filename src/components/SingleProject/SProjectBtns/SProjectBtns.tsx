@@ -39,7 +39,7 @@ function SProjectBtns({ digit }: { digit: number }) {
         </Btn>
         <StepButton
           isPrimary
-          onClick={() => handleNavigation(`/${projects[num].url}`)}
+          onClick={() => handleNavigation(`/${projects[num].href}`)}
         >
           <ArrowRightIcon />
           Ir para o projeto {projects[num].title}
