@@ -5,12 +5,14 @@ import Authors from "@/components/SingleProject/ProjectDescription/Authors";
 import { useUtilsContext } from "@/providers/useContext";
 import { Utils } from "@/types/utils";
 import Spinner from "@/components/Spinner";
+import { projsIntro } from "@/services/intro.data.ts";
 
 function GeneralInfo() {
   const { project } = useUtilsContext() as Utils;
   if (!project) return <Spinner />;
 
-  const { date, authors, motivation } = project;
+  const singleProject = projsIntro[project.id - 1];
+  const { motivation, date, authors } = singleProject;
   return (
     <>
       <InfoItem title="motivação">

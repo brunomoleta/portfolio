@@ -1,6 +1,6 @@
+"use client";
 import React from "react";
 import { TourSection } from "@/components/SingleProject/SingleProject.style";
-import { IProject } from "@/types/types";
 import {
   OtherName,
   SubName,
@@ -14,15 +14,29 @@ import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
 import { Wrapper } from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
 import { upper } from "@/services/service.ts";
 import TestCode from "@/components/SingleProject/SingleProjTour/TestCode";
+import { Utils } from "@/types/utils";
+import { frontEndFullData } from "@/services/frontEndFull.data.ts";
+import { backEndFullData } from "@/services/backEndFull.data.ts";
+import Spinner from "@/components/Spinner";
+import { useUtilsContext } from "@/providers/useContext";
+import { testsFullData } from "@/services/testsFull.data.ts";
 
 function SingleProjTour({
-  project,
   sectionType,
 }: {
-  project: IProject;
   sectionType: "front end" | "back end" | "devops";
 }) {
-  const { frontContent, backContent, devOpsContent } = project;
+  const { project } = useUtilsContext() as Utils;
+
+  if (!project) return <Spinner />;
+
+  const frontend = frontEndFullData[project.id - 1];
+  const backend = backEndFullData[project.id - 1];
+  const devOps = testsFullData[project.id - 1];
+
+  const { frontContent } = frontend;
+  const { backContent } = backend;
+  const { devOpsContent } = devOps;
 
   const mapFront = frontContent.map((item, index) => (
     <TourPiece key={index}>

@@ -23,7 +23,7 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
     setTimeout(() => {
       setLoading(false);
       router.push(href);
-    }, 1.6 * 1000);
+    }, 2 * 1000);
   };
   return (
     <>
