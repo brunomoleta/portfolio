@@ -17,3 +17,10 @@ export const threeMobiles = (
   thirdScreen: string,
 ) =>
   `Três dispositivos móveis. O primeiro mostra a tela de ${firstScreen}, o segundo de ${secondScreen} e o terceiro ${thirdScreen}.`;
+
+export function toTitleCase(str: string) {
+  return str
+    .split("-")
+    .map((word) => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+    .join(" ");
+}
