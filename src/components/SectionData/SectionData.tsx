@@ -1,3 +1,4 @@
+'use client'
 import React from "react";
 import InfoItem from "@/components/SingleProject/InfoItem";
 import {
@@ -9,6 +10,9 @@ import { ProjBtn } from "@/components/Main/Projects/projectCard/ProjectBtn/Proje
 import { useUtilsContext } from "@/providers/useContext";
 import { Utils } from "@/types/utils";
 import Spinner from "@/components/Spinner";
+import { frontEndFullData } from "@/services/frontEndFull.data.ts";
+import { backEndFullData } from "@/services/backEndFull.data.ts";
+import { projects } from "@/services/projects.data.ts";
 
 function SectionData({
   category,
@@ -18,8 +22,14 @@ function SectionData({
   const { project } = useUtilsContext() as Utils;
   if (!project) return <Spinner />;
 
-  const { frontendTags, frontEndRepo, backEndRepo, backendTags, live, doc } =
-    project;
+  const frontend = frontEndFullData[project.id - 1];
+  const backend = backEndFullData[project.id - 1];
+  const singleProject = projects[project.id - 1];
+
+  const { frontendTags, backendTags } = singleProject;
+  const { live, frontEndRepo } = frontend;
+  const { doc, backEndRepo } = backend;
+
   return (
     <>
       <InfoItem title="tecnologias">
