@@ -29,7 +29,7 @@ export const DecorWrapper = styled.div`
 `;
 
 export const Describe = styled.small`
-  color: var(--cool-grey-50);
+  color: var(--cool-grey-70);
   width: 100%;
   text-align: end;
   margin-inline-start: auto;
