@@ -18,7 +18,7 @@ export const FootHeading = styled.h3`
   margin-inline-end: auto;
 `;
 
-export const Message = styled.h5`
+export const Message = styled.h4`
   color: var(--cool-grey-60);
   font-size: var(--font-body-sm-3);
 

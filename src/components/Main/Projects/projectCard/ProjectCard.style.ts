@@ -76,7 +76,7 @@ export const BaseImage = styled(Image)`
 export const ProjectImage = styled(BaseImage)``;
 
 export const Subtitle = styled.h4`
-  color: var(--cool-grey-50);
+  color: var(--cool-grey-70);
   font-size: clamp(var(--font-body-sm-2), 4%, var(--font-body-sm-4));
   line-height: 130%;
 

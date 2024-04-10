@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Describe = styled.small`
-  color: var(--cool-grey-50);
+  color: var(--cool-grey-70);
 
   margin-block-end: var(--s1);
   margin-inline-end: auto;
