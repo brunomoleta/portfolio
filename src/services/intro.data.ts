@@ -20,7 +20,8 @@ export const projsIntro: Intro[] = [
       " Tivemos três semanas para produzí-lo, sendo este o primeiro projeto full stack nosso." +
       " Logo, a organização foi um desafio em si mesmo.",
     about2: "",
-    target: "Músicistas de todas as idades.",
+    target:
+      "Músicistas de todas as idades que buscam comprar ou vender equipamentos musicais.",
     authors: [
       {
         image: Bruno,

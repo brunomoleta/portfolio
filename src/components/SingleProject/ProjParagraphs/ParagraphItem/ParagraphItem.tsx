@@ -17,7 +17,7 @@ function ParagraphItem({
   return (
     <div>
       <Balancer>
-        <Header>{upper(title)}:</Header>
+        <Header as="h2">{upper(title)}:</Header>
         {typeof content === "string" && <p>{content}</p>}
         {Array.isArray(content) && (
           <ContentList>
