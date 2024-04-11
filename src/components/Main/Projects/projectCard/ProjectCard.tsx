@@ -39,7 +39,7 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
           isLoading={loading}
           disabled={loading}
           onClick={handleClick}
-          aria-label={`Aplicação ${title} rodando em dispositivo móvel`}
+          alt={`Aplicação ${title} rodando em dispositivo móvel`}
           illustration={illustration}
         />
       </ProjectArticle>
