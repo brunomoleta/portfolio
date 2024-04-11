@@ -12,8 +12,6 @@ export const HeroText = styled.article`
   line-height: 125%;
   max-width: 100%;
 
-  font-weight: var(--weight-medium);
-
   max-inline-size: var(--max-inline-size);
 
   @media (min-width: 550px) {
