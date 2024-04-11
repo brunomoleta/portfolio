@@ -7,7 +7,6 @@ export const frontEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="react.js"
-        title="react.js"
         width="40"
         height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/react/react-original.svg"
@@ -24,7 +23,6 @@ export const frontEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="next.js"
-        title="next.js"
         width="40"
         height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg"
@@ -40,7 +38,6 @@ export const frontEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="html"
-        title="html"
         width="40"
         height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-plain-wordmark.svg"
@@ -57,7 +54,6 @@ export const frontEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="CSS"
-        title="css"
         width="40"
         height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-plain-wordmark.svg"
@@ -77,7 +73,6 @@ export const backEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="node.js"
-        title="node.js"
         width="40"
         height="40"
         src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg"
@@ -95,7 +90,6 @@ export const backEndList: ITechItem[] = [
     logoImage: (
       <TechImage
         alt="Git"
-        title="Git"
         width="40"
         height="40"
         src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"

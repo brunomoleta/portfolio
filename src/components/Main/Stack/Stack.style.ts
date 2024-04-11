@@ -26,7 +26,7 @@ export const Describe = styled.small`
 type HeadingProps = {
   isBlack?: boolean;
 };
-export const Heading = styled.h3<HeadingProps>`
+export const Heading = styled.h2<HeadingProps>`
   font-weight: var(--weight-normal);
   color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-70)")};
   width: fit-content;
