@@ -48,7 +48,6 @@ export const PButton = styled.button`
   font-size: var(--font-body-sm-1);
 
   color: var(--teal-70);
-  font-weight: var(--weight-medium);  
   transition: color 300ms;
 
   word-break: break-word;
