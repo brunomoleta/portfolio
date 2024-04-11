@@ -8,15 +8,17 @@ export const ProjBtn = styled(Link)`
   gap: var(--s-1);
   font-size: var(--font-body-sm-1);
 
-  color: var(--teal-60);
+  color: var(--teal-70);
   transition: color 300ms;
 
   word-break: break-word;
 
   text-decoration: underline;
+
   &:hover {
     outline: revert;
     color: var(--teal-90);
+    text-decoration: none;
   }
 `;
 
@@ -26,7 +28,7 @@ export const Btn = styled.button`
   gap: var(--s-1);
   font-size: var(--font-body-sm-1);
 
-  color: var(--teal-60);
+  color: var(--teal-70);
   transition: color 300ms;
 
   word-break: break-word;
@@ -35,6 +37,7 @@ export const Btn = styled.button`
   &:hover {
     outline: revert;
     color: var(--teal-90);
+    text-decoration: none;
   }
 `;
 
@@ -44,7 +47,7 @@ export const PButton = styled.button`
   gap: var(--s-1);
   font-size: var(--font-body-sm-1);
 
-  color: var(--teal-60);
+  color: var(--teal-70);
   transition: color 300ms;
 
   word-break: break-word;
