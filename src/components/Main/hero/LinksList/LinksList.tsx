@@ -12,7 +12,7 @@ function LinksList() {
   return (
     <WholeContainer>
       <Container>
-        <SectionHeader word="links:" />
+        <SectionHeader isBlack={false} word="links:" />
         <LinksListStyle>
           {linksList.map((item, index) => (
             <HeroLink key={index} item={item} />

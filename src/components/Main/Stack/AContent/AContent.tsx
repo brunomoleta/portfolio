@@ -14,9 +14,9 @@ function AContent({ tech }: { tech: Pick<ITechItem, "items"> }) {
     <AContainer>
       <ContentList>
         {items.map((item, index) => (
-          <Balancer ratio={0} key={index}>
-            <Item>{item}</Item>
-          </Balancer>
+          <Item key={index}>
+            <Balancer ratio={0}>{item}</Balancer>
+          </Item>
         ))}
       </ContentList>
     </AContainer>

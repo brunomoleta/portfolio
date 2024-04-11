@@ -28,10 +28,11 @@ type HeadingProps = {
 };
 export const Heading = styled.h3<HeadingProps>`
   font-weight: var(--weight-normal);
-  color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-50)")};
+  color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-70)")};
   width: fit-content;
   font-size: clamp(var(--font-body-4), 4svw + 1rem, var(--font-body-sm-1));
   line-height: 120%;
+  letter-spacing: ${(props) => (props.isBlack ? "inherit" : "1px")};
 `;
 
 export const StackHeader = styled.div`

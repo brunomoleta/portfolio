@@ -6,7 +6,7 @@ function IconItem({ item }: IIcon) {
   const { title, href, icon } = item;
   return (
     <li key={title}>
-      <Link title={title} href={href}>
+      <Link title={title} aria-label={title} href={href}>
         {icon}
       </Link>
     </li>

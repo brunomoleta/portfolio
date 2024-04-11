@@ -9,6 +9,7 @@ import Spinner from "@/components/Spinner";
 function ProjectIllustration({
   illustration,
   isLoading,
+  alt,
   ...props
 }: ProjectIllustrationProps) {
   return (
@@ -18,7 +19,7 @@ function ProjectIllustration({
         fill={true}
         loading="lazy"
         src={illustration}
-        alt="human hand holding a mobile with the running app."
+        alt={alt}
         style={{ opacity: isLoading ? ".25" : "1" }}
       />
       {isLoading && <Spinner />}
@@ -30,6 +31,7 @@ type ProjectIllustrationProps =
   React.ButtonHTMLAttributes<HTMLButtonElement> & {
     illustration: StaticImageData;
     isLoading: boolean;
+    alt: string;
   };
 
 export default ProjectIllustration;
