@@ -6,10 +6,13 @@ import React from "react";
 import { Header } from "@/components/Header";
 import { PageMain } from "@/components/Main";
 import { Footer } from "@/components/Footer";
+// import { getCookies } from "cookies-next";
 
 export const metadata: Metadata = {
-  title: "Bruno Moleta's portfolio",
-  description: "Bruno Moleta's Full Stack developer portfolio",
+  title: "Bruno Moleta | Desenvolvedor full stack ",
+  description:
+    "Portfólio de Bruno Moleta contendo dois projetos extensivamente detalhados. " +
+    "A explicação compreende autores envolvidos, front end, back end e testes.",
 };
 
 export default function RootLayout({
@@ -17,7 +20,12 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // const cookies = getCookies();
+  // const theme = cookies["color-theme"] as string | undefined;
+  // const themeColors = "red"
+
   return (
+    // <html lang="pt-BR" data-color-theme={themeColors} style={themeColors}>
     <html lang="pt-BR">
       <body>
         <Providers>
