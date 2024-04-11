@@ -7,7 +7,9 @@ function ProjectsList() {
   return (
     <ProjList>
       {projects.map((item, index) => (
-        <ProjectCard key={index} item={item} />
+        <li key={index}>
+          <ProjectCard  item={item} />
+        </li>
       ))}
     </ProjList>
   );
