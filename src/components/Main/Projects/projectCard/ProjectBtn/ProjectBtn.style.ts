@@ -58,5 +58,6 @@ export const PButton = styled.button`
   &:hover {
     outline: revert;
     color: var(--teal-90);
+    text-decoration: none;
   }
 `;
