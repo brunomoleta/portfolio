@@ -8,7 +8,7 @@ function ProjectsList() {
     <ProjList>
       {projects.map((item, index) => (
         <li key={index}>
-          <ProjectCard  item={item} />
+          <ProjectCard item={item} />
         </li>
       ))}
     </ProjList>
