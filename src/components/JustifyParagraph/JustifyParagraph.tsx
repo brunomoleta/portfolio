@@ -8,10 +8,9 @@ function JustifyParagraph({ text, title }: { text: string; title: string }) {
   return (
     <Wrapper>
       <OtherName>{title}</OtherName>
-
-      <Balancer>
-        <Text>{text}</Text>
-      </Balancer>
+      <Text>
+        <Balancer>{text}</Balancer>
+      </Text>
     </Wrapper>
   );
 }
