@@ -29,7 +29,7 @@ export const Paragraph3: React.FC = () => {
       comportamentais e técnicas para fazer a{" "}
       <Emphasis>experiência do usuário</Emphasis> natural como um{" "}
       <Emphasis> rio de águas vivas</Emphasis> e ligeira como um{" "}
-      <Emphasis>"dibre" do Vinícius Jr.</Emphasis>
+      <Emphasis>drible do Vinícius Jr.</Emphasis>
     </>
   );
 };
