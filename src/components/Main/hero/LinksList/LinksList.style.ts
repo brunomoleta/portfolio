@@ -11,6 +11,9 @@ export const LinksListStyle = styled.ul`
 export const ProjList = styled(LinksListStyle)`
   gap: var(--s2);
   display: grid;
+  @media (min-width: 32rem) {
+    grid-template-columns: repeat(auto-fill, minmax(29rem, 1fr));
+  }
 `;
 
 export const WholeContainer = styled.div`

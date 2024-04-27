@@ -13,8 +13,9 @@ export const HHeading = styled.section`
 
   @media (min-width: 900px) {
     display: grid;
-    grid-template-columns: 60% 36%;
+    grid-template-columns: minmax(40ch, 1fr) auto;
     gap: 4%;
+    justify-items: start;
   }
 `;
 

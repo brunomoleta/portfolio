@@ -7,6 +7,8 @@ export const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
   gap: 2ch;
+
+  position: relative;
 `;
 
 export const ProjectArticle = styled.article`
@@ -16,8 +18,7 @@ export const ProjectArticle = styled.article`
   border-radius: var(--s-1);
   border: 2px solid var(--cool-grey-30);
 
-  max-width: 460px;
-
+  height: 100%;
   display: flex;
   flex-flow: column-reverse;
   gap: 4%;

@@ -4,23 +4,19 @@ import React from "react";
 export const Paragraph1: React.FC = () => {
   return (
     <>
-      Acredito ser um profissional{" "}
-      <Emphasis>multidisciplinar, versátil e dinâmico</Emphasis>. Me graduei em
-      Arquitetura e Urbanismo, fiz parte de uma incubadora de startups e fui
-      desenvolvi conhecimento web full stack na Kenzie Academy Brasil.
+      Que bom que você chegou até aqui, fico feliz com a sua visita,{" "}
+      <Emphasis>seja muito bem-vinda(o) :)</Emphasis>
     </>
   );
 };
 export const Paragraph2: React.FC = () => {
   return (
     <>
-      O que me move é absorver coisas novas, similar a uma{" "}
-      <Emphasis>esponja que filtra o que lhe serve e o absorve</Emphasis>. Tanto
-      através de outras pessoas, da I.A. e dos próprios erros. Além disso,
-      considero pontos fortes em minha trajetória a{" "}
-      <Emphasis>
-        capacidade de comunicação, em diversos idiomas, e a autonomia.
-      </Emphasis>
+      Acredito ser um profissional multidisciplinar, cujos temperos principais
+      são: <Emphasis>comunicação e autonomia</Emphasis>. Me graduei arquiteto em
+      universidade pública com experiência na área, fiz parte de uma incubadora
+      de startups e absorvi habilidades em programação full stack na Kenzie
+      Academy Brasil.
     </>
   );
 };
@@ -31,9 +27,9 @@ export const Paragraph3: React.FC = () => {
       Desta forma, ao desenvolver aplicações web através de{" "}
       <Emphasis>Next.js, Node.js, Typescript e CSS</Emphasis>, alio habilidades
       comportamentais e técnicas para fazer a{" "}
-      <Emphasis>experiência do usuário</Emphasis> fluida como um{" "}
+      <Emphasis>experiência do usuário</Emphasis> natural como um{" "}
       <Emphasis> rio de águas vivas</Emphasis> e ligeira como um{" "}
-      <Emphasis>drible do Vinícius Jr.</Emphasis>
+      <Emphasis>"dibre" do Vinícius Jr.</Emphasis>
     </>
   );
 };

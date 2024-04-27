@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
-
+  width: fit-content;
   margin-block-start: 6px;
 `;
 export const HeroText = styled.article`

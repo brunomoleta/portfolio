@@ -12,24 +12,31 @@ import Link from "next/link";
 function HeroPortrait() {
   return (
     <Container>
-      <ImageWrapper
-        initial={{ opacity: 0, x: "100px" }}
-        animate={{ opacity: 1, x: "0px" }}
-        transition={{ duration: 1, ease: "easeInOut" }}
+      <div
+        style={{
+          position: "sticky",
+          top: "var(--s0)",
+        }}
       >
-        <Portrait alt="Bruno Moleta sorrindo." src={Bruno} />
-      </ImageWrapper>
-      <Describe style={{ fontWeight: "revert" }}>
-        Fotografia feita por{" "}
-        <Link
-          style={{ textDecoration: "underline" }}
-          target="_blank"
-          href={"https://www.instagram.com/yaas.schafer/"}
+        <ImageWrapper
+          initial={{ opacity: 0, x: "100px" }}
+          animate={{ opacity: 1, x: "0px" }}
+          transition={{ duration: 1, ease: "easeInOut" }}
         >
-          Yasmin Schaffer
-        </Link>
-        .
-      </Describe>
+          <Portrait alt="Bruno Moleta sorrindo." src={Bruno} />
+        </ImageWrapper>
+        <Describe style={{ fontWeight: "revert" }}>
+          Fotografia feita por{" "}
+          <Link
+            style={{ textDecoration: "underline" }}
+            target="_blank"
+            href={"https://www.instagram.com/yaas.schafer/"}
+          >
+            Yasmin Schaffer
+          </Link>
+          .
+        </Describe>
+      </div>
     </Container>
   );
 }

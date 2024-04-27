@@ -19,13 +19,13 @@ export const ImageWrapper = styled(motion.div)`
   background-color: transparent;
   border-radius: var(--s-1);
   box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px 0;
-  top: var(--s0);
   height: fit-content;
   overflow: auto;
 `;
 export const Container = styled.div`
-  width: 100%;
   display: flex;
   flex-flow: column;
   align-items: flex-end;
+
+  position: relative;
 `;

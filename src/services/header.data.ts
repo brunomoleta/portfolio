@@ -1,6 +1,6 @@
 export const dropdownList = [
   {
-    name: "home",
+    name: "início",
     href: "/",
   },
   {

@@ -45,7 +45,7 @@ export const PButton = styled.button`
   display: flex;
   align-items: center;
   gap: var(--s-1);
-  font-size: var(--font-body-sm-1);
+  font-size: var(--font-body-4);
 
   color: var(--teal-70);
   transition: color 300ms;
