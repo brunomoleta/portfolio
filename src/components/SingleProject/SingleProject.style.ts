@@ -39,7 +39,7 @@ export const HeadWrapper = styled.div`
   flex-flow: column;
   gap: var(--s0);
   width: 100%;
-  @media (min-width: 900px) {
+  @media (min-width: 55rem) {
     flex-flow: revert;
     gap: var(--s2);
     position: relative;
@@ -60,7 +60,7 @@ export const Item = styled.li`
   flex-wrap: wrap;
   @media (min-width: 350px) {
     display: grid;
-    grid-template-columns: 11ch 1fr;
+    grid-template-columns: 11ch auto-fill;
   }
 `;
 export const WrappedItem = styled(Item)`
@@ -81,7 +81,6 @@ export const About = styled.section`
   color: var(--cool-grey-60);
 
   margin-block: 0 var(--s1);
-  margin-inline-end: auto;
   line-height: 130%;
 
   max-inline-size: 50ch;

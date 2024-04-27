@@ -29,11 +29,11 @@ export const DecorWrapper = styled.div`
 `;
 
 export const Describe = styled.small`
+  display: block;
   color: var(--cool-grey-70);
-  width: 100%;
-  text-align: end;
   margin-inline-start: auto;
   margin-block-start: var(--s-1);
   font-size: var(--font-body-sm-3);
   line-height: 130%;
+  width: fit-content;
 `;
