@@ -1,2 +1,2 @@
-export * from './DarkLightIcon';
-export { default } from './DarkLightIcon';
+export * from "./DarkLightIcon";
+export { default } from "./DarkLightIcon";

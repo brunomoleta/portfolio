@@ -69,7 +69,7 @@ export const DItem = styled(Ariakit.MenuItem)`
   &:hover,
   &:focus,
   &:active {
-    outline: 2px solid var(--teal-60);
+    outline: 3px solid var(--teal-60);
     outline-offset: 4px;
   }
 `;

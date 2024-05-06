@@ -1,2 +1,2 @@
-export * from './DarkLightToggle';
-export { default } from './DarkLightToggle';
+export * from "./DarkLightToggle";
+export { default } from "./DarkLightToggle";

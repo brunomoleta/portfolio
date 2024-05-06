@@ -15,7 +15,7 @@ html {
   /*colors*/
 
   --pure-white: hsl(223, 100%, 100%);
-  --rich-black: hsl(250, 100%, 12.5%);
+  --rich-black: hsl(0, 100%, 4%);
 
   --cool-grey-90: hsl(212, 19%, 16%);
   --cool-grey-80: hsl(214, 20%, 16%);

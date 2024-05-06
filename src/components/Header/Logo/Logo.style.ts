@@ -2,6 +2,8 @@
 import styled from "styled-components";
 
 export const StyledLogo = styled.button`
+  color: var(--color-text);
+
   font-family: inherit;
 
   line-height: 110%;
@@ -14,14 +16,6 @@ export const StyledLogo = styled.button`
   text-decoration: none;
 
   &:hover {
-    color: var(--teal-70);
-  }
-
-  &:active {
-    color: var(--teal-70);
-  }
-
-  &:focus {
     color: var(--teal-70);
   }
 `;
