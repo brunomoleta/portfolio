@@ -14,7 +14,6 @@ function DecorSection() {
     <>
       <DecorSectionStyle>
         <DecorWrapper>
-          <DecorItem decor={<BraunWatch />} />
           <DecorItem decor={<CasioKeyboard />} />
         </DecorWrapper>
         <Describe>
