@@ -116,3 +116,4 @@ export interface HeroLinkProps
 export interface IIcon {
   item: { title: string; href: string; icon: React.JSX.Element };
 }
+export type PageTheme = "dark" | "light";
