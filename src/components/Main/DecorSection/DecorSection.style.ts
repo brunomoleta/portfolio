@@ -3,7 +3,6 @@ import styled from "styled-components";
 
 export const Wrapper = styled.div`
   min-width: 100%;
-  background-color: var(--cool-grey-5);
   height: 160px;
   overflow: hidden;
   display: flex;
@@ -30,7 +29,7 @@ export const DecorWrapper = styled.div`
 
 export const Describe = styled.small`
   display: block;
-  color: var(--cool-grey-70);
+  color: var(--color-text-third);
   margin-inline-start: auto;
   margin-block-start: var(--s-1);
   font-size: var(--font-body-sm-3);

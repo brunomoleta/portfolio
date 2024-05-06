@@ -27,7 +27,10 @@ export const FooterContainer = styled(FixedContainer)`
 `;
 
 export const MainStyles = styled.main`
+  padding-block: var(--s0);
   width: 100%;
+  background-color: var(--color-background);
+  color: var(--color-text);
 `;
 
 export const Iframe = styled.iframe`

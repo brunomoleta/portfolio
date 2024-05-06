@@ -73,7 +73,7 @@ export const ProjectSpecs = styled.span`
   margin-inline-start: var(--s-2);
 `;
 export const PItem = styled.h3`
-  color: var(--cool-grey-70);
+  color: var(--color-text-third);
   display: inline;
 `;
 

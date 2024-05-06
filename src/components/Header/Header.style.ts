@@ -8,4 +8,6 @@ export const HeaderStyle = styled.header`
   border-block-end: 2px solid var(--cool-grey-30);
 
   box-shadow: rgba(0, 0, 0, 0.15) 0 5px 15px 0;
+
+  background-color: var(--color-background);
 `;

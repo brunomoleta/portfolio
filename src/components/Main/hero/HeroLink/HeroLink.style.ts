@@ -13,7 +13,7 @@ export const ListItem = styled(Link)`
 
   width: fit-content;
 
-  background-color: var(--cool-grey-5);
+  background-color: var(--color-background);
 
   -webkit-box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
   -moz-box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
@@ -22,6 +22,7 @@ export const ListItem = styled(Link)`
   transition: color 300ms;
 
   &:hover {
+    background-color: var(--color-text);
     border-color: var(--teal-60);
     color: var(--teal-70);
   }
