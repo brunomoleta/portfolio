@@ -5,7 +5,6 @@ import {
   Describe,
   Wrapper,
 } from "@/components/Main/DecorSection/DecorSection.style";
-import BraunWatch from "@/components/BraunWatch";
 import CasioKeyboard from "@/components/CasioKeyboard";
 import Link from "next/link";
 
