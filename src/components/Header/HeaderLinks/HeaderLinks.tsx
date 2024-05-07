@@ -10,7 +10,12 @@ function HeaderLinks() {
     <HLinks>
       {dropdownList.map((item, index) => (
         <li key={index}>
-          <Link href={item.href}>{upper(item.name)}</Link>
+          <Link
+            style={{ display: "block", paddingInline: "var(--s0)" }}
+            href={item.href}
+          >
+            {upper(item.name)}
+          </Link>
         </li>
       ))}
     </HLinks>

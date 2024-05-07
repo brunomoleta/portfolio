@@ -6,7 +6,7 @@ import { preProjects } from "@/services/data";
 
 export const ProjectsSection = () => {
   return (
-    <Wrapper id="projetos">
+    <Wrapper style={{ marginBlockEnd: "var(--s4)" }} id="projetos">
       <SectionHeader isBlack={false} changeH="h2" word="projetos" />
       <Describe>
         <Balancer ratio={0}>{preProjects}</Balancer>

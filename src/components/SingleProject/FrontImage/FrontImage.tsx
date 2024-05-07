@@ -5,9 +5,9 @@ import {
 } from "@/components/SingleProject/SingleProject.style";
 import { IFrontData } from "@/types/types";
 import { upper } from "@/services/service";
-import { Describe } from "@/components/Main/DecorSection/DecorSection.style";
 import JustifyParagraph from "@/components/JustifyParagraph";
 import Spinner from "@/components/Spinner";
+import SmallDescription from "@/components/SmallDescription";
 
 function FrontImage({ content }: { content: IFrontData }) {
   const { image, alt, small, explain } = content;
@@ -25,8 +25,7 @@ function FrontImage({ content }: { content: IFrontData }) {
             title={alt}
           />
         </ImageWrapper>
-        <Describe>Página: {upper(small)}</Describe>
-        <hr style={{ borderBlockEnd: "4px solid var(--cool-grey-20)" }} />
+        <SmallDescription small={small} />
       </div>
     </>
   );

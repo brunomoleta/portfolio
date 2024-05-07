@@ -201,8 +201,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     li {
-
-        color: var(--cool-grey-90);
+        color: var(--color-text);
     }
 
     a:disabled, button:disabled {
@@ -211,7 +210,7 @@ const GlobalStyles = createGlobalStyle`
 
     a:focus, a:hover, button:hover, button:focus {
         outline-offset: 8px;
-        outline: 2px solid var(--teal-70);
+        outline: 3px solid var(--teal-primary);
 
     }
 

@@ -26,11 +26,11 @@ export const List = styled.ul`
 `;
 export const IconsList = styled.ul`
   display: flex;
-  gap: var(--s-1);
+  gap: var(--s0);
 `;
 
 export const GithubLogo = styled(GitHubLogoIcon)`
-  color: var(--cool-grey-60);
+  color: var(--teal-primary);
   width: 25px;
   height: 25px;
 
@@ -47,7 +47,7 @@ export const GithubLogo = styled(GitHubLogoIcon)`
 `;
 
 export const LinkedinLogo = styled(LinkedInLogoIcon)`
-  color: var(--cool-grey-60);
+  color: var(--teal-primary);
   width: 25px;
   height: 25px;
 
@@ -63,7 +63,7 @@ export const LinkedinLogo = styled(LinkedInLogoIcon)`
   }
 `;
 export const CVLogo = styled(FileTextIcon)`
-  color: var(--cool-grey-60);
+  color: var(--teal-primary);
   width: 25px;
   height: 25px;
 

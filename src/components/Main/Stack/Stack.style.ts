@@ -11,7 +11,7 @@ export const Wrapper = styled.section`
 `;
 
 export const Describe = styled.small`
-  color: var(--cool-grey-70);
+  color: var(--color-text-third);
 
   margin-block-end: var(--s1);
   margin-inline-end: auto;
@@ -28,11 +28,13 @@ type HeadingProps = {
 };
 export const Heading = styled.h2<HeadingProps>`
   font-weight: var(--weight-normal);
-  color: ${(props) => (props.isBlack ? "black" : "var(--cool-grey-70)")};
-  width: fit-content;
+  color: ${(props) =>
+    props.isBlack ? "var(--color-text)" : "var(--color-text-secondary)"};
   font-size: clamp(var(--font-body-4), 4svw + 1rem, var(--font-body-sm-1));
   line-height: 120%;
   letter-spacing: ${(props) => (props.isBlack ? "inherit" : "1px")};
+
+  width: fit-content;
 `;
 
 export const StackHeader = styled.div`
