@@ -22,9 +22,9 @@ export const ListItem = styled(Link)`
   transition: color 300ms;
 
   &:hover {
-    background-color: var(--color-text);
+    background-color: var(--button-hover);
     border-color: var(--teal-60);
-    color: var(--teal-70);
+    color: var(--teal-80);
   }
 
   &:active {

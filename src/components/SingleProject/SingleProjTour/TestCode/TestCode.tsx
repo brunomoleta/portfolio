@@ -18,7 +18,7 @@ function TestCode({ content }: { content: ITestsData }) {
         <ImageWrapper>
           <ImageElement unoptimized={true} src={gif} alt={small} />
         </ImageWrapper>
-        <SmallDescription small={small}/>
+        <SmallDescription small={small} />
       </div>
     </>
   );

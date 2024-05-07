@@ -35,10 +35,14 @@ function DarkLightToggle({ initialTheme }: Theme) {
     <button
       style={{
         width: "40px",
-        height: "40px",
+        height: "100%",
+        minWidth: "40px",
+        paddingBlock: "var(--s1)",
+
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
+        margin: "auto",
       }}
       onClick={handleClick}
     >

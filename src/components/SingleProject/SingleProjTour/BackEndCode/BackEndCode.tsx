@@ -10,12 +10,12 @@ function BackEndCode({ content }: { content: IBackData }) {
   return (
     <>
       <JustifyParagraph title={upper(small)} text={explain} />
-        <div>
+      <div>
         <pre>
           <code>{code}</code>
         </pre>
-        <SmallDescription small={small}/>
-        </div>
+        <SmallDescription small={small} />
+      </div>
     </>
   );
 }

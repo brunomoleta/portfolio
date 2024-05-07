@@ -12,7 +12,7 @@ function ProjParagraphs({
   isStart?: boolean;
 }) {
   return (
-    <About style={{ color: "var(--cool-grey-60)" }} as="section">
+    <About style={{ color: "var(--color-text-secondary)" }} as="section">
       {infoType === "general" && isStart && <GeneralTopInfo />}
 
       {infoType === "front end" && isStart && <TopInfo category="front end" />}
