@@ -7,6 +7,7 @@ import {
 } from "@/components/SingleProject/SingleProject.style.ts";
 import { Describe } from "@/components/Main/DecorSection/DecorSection.style.ts";
 import { ITestsData } from "@/types/types";
+import SmallDescription from "@/components/SmallDescription";
 
 function TestCode({ content }: { content: ITestsData }) {
   const { small, explain, gif } = content;
@@ -17,10 +18,8 @@ function TestCode({ content }: { content: ITestsData }) {
         <ImageWrapper>
           <ImageElement unoptimized={true} src={gif} alt={small} />
         </ImageWrapper>
-        <Describe>Demo: suíte de teste de {upper(small)}</Describe>
-        <hr style={{ borderBlockEnd: "4px solid var(--cool-grey-20)" }} />
+        <SmallDescription small={small}/>
       </div>
-      ;
     </>
   );
 }
