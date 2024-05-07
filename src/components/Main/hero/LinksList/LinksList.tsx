@@ -13,9 +13,13 @@ function LinksList() {
     <WholeContainer>
       <Container>
         <SectionHeader isBlack={false} word="links:" />
-        <LinksListStyle>
+        <LinksListStyle style={{ rowGap: "var(--s1)", columnGap: "var(--s0)" }}>
           {linksList.map((item, index) => (
-            <HeroLink key={index} item={item} />
+            <HeroLink
+              style={{ paddingBlock: "var(--s-3)" }}
+              key={index}
+              item={item}
+            />
           ))}
         </LinksListStyle>
       </Container>

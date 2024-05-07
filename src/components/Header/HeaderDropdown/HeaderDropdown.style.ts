@@ -39,6 +39,8 @@ export const DSubTrigger = styled(Ariakit.MenuButton)`
   cursor: pointer;
   outline-offset: 8px;
   transition: color 300ms;
+  min-width: 32px;
+  width: 32px;
 
   &:focus {
     outline: 2px solid var(--teal-60);

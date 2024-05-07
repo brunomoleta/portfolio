@@ -4,6 +4,8 @@ import styled from "styled-components";
 export const StyledLogo = styled.button`
   color: var(--color-text);
 
+  padding: var(--s0) var(--s1) var(--s0) 0;
+
   font-family: inherit;
 
   line-height: 110%;

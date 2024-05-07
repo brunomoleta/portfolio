@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
   gap: 2ch;
+  justify-content: space-between;
 
   position: relative;
 `;
@@ -16,7 +17,7 @@ export const ProjectArticle = styled.article`
 
   padding: var(--s1) clamp(1px, 3%, var(--s0));
   border-radius: var(--s-1);
-  border: 2px solid var(--cool-grey-30);
+  outline: 4px solid var(--color-text-third);
 
   height: 100%;
   display: flex;

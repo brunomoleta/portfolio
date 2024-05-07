@@ -2,7 +2,7 @@
 import styled from "styled-components";
 
 export const HHeading = styled.section`
-  padding-block: var(--s1);
+  padding-block: var(--s1) var(--s3);
   width: 100%;
 
   display: flex;
