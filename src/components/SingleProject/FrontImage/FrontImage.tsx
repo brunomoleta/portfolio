@@ -17,15 +17,15 @@ function FrontImage({ content }: { content: IFrontData }) {
       <JustifyParagraph title={upper(small)} text={explain} />
       <div>
         <ImageWrapper>
-          {isLoading && <Spinner />}
-          <ImageElement
-            onLoad={() => setIsLoading(false)}
-            src={image}
-            alt={alt}
-            title={alt}
-          />
-        </ImageWrapper>
-        <SmallDescription small={small} />
+        {isLoading && <Spinner />}
+        <ImageElement
+          onLoad={() => setIsLoading(false)}
+          src={image}
+          alt={alt}
+          title={alt}
+        />
+      </ImageWrapper>
+      <SmallDescription small={small} />
       </div>
     </>
   );

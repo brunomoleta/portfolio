@@ -1,9 +1,7 @@
 "use client";
-import * as DropdownMenu from "@radix-ui/react-dropdown-menu";
 import styled from "styled-components";
-import * as Ariakit from "@ariakit/react";
 import { motion } from "framer-motion";
-import { Menu } from "@ariakit/react";
+import { Menu, MenuButton, MenuItem, MenuProvider } from "@ariakit/react";
 
 export const DContent = styled(motion(Menu))`
   z-index: 1;
@@ -34,7 +32,7 @@ export const DContent = styled(motion(Menu))`
   }
 `;
 
-export const DSubTrigger = styled(Ariakit.MenuButton)`
+export const DSubTrigger = styled(MenuButton)`
   margin-inline-start: auto;
   cursor: pointer;
   outline-offset: 8px;
@@ -56,7 +54,7 @@ export const DSubTrigger = styled(Ariakit.MenuButton)`
     display: none;
   }
 `;
-export const DItem = styled(Ariakit.MenuItem)`
+export const DItem = styled(MenuItem)`
   font-weight: var(--weight-medium);
   background-color: var(--cool-grey-5);
 
@@ -76,9 +74,4 @@ export const DItem = styled(Ariakit.MenuItem)`
   }
 `;
 
-export const DSeparator = styled(DropdownMenu.Separator)`
-  height: 2px;
-  color: var(--teal-50);
-`;
-
-export const MenuDropdown = styled(Ariakit.MenuProvider)``;
+export const MenuDropdown = styled(MenuProvider)``;

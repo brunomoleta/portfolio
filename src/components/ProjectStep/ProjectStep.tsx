@@ -19,7 +19,7 @@ function ProjectStep({ children }: { children: React.ReactNode }) {
     setStep((prevStep) => (isNext ? prevStep + 1 : prevStep - 1));
   };
   return (
-    <div>
+    <>
       {children}
       <BtnContainer>
         {step > 0 && step < 3 && (
@@ -38,7 +38,7 @@ function ProjectStep({ children }: { children: React.ReactNode }) {
           </StepButton>
         )}
       </BtnContainer>
-    </div>
+    </>
   );
 }
 
