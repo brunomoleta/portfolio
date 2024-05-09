@@ -3,10 +3,9 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   width: 100%;
-  max-width: var(--desktop-width);
   margin: auto;
 
-  padding-inline: clamp(1px, 3%, var(--page-alignment));
+  padding-inline: clamp(var(--s-1), 5svw, var(--s7));
   margin-block: var(--s1);
 
   display: flex;

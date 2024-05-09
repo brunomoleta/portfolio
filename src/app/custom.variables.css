@@ -88,7 +88,7 @@ html {
 
   /*clamp*/
   --font-heading-clamp: clamp(var(--font-body-2), 12svw, var(--font-body-1));
-  --page-alignment: clamp(var(--s0), 10svw, var(--s2));
+  --page-alignment: clamp(var(--s0), 10svw, var(--s4));
 
   /*card width*/
   --flex-wrap-card: 1 0 220px;
@@ -119,6 +119,8 @@ html {
   --s3: calc(var(--s2) * var(--ratio));
   --s4: calc(var(--s3) * var(--ratio));
   --s5: calc(var(--s4) * var(--ratio));
+  --s6: calc(var(--s5) * var(--ratio));
+  --s7: calc(var(--s6) * var(--ratio));
 }
 
 input[type="radio"] {
