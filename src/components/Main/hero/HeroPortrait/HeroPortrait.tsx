@@ -1,13 +1,13 @@
 "use client";
 import React from "react";
-import Bruno from "@/assets/Authors/retrato-cheio.jpg";
+import Bruno from "@/assets/Lcp/Retrato.jpg";
 import {
   Container,
   ImageWrapper,
-  Portrait,
 } from "@/components/Main/hero/HeroPortrait/HeroPortrait.style";
 import { Describe } from "@/components/Main/DecorSection/DecorSection.style";
 import Link from "next/link";
+import Image from "next/image";
 
 function HeroPortrait() {
   return (
@@ -23,7 +23,16 @@ function HeroPortrait() {
           animate={{ opacity: 1, x: "0px" }}
           transition={{ duration: 1, ease: "easeInOut" }}
         >
-          <Portrait alt="Bruno Moleta sorrindo." src={Bruno} />
+          <Image
+            width={500}
+            style={{
+              objectFit: "cover",
+              opacity: "0.9",
+              borderRadius: "var(--s-1)",
+            }}
+            alt="Bruno Moleta sorrindo visto de frente e olhando para a câmera."
+            src={Bruno}
+          />
         </ImageWrapper>
         <Describe style={{ fontWeight: "revert" }}>
           Fotografia feita por{" "}
