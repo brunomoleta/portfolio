@@ -74,7 +74,7 @@ function SingleProjTour({
   return (
     <>
       <TourSection>
-        <SubName>{upper(sectionType)}</SubName>
+        <SubName as="h2">{upper(sectionType)}</SubName>
         <SectionInfo>
           <ProjParagraphs infoType={sectionType} />
           <ProjectDescription infoType={sectionType} />

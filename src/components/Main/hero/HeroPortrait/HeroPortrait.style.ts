@@ -1,20 +1,12 @@
 "use client";
 import styled from "styled-components";
-import Image from "next/image";
 import { motion } from "framer-motion";
 
-export const Portrait = styled(Image)`
-  width: 500px;
-  height: auto;
-
-  opacity: 0.9;
-
-  border-radius: var(--s-1);
-`;
 export const ImageWrapper = styled(motion.div)`
   display: flex;
   flex-flow: column;
   gap: var(--s-1);
+  aspect-ratio: 5/7.49;
 
   background-color: transparent;
   border-radius: var(--s-1);
