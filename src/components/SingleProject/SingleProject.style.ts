@@ -2,29 +2,18 @@
 import styled from "styled-components";
 import { BaseImage } from "@/components/Main/Projects/projectCard/ProjectCard.style";
 
-export const HeadInfoWrapper = styled.section`
-  display: flex;
-  flex-flow: column;
-  gap: var(--s0);
-`;
-
 export const TourSection = styled.section`
   margin-block: var(--s2) 0;
 `;
 
 export const ProjArticle = styled.article``;
-export const Wrapper = styled.div`
-  display: flex;
-  flex-flow: column;
-`;
 
 export const ImageWrapper = styled.div`
   position: relative;
   display: grid;
   place-content: center;
 
-  width: 100%;
-  height: 100%;
+  aspect-ratio: 2600/1526;
 
   border-radius: var(--s-1);
 
@@ -39,6 +28,7 @@ export const HeadWrapper = styled.div`
   flex-flow: column;
   gap: var(--s0);
   width: 100%;
+
   @media (min-width: 55rem) {
     flex-flow: revert;
     gap: var(--s2);
