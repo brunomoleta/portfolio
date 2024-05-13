@@ -53,7 +53,6 @@ export const ImageWrapper = styled.button`
 
   &:hover {
     outline-offset: 12px;
-
     img {
       transform: scale(1.04);
       transition: transform 350ms ease-in-out;

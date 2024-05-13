@@ -8,6 +8,9 @@ export const Trigger = styled(Accordion.Trigger)`
   display: flex;
   align-items: center;
 
+  outline: unset;
+  padding-inline-start: var(--s1);
+  padding-block: var(--s-3);
   border-block-end: 2px solid var(--cool-grey-40);
 
   transition: rotate 300ms;

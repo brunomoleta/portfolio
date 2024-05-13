@@ -27,34 +27,23 @@ export const Btn = styled.button`
   font-size: var(--font-body-sm-1);
 
   color: var(--teal-primary);
-  transition: color 300ms;
 
   word-break: break-word;
 
-  text-decoration: underline;
+  transition:
+    color 300ms,
+    border-bottom-color 300ms;
+  border-radius: unset;
+
+  border-block-end: 2px solid var(--teal-primary);
   &:hover {
     outline: revert;
     color: var(--teal-hover);
     text-decoration: none;
+    border-bottom-color: transparent;
   }
 `;
 
-export const PButton = styled.button`
-  display: flex;
-  align-items: center;
-  gap: var(--s-1);
+export const PButton = styled(Btn)`
   font-size: var(--font-body-4);
-
-  color: var(--teal-primary);
-  transition: color 300ms;
-
-  word-break: break-word;
-
-  text-decoration: underline;
-
-  &:hover {
-    outline: revert;
-    color: var(--teal-hover);
-    text-decoration: none;
-  }
 `;
