@@ -13,8 +13,6 @@ export const ProjBtn = styled(Link)`
 
   word-break: break-word;
 
-  text-decoration: underline;
-
   &:hover {
     outline: revert;
     color: var(--teal-hover);
