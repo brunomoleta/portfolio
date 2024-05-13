@@ -25,7 +25,7 @@ const GlobalStyles = createGlobalStyle`
     html,
     body {
         height: 100%;
-        font-family: 'Hanken Grotesk Variable', 'Inter', 'Helvetica',sans-serif;
+        font-family: 'Hanken Grotesk Variable', 'Inter', 'Helvetica', sans-serif;
     }
 
     ol {
@@ -100,7 +100,6 @@ const GlobalStyles = createGlobalStyle`
     select {
         border: initial;
         font-family: inherit;
-        outline: revert;
         color: inherit;
         background-color: inherit;
         padding: 0;
@@ -208,10 +207,16 @@ const GlobalStyles = createGlobalStyle`
         opacity: .6;
     }
 
-    a:focus, a:hover, button:hover, button:focus {
-        outline-offset: 8px;
-        outline: 3px solid var(--teal-primary);
+    a, button {
+        transition: outline-color 300ms ease-in;
+        outline: 3px solid var(--color-background);
+    }
+    a {
+        padding: 8px;
+    }
 
+    a:focus, a:hover, button:hover, button:focus {
+        outline: 3px solid var(--teal-primary);
     }
 
     body {
@@ -224,6 +229,7 @@ const GlobalStyles = createGlobalStyle`
         border-block-end: 4px solid var(--teal-50);
         border-radius: 4px;
     }
+
     p {
         overflow-wrap: break-word;
         hyphens: auto;
