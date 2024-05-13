@@ -6,7 +6,7 @@ function SmallDescription({ small }: { small: string }) {
   return (
     <>
       <Describe>Página: {upper(small)}</Describe>
-      <hr style={{ borderBlockEnd: "4px solid var(--cool-grey-20)" }} />
+      <hr />
     </>
   );
 }

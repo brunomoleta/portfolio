@@ -81,7 +81,15 @@ function SingleProjTour({
         </SectionInfo>
         <Wrapper>
           <OtherName>{returnWord(sectionType)}</OtherName>
-          {returnContent(sectionType)}
+          <div
+            style={{
+              backgroundColor: "var(--color-line)",
+              display: "grid",
+              gap: "var(--s-5)",
+            }}
+          >
+            {returnContent(sectionType)}
+          </div>
         </Wrapper>
         <ProjParagraphs infoType={sectionType} isStart={false} />
       </TourSection>
