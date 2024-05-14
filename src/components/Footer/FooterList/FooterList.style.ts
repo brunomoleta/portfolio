@@ -23,6 +23,10 @@ export const List = styled.ul`
   display: flex;
   flex-flow: column;
   gap: var(--s-1);
+  
+  & * {
+    padding: 0
+  }
 `;
 export const IconsList = styled.ul`
   display: flex;
