@@ -1,6 +1,6 @@
 export const github = "https://github.com/brunomoleta";
 export const cvLink =
-  "https://drive.google.com/file/d/18zWUVqyciLTm_LLZrHQgkmXNLF_mvI_K/view?usp=sharing";
+  "https://drive.google.com/file/d/1dhLCIJgNt3HsrkDEiBy_R6a9rlKd7yPL/view?usp=sharing";
 export const linkedin =
   "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/";
 

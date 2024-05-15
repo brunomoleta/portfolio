@@ -13,13 +13,15 @@ export const StyledLogo = styled.button`
   font-size: clamp(var(--font-heading-6), 10svw, var(--font-heading-7));
   font-weight: var(--weight-bold);
 
-  transition:
-    color 300ms,
-    outline-color 300ms;
-
   text-decoration: none;
 
   &:hover {
     color: var(--teal-70);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      color 300ms,
+      outline-color 300ms;
   }
 `;

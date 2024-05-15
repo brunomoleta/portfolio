@@ -9,7 +9,6 @@ export const ProjBtn = styled(Link)`
   font-size: var(--font-body-sm-1);
 
   color: var(--teal-primary);
-  transition: color 300ms;
 
   word-break: break-word;
 
@@ -17,6 +16,10 @@ export const ProjBtn = styled(Link)`
     outline: revert;
     color: var(--teal-hover);
     text-decoration: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 300ms;
   }
 `;
 
@@ -30,9 +33,6 @@ export const Btn = styled.button`
 
   word-break: break-word;
 
-  transition:
-    color 300ms,
-    border-bottom-color 300ms;
   border-radius: unset;
 
   border-block-end: 2px solid var(--teal-primary);
@@ -41,6 +41,12 @@ export const Btn = styled.button`
     color: var(--teal-hover);
     text-decoration: none;
     border-bottom-color: transparent;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition:
+      color 300ms,
+      border-bottom-color 300ms;
   }
 `;
 

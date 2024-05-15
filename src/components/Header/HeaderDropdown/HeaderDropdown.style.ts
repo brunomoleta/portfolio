@@ -20,7 +20,6 @@ export const DContent = styled(motion(Menu))`
     0 10px 38px -10px rgba(22, 23, 24, 0.35),
     0 10px 20px -15px rgba(22, 23, 24, 0.2);
 
-  transition: opacity 500ms ease-in-out;
   opacity: 0;
 
   &[data-open] {
@@ -30,13 +29,16 @@ export const DContent = styled(motion(Menu))`
   &[aria-expanded="true"] {
     opacity: 1;
   }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: opacity 500ms ease-in-out;
+  }
 `;
 
 export const DSubTrigger = styled(MenuButton)`
   margin-inline-start: auto;
   cursor: pointer;
   outline-offset: 8px;
-  transition: color 300ms;
   min-width: 32px;
   width: 32px;
 
@@ -52,6 +54,10 @@ export const DSubTrigger = styled(MenuButton)`
 
   @media (min-width: 550px) {
     display: none;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 300ms;
   }
 `;
 export const DItem = styled(MenuItem)`

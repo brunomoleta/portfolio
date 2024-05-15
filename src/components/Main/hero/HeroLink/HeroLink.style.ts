@@ -19,8 +19,6 @@ export const ListItem = styled(Link)`
   -moz-box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
   box-shadow: 4px 4px 12px 0 rgba(172, 241, 200, 0.8);
 
-  transition: color 300ms;
-
   &:hover {
     background-color: var(--button-hover);
     border-color: var(--teal-60);
@@ -33,5 +31,9 @@ export const ListItem = styled(Link)`
 
   &:focus {
     border-color: var(--teal-60);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: color 300ms;
   }
 `;
