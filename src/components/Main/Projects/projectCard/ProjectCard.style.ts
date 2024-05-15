@@ -43,20 +43,22 @@ export const InfoWrapper = styled.div`
 
 export const ImageWrapper = styled.button`
   position: relative;
+  overflow: hidden;
 
   width: 100%;
   height: 100%;
-
   min-height: 600px;
 
-  overflow: hidden;
+  transition: outline-color 400ms;
 
+  outline-offset: 12px;
+  & > img {
+    transition: transform 600ms ease-out;
+  }
   &:hover {
-    outline-offset: 12px;
     img {
-      transform: scale(1.04);
-      transition: transform 350ms ease-in-out;
-      border-radius: var(--s-2);
+      transform: scale(1.08);
+      transition: transform 600ms ease-out;
     }
   }
 
