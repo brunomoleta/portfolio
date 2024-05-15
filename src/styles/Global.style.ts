@@ -208,8 +208,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a, button {
-        transition: outline-color 300ms ease-in;
         outline: 3px solid var(--color-background);
+        @media (prefers-reduced-motion: no-preference) {
+            transition: outline-color 300ms ease-in;
+            
+            }
     }
     a {
         padding: 8px;

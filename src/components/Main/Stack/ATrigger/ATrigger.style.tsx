@@ -13,9 +13,12 @@ export const Trigger = styled(Accordion.Trigger)`
   padding-block: var(--s-3);
   border-block-end: 2px solid var(--cool-grey-40);
 
-  transition: rotate 300ms;
   &[data-state="open"] > svg {
     transform: rotate(45deg);
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: rotate 300ms;
   }
 `;
 

@@ -48,21 +48,24 @@ export const ImageWrapper = styled.button`
   height: 100%;
   min-height: 600px;
 
-  transition: outline-color 400ms;
-
   outline-offset: 12px;
-  & > img {
-    transition: transform 500ms ease-out;
-  }
-  &:hover {
-    img {
-      transform: scale(1.06);
-      transition: transform 250ms ease-out;
-    }
-  }
 
   @media (min-width: 650px) {
     max-width: unset;
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    transition: outline-color 400ms;
+    & > img {
+      transition: transform 500ms ease-out;
+    }
+
+    &:hover {
+      img {
+        transform: scale(1.06);
+        transition: transform 250ms ease-out;
+      }
+    }
   }
 `;
 
