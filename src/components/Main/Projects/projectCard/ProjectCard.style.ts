@@ -1,7 +1,6 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
-import Link from "next/link";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -53,12 +52,12 @@ export const ImageWrapper = styled.button`
 
   outline-offset: 12px;
   & > img {
-    transition: transform 600ms ease-out;
+    transition: transform 500ms ease-out;
   }
   &:hover {
     img {
-      transform: scale(1.08);
-      transition: transform 600ms ease-out;
+      transform: scale(1.06);
+      transition: transform 250ms ease-out;
     }
   }
 
