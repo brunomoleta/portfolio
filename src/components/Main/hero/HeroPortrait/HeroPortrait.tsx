@@ -6,8 +6,8 @@ import {
   ImageWrapper,
 } from "@/components/Main/hero/HeroPortrait/HeroPortrait.style";
 import { Describe } from "@/components/Main/DecorSection/DecorSection.style";
-import Link from "next/link";
 import Image from "next/image";
+import AuthorName from "@/components/AuthorName";
 
 function HeroPortrait() {
   return (
@@ -18,11 +18,7 @@ function HeroPortrait() {
           top: "var(--s0)",
         }}
       >
-        <ImageWrapper
-          initial={{ opacity: 0, x: "100px" }}
-          animate={{ opacity: 1, x: "0px" }}
-          transition={{ duration: 1, ease: "easeInOut" }}
-        >
+        <ImageWrapper>
           <Image
             width={500}
             style={{
@@ -35,15 +31,11 @@ function HeroPortrait() {
           />
         </ImageWrapper>
         <Describe style={{ fontWeight: "revert" }}>
-          Fotografia feita por{" "}
-          <Link
-            style={{ textDecoration: "underline" }}
-            target="_blank"
-            href={"https://www.instagram.com/yaas.schafer/"}
-          >
-            Yasmin Schaffer
-          </Link>
-          .
+          Fotografia feita por
+          <AuthorName
+            author="Yasmin Schaffer"
+            site="https://www.instagram.com/yaas.schafer/"
+          />
         </Describe>
       </div>
     </Container>
