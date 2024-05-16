@@ -16,7 +16,7 @@ export const StyledLogo = styled.button`
   text-decoration: none;
 
   &:hover {
-    color: var(--teal-70);
+    color: var(--teal-hover);
   }
 
   @media (prefers-reduced-motion: no-preference) {
