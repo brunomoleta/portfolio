@@ -153,6 +153,9 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         max-inline-size: var(--max-inline-size);
+        &::selection{
+            background: var(--teal-background);
+        }
     }
 
     div,
@@ -208,10 +211,9 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a, button {
-        outline: 3px solid var(--color-background);
+        border: 3px solid var(--color-background);
         @media (prefers-reduced-motion: no-preference) {
-            transition: outline-color 300ms ease-in;
-            
+            transition: border-color 300ms ease-in;
             }
     }
     a {
