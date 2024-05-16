@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: 100%;
   margin: auto;
-
+  overflow: hidden;
   padding-inline: clamp(var(--s-1), 5svw, var(--s7));
   margin-block: var(--s1);
 

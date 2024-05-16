@@ -29,5 +29,5 @@ export const footer1 =
   "vaga, dúvida a respeito de algo no portfólio ou simplesmente para " +
   "trocarmos figurinhas :)";
 export const madeBy =
-  "Portfólio co-designeado e desenvolvido por Bruno Moleta Santos" +
-  "(o menino da foto) em Março de 2024. :)";
+  "Portfólio desenhado e desenvolvido feito com as mãos do " +
+  "menino da foto. Última atualização em Maio de 2024.";

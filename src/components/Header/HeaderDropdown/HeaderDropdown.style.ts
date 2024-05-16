@@ -1,9 +1,8 @@
 "use client";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 import { Menu, MenuButton, MenuItem, MenuProvider } from "@ariakit/react";
 
-export const DContent = styled(motion(Menu))`
+export const DContent = styled(Menu)`
   z-index: 1;
   height: 80svh;
   min-width: 100%;

@@ -6,7 +6,7 @@ import {
   Wrapper,
 } from "@/components/Main/DecorSection/DecorSection.style";
 import CasioKeyboard from "@/components/CasioKeyboard";
-import Link from "next/link";
+import AuthorName from "@/components/AuthorName";
 
 function DecorSection() {
   return (
@@ -16,15 +16,11 @@ function DecorSection() {
           <DecorItem decor={<CasioKeyboard />} />
         </DecorWrapper>
         <Describe>
-          Ilustrações feitas 100% em CSS e HTML por{" "}
-          <Link
-            style={{ textDecoration: "underline" }}
-            target="_blank"
-            href={"https://codepen.io/collection/nwzQJq"}
-          >
-            Sarah Fossheim
-          </Link>
-          .
+          Ilustração feita 100% em CSS e HTML por
+          <AuthorName
+            author="Sarah Fossheim"
+            site="https://codepen.io/collection/nwzQJq"
+          />
         </Describe>
       </DecorSectionStyle>
     </>

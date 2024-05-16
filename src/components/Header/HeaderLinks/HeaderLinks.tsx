@@ -11,10 +11,14 @@ function HeaderLinks() {
       {dropdownList.map((item, index) => (
         <li key={index}>
           <Link
-            style={{ display: "block", paddingInline: "var(--s0)" }}
+            style={{
+              display: "block",
+              paddingInline: "var(--s0)",
+              overflow: "hidden",
+            }}
             href={item.href}
           >
-            {upper(item.name)}
+            <span style={{ display: "inline-block" }}>{upper(item.name)}</span>
           </Link>
         </li>
       ))}
