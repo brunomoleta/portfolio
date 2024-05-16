@@ -1,8 +1,23 @@
 "use client";
 import styled from "styled-components";
-import { motion } from "framer-motion";
 
-export const ImageWrapper = styled(motion.div)`
+export const ImageWrapper = styled.div`
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateX(100%);
+    }
+    50% {
+      opacity: 0.25;
+    }
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  animation: fadeIn 1500ms ease-out both;
+  animation-delay: 700ms;
+
   display: flex;
   flex-flow: column;
   gap: var(--s-1);
