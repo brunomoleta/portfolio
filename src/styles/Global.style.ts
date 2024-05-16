@@ -85,11 +85,7 @@ const GlobalStyles = createGlobalStyle`
     /*
         9. Create a root stacking context
       */
-    #root,
-    #__next {
-        isolation: isolate;
-    }
-
+    
     /* --------------- Resets from Josh Cameau end here */
     figcaption {
         display: none;
