@@ -47,7 +47,7 @@ export const HLinks = styled.ul`
     }
   }
   animation: fall 1200ms both;
-  animation-delay: 1000ms;
+  animation-delay: 1800ms;
 
   & > li > a:hover > span {
     animation: swap 500ms ease-out both;

@@ -20,7 +20,7 @@ const Project = ({ params }: { params: { project: string } }) => {
   if (!singleProject) return <div>Página não encontrada</div>;
   const { id, url } = singleProject;
   setProject(singleProject);
-  document.title = `${toTitleCase(singleProject.url)} Project`;
+  document.title = `Bruno Moleta | ${toTitleCase(singleProject.url)} Project`;
 
   return (
     <>

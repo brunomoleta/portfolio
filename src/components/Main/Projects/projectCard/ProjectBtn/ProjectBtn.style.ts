@@ -16,10 +16,15 @@ export const ProjBtn = styled(Link)`
     outline: revert;
     color: var(--teal-hover);
     text-decoration: none;
+    border-color: transparent;
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    transition: color 300ms;
+    transition: color 400ms ease-out;
+    border-color: transparent;
+    &:hover {
+      transition: color 150ms ease-in;
+    }
   }
 `;
 
