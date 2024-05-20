@@ -21,8 +21,9 @@ export const ListItem = styled(Link)`
 
   &:hover {
     background-color: var(--button-hover);
-    border-color: var(--teal-60);
+    outline-color: var(--teal-60);
     color: var(--teal-80);
+    border: 2px solid transparent;
   }
 
   &:active {
@@ -34,6 +35,11 @@ export const ListItem = styled(Link)`
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    transition: color 300ms;
+    transition:
+      color 300ms,
+      background-color 500ms;
+    &:hover {
+      transition: background-color 250ms ease-in-out;
+    }
   }
 `;
