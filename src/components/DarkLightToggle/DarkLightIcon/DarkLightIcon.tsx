@@ -4,10 +4,10 @@ import { MoonIcon, SunIcon } from "@radix-ui/react-icons";
 function DarkLightIcon({ theme }: { theme: string }) {
   if (theme === "dark")
     return (
-      <SunIcon style={{ color: "var(--color-text)" }} fontSize={"1.5rem"} />
+      <SunIcon className="darkmode-icon" />
     );
   return (
-    <MoonIcon style={{ color: "var(--color-text)" }} fontSize={"1.5rem"} />
+    <MoonIcon className="darkmode-icon" />
   );
 }
 

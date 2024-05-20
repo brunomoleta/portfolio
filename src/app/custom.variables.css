@@ -1161,3 +1161,10 @@ input[type="radio"]:hover {
   border: none;
   position: absolute;
 }
+
+.darkmode-icon{
+  min-width: 25px;
+  width: 25px;
+  height: auto;
+  font-size: var(--s0);
+}
