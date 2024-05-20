@@ -5,7 +5,7 @@ import { DARK_COLORS, LIGHT_COLORS } from "@/styles/colors.ts";
 import { VisuallyHidden } from "@radix-ui/react-visually-hidden";
 import { PageTheme } from "@/types/types";
 import DarkLightIcon from "@/components/DarkLightToggle/DarkLightIcon";
-import {ThemeButton} from "@/components/DarkLightToggle/DarkLightToggle.style.ts";
+import { ThemeButton } from "@/components/DarkLightToggle/DarkLightToggle.style.ts";
 
 interface Theme {
   initialTheme: string;
@@ -33,9 +33,7 @@ function DarkLightToggle({ initialTheme }: Theme) {
   }
 
   return (
-    <ThemeButton
-      onClick={handleClick}
-    >
+    <ThemeButton onClick={handleClick}>
       <DarkLightIcon theme={theme} />
       <VisuallyHidden>Toggle light / dark mode</VisuallyHidden>
     </ThemeButton>

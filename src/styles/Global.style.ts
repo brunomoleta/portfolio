@@ -85,7 +85,7 @@ const GlobalStyles = createGlobalStyle`
     /*
         9. Create a root stacking context
       */
-    
+
     /* --------------- Resets from Josh Cameau end here */
     figcaption {
         display: none;
@@ -149,7 +149,8 @@ const GlobalStyles = createGlobalStyle`
 
     * {
         max-inline-size: var(--max-inline-size);
-        &::selection{
+
+        &::selection {
             background: var(--teal-background);
         }
     }
@@ -208,16 +209,20 @@ const GlobalStyles = createGlobalStyle`
 
     a, button {
         border: 3px solid var(--color-background);
+        outline: 2px solid transparent;
         @media (prefers-reduced-motion: no-preference) {
-            transition: border-color 300ms ease-in;
-            }
+            transition: border-color 350ms ease-in;
+        }
     }
+
     a {
         padding: 8px;
     }
 
-    a:focus, a:hover, button:hover, button:focus {
-        outline: 3px solid var(--teal-primary);
+    a:focus, button:focus, a:hover, button:hover {
+        transition: border-color 150ms ease-in;
+        border: 3px solid var(--teal-primary);
+        outline: 2px solid transparent;
     }
 
     body {
