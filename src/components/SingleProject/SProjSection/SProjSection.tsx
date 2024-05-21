@@ -2,12 +2,11 @@
 import React from "react";
 import SingleProjHeader from "@/components/SingleProject/SingleProjHeader";
 import SingleProjTour from "@/components/SingleProject/SingleProjTour";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import ProjectStep from "@/components/ProjectStep";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function SProjSection() {
-  const { step } = useUtilsContext() as Utils;
+  const { step } = useUtilsStore();
 
   return (
     <>

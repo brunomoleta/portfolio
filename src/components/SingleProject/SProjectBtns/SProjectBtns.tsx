@@ -6,13 +6,12 @@ import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
 import { Container } from "@/components/SingleProject/SProjectBtns/SProjectBtns.style";
 import Balancer from "react-wrap-balancer";
 import { projects } from "@/services/projects.data";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import { StepButton } from "@/components/ProjectStep/pStep.style.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function SProjectBtns({ digit }: { digit: number }) {
   const router = useRouter();
-  const { step, setStep } = useUtilsContext() as Utils;
+  const { step, returnFirstStep } = useUtilsStore();
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -27,13 +26,13 @@ function SProjectBtns({ digit }: { digit: number }) {
   }
   const handleNavigation = (url: string) => {
     router.push(url);
-    setStep(0);
+    returnFirstStep();
   };
 
   return (
     <Balancer>
       <Container>
-        <Btn onClick={() => setStep(0)}>
+        <Btn onClick={returnFirstStep}>
           <ArrowLeftIcon />
           Voltar para início do projeto
         </Btn>

@@ -7,19 +7,19 @@ import {
 } from "@/components/SingleProject/SingleProject.style.ts";
 import { joinArray } from "@/services/service.ts";
 import { ProjBtn } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style.ts";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
+
 import Spinner from "@/components/Spinner";
 import { frontEndFullData } from "@/services/frontEndFull.data.ts";
 import { backEndFullData } from "@/services/backEndFull.data.ts";
 import { projects } from "@/services/projects.data.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function SectionData({
   category,
 }: {
   category: "front end" | "back end" | "devops";
 }) {
-  const { project } = useUtilsContext() as Utils;
+  const { project } = useUtilsStore();
   if (!project) return <Spinner />;
 
   const frontend = frontEndFullData[project.id - 1];

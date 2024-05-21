@@ -1,12 +1,11 @@
 import React from "react";
 import ParagraphItem from "@/components/SingleProject/ProjParagraphs/ParagraphItem";
-import { useUtilsContext } from "@/providers/useContext";
 import Spinner from "@/components/Spinner";
-import { Utils } from "@/types/utils";
 import { testsFullData } from "@/services/testsFull.data.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function TestsTopInfo() {
-  const { project } = useUtilsContext() as Utils;
+  const { project } = useUtilsStore();
   if (!project) return <Spinner />;
 
   const devOps = testsFullData[project.id - 1];
