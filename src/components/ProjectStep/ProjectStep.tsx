@@ -1,23 +1,20 @@
 import React from "react";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import {
   BtnContainer,
   StepButton,
 } from "@/components/ProjectStep/pStep.style.ts";
 import { Btn } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style.ts";
 import { ArrowLeftIcon, ArrowRightIcon } from "@radix-ui/react-icons";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function ProjectStep({ children }: { children: React.ReactNode }) {
-  const { setStep, step } = useUtilsContext() as Utils;
+  const { step, prevStep, nextStep } = useUtilsStore();
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
   }, [step]);
 
-  const btnReturn = (isNext: boolean) => {
-    setStep((prevStep) => (isNext ? prevStep + 1 : prevStep - 1));
-  };
+  const btnReturn = (isNext: boolean) => (!isNext ? prevStep() : nextStep());
   return (
     <>
       {children}

@@ -5,22 +5,26 @@ import SProjectBtns from "@/components/SingleProject/SProjectBtns";
 import { Intro } from "@/types/types";
 import { ProjName } from "@/components/Main/hero/heroHeading/HeroHeading.style.ts";
 import React from "react";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import { projsIntro } from "@/services/intro.data.ts";
 import { toTitleCase } from "@/services/service.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 const Project = ({ params }: { params: { project: string } }) => {
   const { project } = params;
-  const { setProject } = useUtilsContext() as Utils;
+  const { setProject } = useUtilsStore();
   const singleProject: Intro | undefined = projsIntro.find(
     (item) => item.url === project,
   );
 
+  React.useEffect(() => {
+    if (singleProject) {
+      setProject(singleProject);
+      document.title = `Bruno Moleta | ${toTitleCase(singleProject.url)} Project`;
+    }
+  }, []);
+
   if (!singleProject) return <div>Página não encontrada</div>;
   const { id, url } = singleProject;
-  setProject(singleProject);
-  document.title = `Bruno Moleta | ${toTitleCase(singleProject.url)} Project`;
 
   return (
     <>

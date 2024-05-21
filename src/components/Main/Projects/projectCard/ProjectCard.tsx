@@ -11,17 +11,18 @@ import ProjectInfo from "@/components/Main/Projects/projectCard/ProjectInfo";
 import ProjectBtn from "@/components/Main/Projects/projectCard/ProjectBtn";
 import Spinner from "@/components/Spinner";
 import { useRouter } from "next/navigation";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 export const ProjectCard = ({ item }: { item: IProject }) => {
   const { illustration, backendTags, frontendTags, href, title } = item;
+  const { setLoading, loading } = useUtilsStore();
 
-  const [loading, setLoading] = React.useState(false);
   const router = useRouter();
 
   const handleClick = () => {
-    setLoading(true);
+    setLoading();
     setTimeout(() => {
-      setLoading(false);
+      setLoading();
       router.push(href);
     }, 2 * 1000);
   };

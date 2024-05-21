@@ -54,21 +54,18 @@ export const Btn = styled.button`
       color 300ms,
       border-bottom-color 1600ms;
   }
+  &:hover {
+    border: 2px solid transparent;
+    border-block-end: 2px solid var(--color-background);
+  }
+
+  &:focus {
+    border: 2px solid transparent;
+    border-block-end: 2px solid var(--color-background);
+    color: var(--color-text);
+  }
 `;
 
 export const PButton = styled(Btn)`
-    font-size: var(--font-body-4);
-
-    @media (prefers-reduced-motion: no-preference) {
-        &:hover {
-            border: 2px solid transparent;
-            border-block-end: 2px solid var(--color-background);
-        }
-
-        &:focus {
-            border: 2px solid transparent;
-            border-block-end: 2px solid var(--color-background);
-            color: var(--color-text);
-        }
-    }
+  font-size: var(--font-body-4);
 `;

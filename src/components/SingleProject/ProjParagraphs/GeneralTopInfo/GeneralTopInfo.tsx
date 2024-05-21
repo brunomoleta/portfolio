@@ -1,12 +1,11 @@
 import React from "react";
 import ParagraphItem from "@/components/SingleProject/ProjParagraphs/ParagraphItem";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import Spinner from "@/components/Spinner";
 import { projsIntro } from "@/services/intro.data.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function GeneralTopInfo() {
-  const { project } = useUtilsContext() as Utils;
+  const { project } = useUtilsStore();
   if (!project) return <Spinner />;
 
   const introData = projsIntro[project.id - 1];

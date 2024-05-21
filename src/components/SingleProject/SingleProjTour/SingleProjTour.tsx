@@ -14,19 +14,18 @@ import ProjParagraphs from "@/components/SingleProject/ProjParagraphs";
 import { Wrapper } from "@/components/SingleProject/SingleProjTour/SingleProjTour.style";
 import { upper } from "@/services/service.ts";
 import TestCode from "@/components/SingleProject/SingleProjTour/TestCode";
-import { Utils } from "@/types/utils";
 import { frontEndFullData } from "@/services/frontEndFull.data.ts";
 import { backEndFullData } from "@/services/backEndFull.data.ts";
 import Spinner from "@/components/Spinner";
-import { useUtilsContext } from "@/providers/useContext";
 import { testsFullData } from "@/services/testsFull.data.ts";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function SingleProjTour({
   sectionType,
 }: {
   sectionType: "front end" | "back end" | "devops";
 }) {
-  const { project } = useUtilsContext() as Utils;
+  const { project } = useUtilsStore();
 
   if (!project) return <Spinner />;
 

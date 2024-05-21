@@ -1,18 +1,17 @@
 "use client";
 import React from "react";
 import { StyledLogo } from "./Logo.style";
-import { useUtilsContext } from "@/providers/useContext";
-import { Utils } from "@/types/utils";
 import { useRouter } from "next/navigation";
 import { wait } from "next/dist/lib/wait";
+import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function Logo() {
-  const { setStep } = useUtilsContext() as Utils;
+  const { returnFirstStep } = useUtilsStore();
   const router = useRouter();
   const handleClick = () => {
     router.push("/");
     wait(200);
-    setStep(0);
+    returnFirstStep();
   };
 
   return (

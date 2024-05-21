@@ -14,7 +14,7 @@ function DropdownItem({ href, name }: ItemProps) {
   const router = useRouter();
   return (
     <DItem onClick={() => router.push(href)}>
-      <Link href={href}>{upper(name)}</Link>
+      <span>{upper(name)}</span>
     </DItem>
   );
 }

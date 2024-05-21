@@ -12,9 +12,8 @@ export const Trigger = styled(Accordion.Trigger)`
   padding-inline-start: var(--s1);
   padding-block: var(--s-3);
   border-block-end: 3px solid var(--cool-grey-40);
-  
+
   margin-block: var(--s-4);
-  
 `;
 
 export const TechName = styled.h3`

@@ -4,7 +4,7 @@ import Link from "next/link";
 
 export const Author = styled(Link)`
   --width: 1.3px;
-    padding: 0;
+  padding: 0;
 
   border: 2px solid transparent;
   border-bottom: var(--width) solid var(--color-text-third);
@@ -24,17 +24,18 @@ export const Author = styled(Link)`
     outline-color: transparent;
   }
 
-    @media (hover: hover) and (prefers-reduced-motion: no-preference) {
-        &:hover {
-            transition: color 100ms,
-            border-bottom-color 200ms;
-            border: 2px solid transparent;
-            border-block-end: var(--width) solid var(--color-background);
-        }
-        &:focus {
-            border: 2px solid transparent;
-            border-block-end: var(--width) solid transparent;
-            color: var(--teal-primary);
-        }
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    &:hover {
+      transition:
+        color 100ms,
+        border-bottom-color 200ms;
+      border: 2px solid transparent;
+      border-block-end: var(--width) solid var(--color-background);
     }
+    &:focus {
+      border: 2px solid transparent;
+      border-block-end: var(--width) solid transparent;
+      color: var(--teal-primary);
+    }
+  }
 `;
