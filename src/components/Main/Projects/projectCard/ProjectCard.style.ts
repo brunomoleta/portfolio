@@ -54,15 +54,17 @@ export const ImageWrapper = styled.button`
   @media (min-width: 650px) {
     max-width: unset;
   }
-  &>img {
-      filter: saturate(60%);
-  }  
+  & > img {
+    filter: saturate(60%);
+  }
 
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     will-change: transform;
     transition: border-color 800ms;
     & > img {
-      transition: transform 500ms ease-in,filter 800ms ease-out;
+      transition:
+        transform 500ms ease-in,
+        filter 800ms ease-out;
     }
 
     &:hover,
@@ -70,7 +72,9 @@ export const ImageWrapper = styled.button`
       img {
         filter: saturate(100%);
         transform: scale(1.06);
-        transition: transform 250ms ease-in,filter 400ms ease-in;
+        transition:
+          transform 250ms ease-in,
+          filter 400ms ease-in;
       }
     }
   }

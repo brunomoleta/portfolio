@@ -57,18 +57,18 @@ export const Btn = styled.button`
 `;
 
 export const PButton = styled(Btn)`
-    font-size: var(--font-body-4);
+  font-size: var(--font-body-4);
 
-    @media (prefers-reduced-motion: no-preference) {
-        &:hover {
-            border: 2px solid transparent;
-            border-block-end: 2px solid var(--color-background);
-        }
-
-        &:focus {
-            border: 2px solid transparent;
-            border-block-end: 2px solid var(--color-background);
-            color: var(--color-text);
-        }
+  @media (prefers-reduced-motion: no-preference) {
+    &:hover {
+      border: 2px solid transparent;
+      border-block-end: 2px solid var(--color-background);
     }
+
+    &:focus {
+      border: 2px solid transparent;
+      border-block-end: 2px solid var(--color-background);
+      color: var(--color-text);
+    }
+  }
 `;

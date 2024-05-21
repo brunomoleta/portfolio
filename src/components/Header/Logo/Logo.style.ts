@@ -17,9 +17,9 @@ export const StyledLogo = styled.button`
 
   &:hover {
     color: var(--teal-hover);
-      transition:
-              color 200ms ease-in,
-              border-color 200ms ease-in;
+    transition:
+      color 200ms ease-in,
+      border-color 200ms ease-in;
   }
 
   @media (prefers-reduced-motion: no-preference) {
