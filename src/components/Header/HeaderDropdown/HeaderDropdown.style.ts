@@ -32,7 +32,7 @@ export const OverlayDiv = styled.div`
   inset: 0;
   width: 100svw;
   height: 100svh;
-`
+`;
 
 export const DContent = styled(Menu)`
     z-index: 1;
