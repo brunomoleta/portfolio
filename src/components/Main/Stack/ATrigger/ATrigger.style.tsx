@@ -11,15 +11,10 @@ export const Trigger = styled(Accordion.Trigger)`
   outline: unset;
   padding-inline-start: var(--s1);
   padding-block: var(--s-3);
-  border-block-end: 2px solid var(--cool-grey-40);
-
-  &[data-state="open"] > svg {
-    transform: rotate(45deg);
-  }
-
-  @media (prefers-reduced-motion: no-preference) {
-    transition: rotate 300ms;
-  }
+  border-block-end: 3px solid var(--cool-grey-40);
+  
+  margin-block: var(--s-4);
+  
 `;
 
 export const TechName = styled.h3`

@@ -17,11 +17,14 @@ export const StyledLogo = styled.button`
 
   &:hover {
     color: var(--teal-hover);
+      transition:
+              color 200ms ease-in,
+              border-color 200ms ease-in;
   }
 
   @media (prefers-reduced-motion: no-preference) {
     transition:
-      color 300ms,
-      outline-color 300ms;
+      color 500ms ease-in,
+      border-color 500ms ease-in;
   }
 `;

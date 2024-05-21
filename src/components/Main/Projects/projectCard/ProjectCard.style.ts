@@ -50,28 +50,34 @@ export const ImageWrapper = styled.button`
 
   outline-offset: 12px;
 
+  border-radius: var(--s-1);
   @media (min-width: 650px) {
     max-width: unset;
   }
+  &>img {
+      filter: saturate(60%);
+  }  
 
-  @media (prefers-reduced-motion: no-preference) {
-    transition: outline-color 400ms;
+  @media (hover: hover) and (prefers-reduced-motion: no-preference) {
+    will-change: transform;
+    transition: border-color 800ms;
     & > img {
-      transition: transform 500ms ease-out;
+      transition: transform 500ms ease-in,filter 800ms ease-out;
     }
 
-    &:hover {
+    &:hover,
+    &:focus {
       img {
+        filter: saturate(100%);
         transform: scale(1.06);
-        transition: transform 250ms ease-out;
+        transition: transform 250ms ease-in,filter 400ms ease-in;
       }
     }
   }
 `;
 
 export const BaseImage = styled(Image)`
-  border-radius: var(--s-1);
-
+  display: block;
   height: auto;
   width: auto;
 
