@@ -39,8 +39,9 @@ export const Btn = styled.button`
   word-break: break-word;
 
   border-radius: unset;
-
+  border: 2px solid transparent;
   border-block-end: 2px solid var(--teal-primary);
+
   &:hover {
     outline: revert;
     color: var(--teal-hover);
@@ -51,10 +52,23 @@ export const Btn = styled.button`
   @media (prefers-reduced-motion: no-preference) {
     transition:
       color 300ms,
-      border-bottom-color 300ms;
+      border-bottom-color 1600ms;
   }
 `;
 
 export const PButton = styled(Btn)`
-  font-size: var(--font-body-4);
+    font-size: var(--font-body-4);
+
+    @media (prefers-reduced-motion: no-preference) {
+        &:hover {
+            border: 2px solid transparent;
+            border-block-end: 2px solid var(--color-background);
+        }
+
+        &:focus {
+            border: 2px solid transparent;
+            border-block-end: 2px solid var(--color-background);
+            color: var(--color-text);
+        }
+    }
 `;

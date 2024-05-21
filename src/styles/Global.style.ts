@@ -211,7 +211,7 @@ const GlobalStyles = createGlobalStyle`
         border: 3px solid var(--color-background);
         outline: 2px solid transparent;
         @media (prefers-reduced-motion: no-preference) {
-            transition: border-color 350ms ease-in;
+            transition: border-color 500ms ease-out;
         }
     }
 
@@ -220,7 +220,7 @@ const GlobalStyles = createGlobalStyle`
     }
 
     a:focus, button:focus, a:hover, button:hover {
-        transition: border-color 150ms ease-in;
+        transition: border-color 200ms ease-in;
         border: 3px solid var(--teal-primary);
         outline: 2px solid transparent;
     }

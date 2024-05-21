@@ -12,14 +12,11 @@ export const ThemeButton = styled.button`
   margin: auto;
 
   color: var(--color-text);
-  transition: color 500ms ease-in;
+  transition: color 600ms ease-in,border-color 600ms ease-out;
+    
 
-  &:hover {
+  &:hover,&:focus {
     color: orangered;
-    transition: color 200ms ease-in;
-  }
-  &:focus {
-    color: orangered;
-    transition: color 200ms ease-in;
+    transition: color 200ms ease-in,border-color 200ms ease-in;
   }
 `;
