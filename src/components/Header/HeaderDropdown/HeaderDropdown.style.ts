@@ -27,16 +27,10 @@ export const DSubTrigger = styled(MenuButton)`
     transition: color 300ms;
   }
 `;
-export const OverlayDiv = styled.div`
-  position: fixed;
-  inset: 0;
-  width: 100svw;
-  height: 100svh;
-`;
 
 export const DContent = styled(Menu)`
     z-index: 1;
-    height: 75svh;
+    height: 60svh;
     min-width: 100%;
     width: 90svw;
     max-width: 350px;
