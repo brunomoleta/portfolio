@@ -5,12 +5,12 @@ import { IIcon } from "@/types/types";
 function IconItem({ item }: IIcon) {
   const { title, href, icon } = item;
   return (
-    <li style={{ padding: "4px" }} key={title}>
+    <li style={{ display:"grid"}} key={title}>
       <Link
         title={title}
         aria-label={title}
         href={href}
-        style={{ padding: "0" }}
+        style={{ padding: "var(--s-2)" }}
       >
         {icon}
       </Link>
