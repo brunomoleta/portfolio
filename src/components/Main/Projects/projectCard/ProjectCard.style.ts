@@ -73,7 +73,7 @@ export const ImageWrapper = styled.button`
         filter: saturate(100%);
         transform: scale(1.06);
         transition:
-          transform 250ms ease-in,
+          transform 200ms ease-in,
           filter 400ms ease-in;
       }
     }

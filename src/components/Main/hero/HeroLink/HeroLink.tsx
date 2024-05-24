@@ -9,7 +9,7 @@ function HeroLink({ item, ...props }: HeroLinkProps) {
   return (
     <li>
       <ListItem {...props} href={href}>
-        {upper(name)}
+        <div>{upper(name)}</div>
       </ListItem>
     </li>
   );

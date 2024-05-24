@@ -20,7 +20,9 @@ export const HeroText = styled.article`
 `;
 export const Emphasis = styled.em`
   font-weight: var(--weight-semibold);
-  border-block-end: 2.5px solid var(--teal-30);
+  text-decoration: underline;
+  text-decoration-color: var(--teal-30);
+  text-decoration-thickness: 2.5px;
 `;
 
 export const Paragraph = styled.p`
