@@ -10,6 +10,7 @@ export const LIGHT_COLORS = {
   "--button-background": "var(--cool-grey-5)",
   "--button-hover": "var(--cool-grey-10)",
   "--button-hover-text": "var(--rich-black)",
+  "--gradient": "linear-gradient(to right, var(--teal-70), transparent)",
   // '--teal-secondary': 'hsl(345deg 100% 50%)',
 };
 
@@ -25,5 +26,6 @@ export const DARK_COLORS = {
   "--button-background": "black",
   "--button-hover": "var(--cool-grey-10)",
   "--button-hover-text": "var(--cool-grey-90)",
-  // '--color-secondary': 'hsl(210deg 100% 70%)',
+  "--gradient": "linear-gradient(to right, var(--teal-70), transparent)",
+  // '--teal-secondary': 'hsl(210deg 100% 70%)',
 };
