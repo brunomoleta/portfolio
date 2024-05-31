@@ -29,6 +29,7 @@ export const ProjBtn = styled(Link)`
 `;
 
 export const Btn = styled.button`
+  position: relative;
   display: flex;
   align-items: center;
   gap: var(--s-1);
@@ -40,7 +41,20 @@ export const Btn = styled.button`
 
   border-radius: unset;
   border: 2px solid transparent;
-  border-block-end: 2px solid var(--teal-primary);
+  border-block-end: 2px solid transparent;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 3.2px;
+    background: var(--gradient);
+  }
+  &:hover::after {
+    opacity: 0;
+  }
 
   &:hover {
     outline: revert;
@@ -50,10 +64,22 @@ export const Btn = styled.button`
   }
 
   @media (prefers-reduced-motion: no-preference) {
-    transition:
-      color 300ms,
-      border-bottom-color 1600ms;
+    transition: color 800ms ease-out;
+
+    &::after {
+      transition: opacity 800ms ease-out;
+    }
+    &:hover::after {
+      transition: opacity 300ms ease-in;
+    }
+
+    &:hover {
+      transition:
+        color 300ms ease-in,
+        opacity 300ms ease-in;
+    }
   }
+
   &:hover {
     border: 2px solid transparent;
     border-block-end: 2px solid var(--color-background);

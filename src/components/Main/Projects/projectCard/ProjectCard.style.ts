@@ -104,6 +104,15 @@ export const Title = styled.h3`
 
 export const ProjTitle = styled(Title)`
   font-size: clamp(var(--font-body-4), 2svw + 1rem, var(--font-heading-7));
-  border-bottom: 3px solid var(--teal-40);
   width: fit-content;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: -2px;
+    height: 3px;
+    background: var(--gradient);
+  }
 `;

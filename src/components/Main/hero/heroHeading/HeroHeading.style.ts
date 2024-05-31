@@ -22,11 +22,23 @@ export const HHeading = styled.section`
 export const Name = styled.h1`
   font-size: clamp(var(--font-body-4), 3vw + 1rem, var(--font-heading-4));
   line-height: 120%;
-  max-width: 100%;
+  max-width: fit-content;
 `;
+
 export const ProjName = styled(Name)`
   margin-block-end: var(--s1);
-  border-block-end: 4px solid var(--teal-30);
+
+  position: relative;
+
+  &::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 6px;
+    background: linear-gradient(to right, var(--teal-20), transparent);
+  }
 `;
 
 export const SubName = styled.h1`
