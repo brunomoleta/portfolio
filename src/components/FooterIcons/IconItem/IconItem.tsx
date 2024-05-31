@@ -5,7 +5,7 @@ import { IIcon } from "@/types/types";
 function IconItem({ item }: IIcon) {
   const { title, href, icon } = item;
   return (
-    <li style={{ display:"grid"}} key={title}>
+    <li style={{ display: "grid" }} key={title}>
       <Link
         title={title}
         aria-label={title}
