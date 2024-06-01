@@ -37,8 +37,7 @@ export const ProjName = styled(Name)`
     right: 0;
     bottom: 0;
     height: 6px;
-    background: linear-gradient(to right, var(--teal-20), transparent);
-  }
+    background: var(--gradient-teal-50);
 `;
 
 export const SubName = styled.h1`

@@ -4,7 +4,7 @@ import styled from "styled-components";
 export const StyledLogo = styled.button`
   color: var(--color-text);
 
-  padding: var(--s0) var(--s1) var(--s0) 0;
+  padding: var(--s-2) var(--s1) var(--s-2) 0;
 
   font-family: inherit;
 
@@ -17,14 +17,16 @@ export const StyledLogo = styled.button`
 
   &:hover {
     color: var(--teal-hover);
-    transition:
-      color 200ms ease-in,
-      border-color 200ms ease-in;
   }
 
   @media (prefers-reduced-motion: no-preference) {
     transition:
       color 500ms ease-in,
       border-color 500ms ease-in;
+  }
+  &:hover {
+    transition:
+      color 200ms ease-in,
+      border-color 200ms ease-in;
   }
 `;

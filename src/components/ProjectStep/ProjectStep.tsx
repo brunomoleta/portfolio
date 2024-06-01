@@ -9,6 +9,7 @@ import { useUtilsStore } from "@/providers/utils.store.ts";
 
 function ProjectStep({ children }: { children: React.ReactNode }) {
   const { step, prevStep, nextStep } = useUtilsStore();
+  const space = "\u00A0";
 
   React.useEffect(() => {
     window.scrollTo(0, 0);
@@ -29,9 +30,9 @@ function ProjectStep({ children }: { children: React.ReactNode }) {
         {step < 3 && (
           <StepButton isPrimary onClick={() => btnReturn(true)}>
             <ArrowRightIcon />
-            Ir para seção de {step === 0 && "Front end"}
-            {step === 1 && "Back end"}
-            {step === 2 && "Testes automatizados"}
+            Ir para seção de {step === 0 && `Front${space}end`}
+            {step === 1 && `Back${space}end`}
+            {step === 2 && `Testes${space}automatizados`}
           </StepButton>
         )}
       </BtnContainer>

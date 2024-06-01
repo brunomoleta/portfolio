@@ -15,9 +15,9 @@ export const HeaderStyle = styled.header`
     position: absolute;
     left: 0;
     right: 0;
-    bottom: -24px;
-    height: 12px;
-    background: var(--gradient);
+    bottom: -18px;
+    height: 18px;
+    background: var(--gradient-teal-70);
     opacity: 1;
     transition: opacity 800ms ease-in;
   }

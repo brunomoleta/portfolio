@@ -4,8 +4,7 @@ import styled from "styled-components";
 export const ThemeButton = styled.button`
   height: 100%;
 
-  padding-inline: var(--s0);
-  padding-block: var(--s1);
+  padding: var(--s0);
 
   display: grid;
   place-content: center;
