@@ -11,18 +11,22 @@ export const StepButton = styled.button<Props>`
   align-items: center;
   font-weight: 500;
 
-  background-color: ${(props) =>
-    props.isPrimary ? "var(--teal-70)" : "var(--cool-grey-30)"};
-  color: ${(props) =>
-    props.isPrimary ? "var(--cool-grey-5)" : "var(--cool-grey-90)"};
+  background-color: var(--teal-70);
+  color: var(--cool-grey-5);
 
   &:hover {
-    background-color: ${(props) =>
-      props.isPrimary ? "var(--teal-90)" : "var(--cool-grey-10)"};
-    color: ${(props) => (props.isPrimary ? "white" : "inherit")};
+    background-color: var(--teal-90);
   }
+
   @media (prefers-reduced-motion: no-preference) {
-    transition: 300ms background-color;
+    transition:
+      450ms background-color ease-in,
+      700ms border ease-out;
+    &:hover {
+      transition:
+        250ms background-color ease-out,
+        350ms border ease-in;
+    }
   }
 `;
 

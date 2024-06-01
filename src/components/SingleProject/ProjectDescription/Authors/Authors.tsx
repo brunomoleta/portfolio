@@ -2,6 +2,7 @@ import {
   AuthorLi,
   AuthorUL,
   Avatar,
+  Name,
 } from "@/components/SingleProject/ProjectDescription/ProjectDescription.style";
 import { IAuthors } from "@/types/types";
 
@@ -11,7 +12,7 @@ function Authors({ authors }: { authors: IAuthors[] }) {
       {authors.map((author, index) => (
         <AuthorLi key={index}>
           <Avatar src={author.image} alt="" />
-          <span>{author.name}</span>
+          <Name>{author.name}</Name>
         </AuthorLi>
       ))}
     </AuthorUL>
