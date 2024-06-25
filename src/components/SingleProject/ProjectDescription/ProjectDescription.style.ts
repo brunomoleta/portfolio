@@ -9,19 +9,6 @@ export const Avatar = styled(Image)`
   height: var(--avatar-size);
   border-radius: 50px;
   opacity: 0.85;
-  margin-block-start: var(--s-2);
-`;
-
-export const AuthorLi = styled.li`
-  display: flex;
-  line-height: 135%;
-  width: fit-content;
-  gap: var(--s-1);
-  align-items: center;
-  text-align: center;
-  @media (min-width: 600px) {
-    flex-flow: column;
-  }
 `;
 
 export const Name = styled.span`
@@ -29,19 +16,34 @@ export const Name = styled.span`
     max-width: 80px;
   }
 `;
+export const AuthorLi = styled.li`
+  display: flex;
+  line-height: 135%;
+  width: fit-content;
+  gap: var(--s-1);
+  align-items: center;
+  text-align: center;
+
+  &:first-child > ${Name} {
+    text-align: initial;
+  }
+
+  @media (min-width: 600px) {
+    flex-flow: column;
+  }
+`;
 
 export const AuthorUL = styled.ul`
   display: flex;
-  flex-flow: column;
+  flex-wrap: wrap;
   gap: var(--s0);
+  margin-block-start: var(--s-2);
 
   & > :last-child {
     margin-block-end: var(--s-2);
   }
 
   @media (min-width: 600px) {
-    flex-flow: unset;
-    gap: var(--s2);
     justify-content: space-between;
   }
 `;

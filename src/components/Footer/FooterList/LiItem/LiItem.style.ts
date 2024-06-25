@@ -9,6 +9,8 @@ export const Span = styled.span`
 export const ListItem = styled.li`
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+
   gap: var(--s-3);
   line-height: 110%;
 `;

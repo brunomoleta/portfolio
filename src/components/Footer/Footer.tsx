@@ -22,8 +22,8 @@ export const Footer = () => {
           </Describe>
         </FooterHead>
         <Content>
-          <FooterIcons />
           <FooterList />
+          <FooterIcons />
           <Message>
             <Balancer>{madeBy}</Balancer>
           </Message>
