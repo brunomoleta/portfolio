@@ -92,7 +92,7 @@ export const backEndList: ITechItem[] = [
         alt=""
         width="40"
         height="40"
-        src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain-wordmark.svg"
+        src=" https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/git/git-plain.svg"
       />
     ),
     items: [
