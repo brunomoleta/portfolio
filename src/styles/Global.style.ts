@@ -143,8 +143,10 @@ const GlobalStyles = createGlobalStyle`
         font-style: normal;
     }
 
-    html {
-        scroll-behavior: smooth;
+    @media (prefers-reduced-motion: no-preference) {
+        html {
+            scroll-behavior: smooth;
+        }
     }
 
     * {
@@ -224,13 +226,30 @@ const GlobalStyles = createGlobalStyle`
         border: 3px solid var(--teal-primary);
         outline: 2px solid transparent;
     }
+    @media (min-width: 35rem) {
+        html {
+            /* Official styles (Firefox) */
+            scrollbar-color: var(--color-scrollbar) var(--scrollbar-bg);
+            scrollbar-width: thin;
+        }
 
-    body {
-        background-color: #ffffff;
-        color: #000000;
+        ::-webkit-scrollbar {
+            /* Track color */
+            width: 8px;
+            background-color: var(--color-scrollbar);
+        }
 
+        ::-webkit-scrollbar-thumb {
+            /* Thumb color */
+            border-radius: 100%;
+            border: 2px solid var(--color-scrollbar);
+            background-color: var(--scrollbar-bg);
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background-color: var(--button-hover);
+        }
     }
-
     button[aria-expanded="true"] {
         border-block-end: 4px solid var(--teal-50);
         border-radius: 4px;
