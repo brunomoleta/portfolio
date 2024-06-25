@@ -10,7 +10,7 @@ function IconItem({ item }: IIcon) {
         title={title}
         aria-label={title}
         href={href}
-        style={{ padding: "var(--s-2)" }}
+        style={{ padding: "var(--s-2) var(--s-2) var(--s-2) 0" }}
       >
         {icon}
       </Link>

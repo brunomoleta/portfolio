@@ -30,7 +30,7 @@ export const List = styled.ul`
 `;
 export const IconsList = styled.ul`
   display: flex;
-  gap: var(--s0);
+  gap: var(--s-1);
 `;
 
 export const GithubLogo = styled(GitHubLogoIcon)`

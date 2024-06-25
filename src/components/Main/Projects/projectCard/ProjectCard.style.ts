@@ -16,7 +16,7 @@ export const ProjectArticle = styled.article`
 
   padding: var(--s1) clamp(1px, 3%, var(--s0));
   border-radius: var(--s-1);
-  outline: 4px solid var(--color-text-third);
+  border: 4px solid var(--color-text-fourth);
 
   height: 100%;
   display: flex;

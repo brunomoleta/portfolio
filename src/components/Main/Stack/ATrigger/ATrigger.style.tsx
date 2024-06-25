@@ -9,7 +9,7 @@ export const Trigger = styled(Accordion.Trigger)`
   align-items: center;
 
   outline: unset;
-  padding-inline-start: var(--s1);
+
   padding-block: var(--s-3);
   border-block-end: 3px solid var(--cool-grey-40);
 

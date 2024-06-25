@@ -60,7 +60,6 @@ export const WrappedItem = styled(Item)`
 
 export const ProjectSpecs = styled.span`
   font-weight: var(--weight-medium);
-  margin-inline-start: var(--s-2);
 `;
 export const PItem = styled.h3`
   color: var(--color-text-third);
