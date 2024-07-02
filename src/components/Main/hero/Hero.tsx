@@ -11,8 +11,7 @@ export const Hero = () => {
       <Wrapper>
         <Name style={{ fontWeight: "700" }}>
           {heroHeading1}
-          <br />
-          Desenvolvedor Full&nbsp;Stack.
+          <span>QA | Desenvolvedor Full&nbsp;Stack</span>
         </Name>
         <HeroInfo />
       </Wrapper>

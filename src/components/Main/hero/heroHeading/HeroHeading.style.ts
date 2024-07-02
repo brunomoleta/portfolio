@@ -23,6 +23,8 @@ export const Name = styled.h1`
   font-size: clamp(var(--font-body-4), 3vw + 1rem, var(--font-heading-4));
   line-height: 120%;
   max-width: fit-content;
+  display: grid;
+  grid-template-columns: auto;
 `;
 
 export const ProjName = styled(Name)`
