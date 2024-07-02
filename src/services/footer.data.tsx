@@ -30,4 +30,4 @@ export const footer1 =
   "trocarmos figurinhas :)";
 export const madeBy =
   "Portfólio desenhado e desenvolvido feito com as mãos do " +
-  "menino da foto. Última atualização em Maio de 2024.";
+  "menino da foto. Última atualização em Julho de 2024.";

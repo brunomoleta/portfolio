@@ -79,7 +79,7 @@ export const backEndList: ITechItem[] = [
       />
     ),
     items: [
-      "Utilizar o PrimaORM na comunicação entre o Node.js e o banco de dados relacional;",
+      "Utilizar o PrismaORM na comunicação entre o Node.js e o banco de dados relacional;",
       "Implantar Api's restful com Typescript utilizando os frameworks Express.js ou Nest.js;",
       "Desenvolver back end em conjunto com o banco de dados PostgreSQL;",
       "Desenvolver documentação detalhada das rotas de Api's restful usando Swagger-ui;",
@@ -97,6 +97,54 @@ export const backEndList: ITechItem[] = [
     ),
     items: [
       "Criar commit's baseado em boas práticas, com zelo para mantê-los curtos e facilitar a revisão de código por pares;",
+    ],
+  },
+];
+
+export const qaList: ITechItem[] = [
+  {
+    name: "Cypress",
+    logoImage: (
+        <TechImage
+            alt=""
+            width="40"
+            height="40"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/cypressio/cypressio-original.svg"
+        />
+    ),
+    items: [
+      "Realizo testes de interface automatizados usando Cypress IO;",
+      "Aplicar estes testes em conjunto com o Cucumber para fazê-los baseados em BDD"
+
+    ],
+  },
+  {
+    name: "Postman API",
+    logoImage: (
+        <TechImage
+            alt=""
+            width="40"
+            height="40"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postman/postman-plain.svg"
+/>
+    ),
+    items: [
+      "Desenvolvi testes manuais de API Rest que facilitam o desenvolvimento do back end;",
+    ],
+  },
+  {
+    name: "Jest | Testes unitários",
+    logoImage: (
+        <TechImage
+            alt=""
+            width="40"
+            height="40"
+            src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/jest/jest-plain.svg"
+
+/>
+    ),
+    items: [
+      "Desenvolvi testes unitários em componentes React.js;",
     ],
   },
 ];

@@ -4,19 +4,21 @@ import React from "react";
 export const Paragraph1: React.FC = () => {
   return (
     <>
-      Que bom que você chegou até aqui, fico feliz com a sua visita,{" "}
-      <Emphasis>seja muito bem-vinda(o) :)</Emphasis>
+        Obrigado pela visita,{" "}
+      <Emphasis>seja bem-vinda(o) :)</Emphasis>
     </>
   );
 };
 export const Paragraph2: React.FC = () => {
   return (
     <>
-      Acredito ser um profissional multidisciplinar, cujos temperos principais
-      são: <Emphasis>comunicação e autonomia</Emphasis>. Me graduei arquiteto em
-      universidade pública com experiência na área, fiz parte de uma incubadora
-      de startups e absorvi habilidades em programação full stack na Kenzie
-      Academy Brasil.
+      Busco ser um profissional multidisciplinar cujos temperos principais
+      são: <Emphasis>comunicação e autonomia</Emphasis>.
+        Graduado arquiteto e urbanista,
+        estou em transição para a área tech, pois vejo
+        que terei maior impacto nas decisões em uma equipe
+        que produz um projeto digital
+        e isso me trará maior satisfação profissional.
     </>
   );
 };
@@ -24,12 +26,14 @@ export const Paragraph2: React.FC = () => {
 export const Paragraph3: React.FC = () => {
   return (
     <>
-      Desta forma, ao desenvolver aplicações web através de{" "}
-      <Emphasis>Next.js, Node.js, Typescript e CSS</Emphasis>, alio habilidades
-      comportamentais e técnicas para fazer a{" "}
-      <Emphasis>experiência do usuário</Emphasis> natural como um{" "}
-      <Emphasis> rio de águas vivas</Emphasis> e ligeira como um{" "}
-      <Emphasis>drible do Vinícius Jr.</Emphasis>
+        No desenvolvimento de software que tomei parte
+        até o momento usei ferramentas como {" "}
+        <Emphasis>Next.js, Node.js, Typescript e SQL </Emphasis>
+        e efetuei testes funcionais usando <Emphasis>Cypress e Cucumber</Emphasis>.
+        Mantendo o objetivo final do produto, que é uma {" "}
+        <Emphasis>experiência do usuário</Emphasis> fluida como um{" "}
+      <Emphasis>rio de águas vivas</Emphasis> e veloz como um{" "}
+      <Emphasis>drible do Vinícius Jr</Emphasis>.
     </>
   );
 };
