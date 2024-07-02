@@ -17,8 +17,8 @@ export const LIGHT_COLORS = {
 
   "--gradient": "linear-gradient(to right, var(--teal-70), transparent)",
   // '--teal-secondary': 'hsl(345deg 100% 50%)',
-  "--color-scrollbar":"var(--teal-70)",
-  "--scrollbar-bg":"vaR(--neutral-grey-20)"
+  "--color-scrollbar": "var(--teal-70)",
+  "--scrollbar-bg": "vaR(--neutral-grey-20)",
 };
 
 export const DARK_COLORS = {
@@ -41,6 +41,6 @@ export const DARK_COLORS = {
   "--gradient": "linear-gradient(to right, var(--teal-70), transparent)",
   // '--teal-secondary': 'hsl(210deg 100% 70%)',
 
-  "--color-scrollbar":"var(--teal-70)",
-  "--scrollbar-bg":"vaR(--cool-grey-90)"
+  "--color-scrollbar": "var(--teal-70)",
+  "--scrollbar-bg": "vaR(--cool-grey-90)",
 };
