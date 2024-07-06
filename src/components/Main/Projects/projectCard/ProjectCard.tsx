@@ -31,8 +31,6 @@ export const ProjectCard = ({ item }: { item: IProject }) => {
       <ProjectArticle>
         <Wrapper>
           <ProjectInfo item={item} />
-          <ProjectRelatedTechs heading="Front end" tags={frontendTags} />
-          <ProjectRelatedTechs heading="Back end" tags={backendTags} />
           <ProjectBtn disabled={loading} onClick={handleClick} />
         </Wrapper>
         {loading && <Spinner />}

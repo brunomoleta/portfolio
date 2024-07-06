@@ -12,8 +12,8 @@ function ProjectInfo({ item }: { item: IProject }) {
   const { title, subTitle } = item;
   return (
     <InfoWrapper>
-      <Balancer>
         <ProjTitle>{title}</ProjTitle>
+      <Balancer>
         <Subtitle>{subTitle}</Subtitle>
       </Balancer>
     </InfoWrapper>

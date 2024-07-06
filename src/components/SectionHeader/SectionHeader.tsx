@@ -11,8 +11,9 @@ function SectionHeader({
   word: string;
   changeH?: string;
 }) {
+  const id = React.useId()
   return (
-    <StackHeader>
+    <StackHeader id={`${id}-${word}`}>
       <ArrowRightIcon style={{ color: "var(--cool-grey-60)" }} />
       <Heading isBlack={isBlack} as={changeH}>
         {word.toUpperCase()}
