@@ -28,7 +28,7 @@ export const ProjBtn = styled(Link)`
   }
 `;
 
-export const Btn = styled.button`
+export const Btn = styled.div`
   position: relative;
   display: flex;
   align-items: center;

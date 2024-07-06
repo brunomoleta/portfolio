@@ -32,10 +32,12 @@ function SProjectBtns({ digit }: { digit: number }) {
   return (
     <Balancer>
       <Container>
-        <Btn onClick={returnFirstStep}>
-          <ArrowLeftIcon />
-          Voltar para início do projeto
-        </Btn>
+        <button onClick={returnFirstStep}>
+          <Btn>
+            <ArrowLeftIcon />
+            Voltar para início do projeto
+          </Btn>
+        </button>
         <StepButton
           isPrimary
           onClick={() => handleNavigation(`/${projects[num].href}`)}

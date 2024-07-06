@@ -212,8 +212,9 @@ const GlobalStyles = createGlobalStyle`
     a, button {
         border: 3px solid var(--color-background);
         outline: 2px solid transparent;
+        outline-offset: 8px;
         @media (prefers-reduced-motion: no-preference) {
-            transition: border-color 500ms ease-out;
+            transition: border-color 500ms ease-out, outline-color 500ms ease-out;
         }
     }
 
@@ -221,10 +222,15 @@ const GlobalStyles = createGlobalStyle`
         padding: 8px;
     }
 
-    a:focus, button:focus, a:hover, button:hover {
+    a:hover, button:hover {
         transition: border-color 200ms ease-in;
-        border: 3px solid var(--teal-primary);
-        outline: 2px solid transparent;
+        border: 4px solid var(--teal-primary);
+    }
+
+    a:focus, button:focus{
+        outline: 2px solid var(--teal-primary);
+        transition: outline-color 300ms ease-in;
+
     }
     @media (min-width: 35rem) {
         html {

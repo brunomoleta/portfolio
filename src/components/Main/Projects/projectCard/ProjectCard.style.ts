@@ -1,7 +1,38 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
+import {
+  PButton,
+} from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style.ts";
 
+export const Look = styled.span``;
+export const Title = styled.h3`
+  font-weight: var(--weight-bold);
+  font-size: clamp(var(--font-body-3), 2svw + 1rem, var(--font-heading-6));
+  margin-inline-end: auto;
+`;
+export const ImageWrapper = styled.div`
+  position: relative;
+  overflow: hidden;
+
+  width: 100%;
+  height: 100%;
+  min-height: 800px;
+
+  outline-offset: 12px;
+
+  border-radius: var(--s-1);
+  @media (min-width: 650px) {
+    max-width: unset;
+  }
+  & > img {
+    filter: saturate(60%);
+  }
+
+  @media (min-width: 50rem) {
+    min-height: 500px;
+  }
+`;
 export const Wrapper = styled.div`
   display: flex;
   flex-flow: column;
@@ -11,7 +42,7 @@ export const Wrapper = styled.div`
   position: relative;
 `;
 
-export const ProjectArticle = styled.article`
+export const ProjectArticle = styled.button`
   width: 100%;
 
   padding: var(--s1) clamp(1px, 3%, var(--s0));
@@ -29,39 +60,36 @@ export const ProjectArticle = styled.article`
     padding-block-start: var(--s1);
     display: grid;
     grid-template-rows: unset;
-    grid-template-columns: 48% 48%;
+    grid-template-columns: 48.5% 48.5%;
     max-width: 48rem;
-    gap: 4%;
+    gap: 3%;
   }
-`;
-export const InfoWrapper = styled.div`
-  @media (min-width: 650px) {
-    margin-block-start: unset;
+
+  & ${Title} {
+    transition: color 750ms ease-out;
   }
-`;
 
-export const ImageWrapper = styled.button`
-  position: relative;
-  overflow: hidden;
-
-  width: 100%;
-  height: 100%;
-  min-height: 600px;
-
-  outline-offset: 12px;
-
-  border-radius: var(--s-1);
-  @media (min-width: 650px) {
-    max-width: unset;
+  &:hover ${PButton} {
+    border: 2px solid transparent;
+    border-block-end: 2px solid var(--color-background);
   }
-  & > img {
-    filter: saturate(60%);
+
+  &:hover ${Title} {
+    transition: color 250ms ease-in;
+    color: var(--teal-primary);
   }
 
   @media (hover: hover) and (prefers-reduced-motion: no-preference) {
     will-change: transform;
-    transition: border-color 800ms;
-    & > img {
+    transition:
+      border-color 800ms ease-out,
+      box-shadow 600ms ease-out;
+
+    &:hover {
+      transition: box-shadow 800ms;
+      box-shadow: 6px 6px 14px 2px var(--teal-40);
+    }
+    & > ${ImageWrapper} > img {
       transition:
         transform 500ms ease-in,
         filter 800ms ease-out;
@@ -79,6 +107,16 @@ export const ImageWrapper = styled.button`
     }
   }
 `;
+export const InfoWrapper = styled.div`
+  text-align: initial;
+  display: grid;
+
+  gap: var(--s-1);
+  @media (min-width: 50rem) {
+    grid-template-rows: 6.5ex 1fr;
+    margin-block-start: unset;
+  }
+`;
 
 export const BaseImage = styled(Image)`
   display: block;
@@ -94,12 +132,6 @@ export const Subtitle = styled.h4`
   color: var(--color-text-third);
   font-size: clamp(var(--font-body-sm-2), 4%, var(--font-body-sm-4));
   line-height: 130%;
-
-  margin-block-start: var(--s-1);
-`;
-export const Title = styled.h3`
-  font-weight: var(--weight-bold);
-  font-size: clamp(var(--font-body-3), 2svw + 1rem, var(--font-heading-6));
 `;
 
 export const ProjTitle = styled(Title)`
@@ -114,5 +146,8 @@ export const ProjTitle = styled(Title)`
     bottom: -2px;
     height: 3px;
     background: var(--gradient);
+  }
+  @media (min-width: 50rem) {
+    max-inline-size: 10ch;
   }
 `;

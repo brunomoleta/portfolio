@@ -10,10 +10,9 @@ function ProjectIllustration({
   illustration,
   isLoading,
   alt,
-  ...props
 }: ProjectIllustrationProps) {
   return (
-    <ImageWrapper {...props}>
+    <ImageWrapper>
       <ProjectImage
         sizes={"(max-width: 550px) 100vw, (max-width: 1200px) 50vw, 30vw"}
         fill={true}
@@ -27,11 +26,10 @@ function ProjectIllustration({
   );
 }
 
-type ProjectIllustrationProps =
-  React.ButtonHTMLAttributes<HTMLButtonElement> & {
-    illustration: StaticImageData;
-    isLoading: boolean;
-    alt: string;
-  };
+type ProjectIllustrationProps = {
+  illustration: StaticImageData;
+  isLoading: boolean;
+  alt: string;
+};
 
 export default ProjectIllustration;

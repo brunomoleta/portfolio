@@ -21,11 +21,13 @@ function ProjectStep({ children }: { children: React.ReactNode }) {
       {children}
       <BtnContainer>
         {step > 0 && step < 3 && (
-          <Btn onClick={() => btnReturn(false)}>
-            <ArrowLeftIcon />
-            Voltar para seção de {step === 1 && "Introdução"}
-            {step === 2 && "Front end"}
-          </Btn>
+          <button>
+            <Btn onClick={() => btnReturn(false)}>
+              <ArrowLeftIcon />
+              Voltar para seção de {step === 1 && "Introdução"}
+              {step === 2 && "Front end"}
+            </Btn>
+          </button>
         )}
         {step < 3 && (
           <StepButton isPrimary onClick={() => btnReturn(true)}>

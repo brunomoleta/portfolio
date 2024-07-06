@@ -4,10 +4,8 @@ import styled from "styled-components";
 export const Wrapper = styled.section`
   display: flex;
   flex-flow: column;
-
   align-items: center;
-
-  margin-block: var(--s2) var(--s-1);
+  row-gap: var(--s-2);
 `;
 
 export const Describe = styled.small`
