@@ -1,14 +1,13 @@
 import React from "react";
 import { EyeOpenIcon } from "@radix-ui/react-icons";
 import { PButton } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style";
+import { Look } from "@/components/Main/Projects/projectCard/ProjectCard.style.ts";
 
-function ProjectBtn({
-  ...props
-}: React.ButtonHTMLAttributes<HTMLButtonElement>) {
+function ProjectBtn() {
   return (
-    <PButton as="button" {...props}>
+    <PButton>
       <EyeOpenIcon width={20} height={20} />
-      <span>Dar uma olhada</span>
+      <Look>Dar uma olhada</Look>
     </PButton>
   );
 }
