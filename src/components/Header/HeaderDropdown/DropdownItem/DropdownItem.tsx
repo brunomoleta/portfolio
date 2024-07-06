@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import Link from "next/link";
 import { DItem } from "@/components/Header/HeaderDropdown/HeaderDropdown.style";
 import { useRouter } from "next/navigation";
 import { upper } from "@/services/service";
