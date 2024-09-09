@@ -1,14 +1,19 @@
 import React from "react";
 import { Author } from "@/components/AuthorName/AuthorName.style.ts";
 
-function AuthorName({ author, site }: { author: string; site: string }) {
+interface AuthorNameProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+  author: string;
+  site: string;
+}
+
+function AuthorName({ author, site, ...props }: AuthorNameProps) {
   return (
     <>
       {" "}
-      <Author target="_blank" href={site}>
+      <Author {...props} target="_blank" href={site}>
         {author}
       </Author>
-      {"."}
     </>
   );
 }

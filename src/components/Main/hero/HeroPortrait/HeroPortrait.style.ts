@@ -31,10 +31,19 @@ export const ImageWrapper = styled.div`
   box-shadow: rgba(0, 0, 0, 0.45) 0 5px 15px 0;
   height: fit-content;
 `;
+export const Describe = styled.small`
+  display: block;
+  color: var(--color-text-third);
+  margin-inline-start: auto;
+  margin-block-start: var(--s-1);
+  font-size: var(--font-body-sm-3);
+  line-height: 130%;
+  width: fit-content;
+`;
+
 export const Container = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+  display: grid;
+  place-content: baseline;
 
   position: relative;
 `;

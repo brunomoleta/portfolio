@@ -5,7 +5,6 @@ import {
   ImageElement,
   ImageWrapper,
 } from "@/components/SingleProject/SingleProject.style.ts";
-import { Describe } from "@/components/Main/DecorSection/DecorSection.style.ts";
 import { ITestsData } from "@/types/types";
 import SmallDescription from "@/components/SmallDescription";
 
