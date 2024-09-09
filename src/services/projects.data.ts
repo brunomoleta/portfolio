@@ -3,14 +3,6 @@ import { IProject } from "@/types/types";
 import DurvalMobileHome from "@/assets/Durval/durval-home.jpg";
 import BankMobileHome from "@/assets/Easy/bank_home_mobile.jpg";
 
-import { DurvalFront, EasyBankFront } from "@/services/frontEnd.data";
-import { DurvalBack, EasyBankBack } from "@/services/backEnd.data";
-import Bruno from "../assets/Authors/retrato-400x400.png";
-import Joao from "../assets/Authors/Joao-Pedro.png";
-import Filipe from "../assets/Authors/Filipe.png";
-import Gustavo from "../assets/Authors/Gustavo.png";
-import { DurvalTests } from "@/services/tests.data.ts";
-
 export const projects: IProject[] = [
   {
     id: 1,

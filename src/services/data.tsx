@@ -1,23 +1,23 @@
-export const github = "https://github.com/brunomoleta";
-export const cvLink =
-  "https://drive.google.com/file/d/1N9lJ-lwOsBQNrJ4D9SB-rzZNpjKM5H5O/view?usp=sharing";
-export const linkedin =
+export const github: string = "https://github.com/brunomoleta";
+export const cvLink: string =
+  "https://drive.google.com/file/d/1ZMcau1ASURyZp6SrzqnNiO17oG58L7zh/view?usp=sharing";
+export const linkedin: string =
   "https://www.linkedin.com/in/bruno-moleta-santos-desenvolvedor-full-stack/";
 
-export const heroHeading1 = "Bruno Moleta.";
+export const heroHeading1: string = "Bruno Moleta.";
 
 export const linksList = [
   {
-    name: "github",
-    href: github,
+    name: "currículo vitae",
+    href: cvLink,
   },
   {
     name: "linkedin",
     href: linkedin,
   },
   {
-    name: "currículo vitae",
-    href: cvLink,
+    name: "github",
+    href: github,
   },
 ];
 

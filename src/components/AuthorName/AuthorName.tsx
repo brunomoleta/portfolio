@@ -1,7 +1,8 @@
 import React from "react";
 import { Author } from "@/components/AuthorName/AuthorName.style.ts";
 
-interface AuthorNameProps extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
+interface AuthorNameProps
+  extends React.AnchorHTMLAttributes<HTMLAnchorElement> {
   author: string;
   site: string;
 }

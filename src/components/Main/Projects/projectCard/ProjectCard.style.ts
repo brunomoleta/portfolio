@@ -1,9 +1,7 @@
 "use client";
 import styled from "styled-components";
 import Image from "next/image";
-import {
-  PButton,
-} from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style.ts";
+import { PButton } from "@/components/Main/Projects/projectCard/ProjectBtn/ProjectBtn.style.ts";
 
 export const Look = styled.span``;
 export const Title = styled.h3`
