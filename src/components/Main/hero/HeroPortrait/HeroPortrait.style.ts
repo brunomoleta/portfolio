@@ -32,9 +32,8 @@ export const ImageWrapper = styled.div`
   height: fit-content;
 `;
 export const Container = styled.div`
-  display: flex;
-  flex-flow: column;
-  align-items: flex-end;
+  display: grid;
+  place-content: baseline;
 
   position: relative;
 `;
