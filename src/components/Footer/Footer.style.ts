@@ -7,7 +7,7 @@ export const StyledFooter = styled.footer`
   width: 100%;
   padding-block: var(--s2) var(--s3);
 
-  border-block-start: 12px solid var(--color-text-secondary);
+  border-block-start: 12px solid var(--teal-70);
   box-shadow:
     0 10px 38px -10px rgba(22, 23, 24, 0.35),
     0 10px 20px -15px rgba(22, 23, 24, 0.2);

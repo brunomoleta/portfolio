@@ -39,5 +39,5 @@ export const Paragraph = styled.div`
 `;
 
 export const HeadListItem = styled.li`
-  margin-block-end: var(--s-2);
+  margin-block-end: var(--s0);
 `;

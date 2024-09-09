@@ -65,8 +65,7 @@ export const Paragraph2: React.FC = () => {
 export const Paragraph3: React.FC = () => {
   return (
     <p>
-      Estou aberto para trocar ideias e terei prazer em falar com você :)
-      <Emphasis style={{ display: "block" }}>Bora aí?</Emphasis>
+      Estou aberto para trocar ideias e terei prazer em falar com você, vamos?
     </p>
   );
 };
