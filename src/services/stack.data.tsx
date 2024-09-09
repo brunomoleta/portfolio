@@ -1,6 +1,45 @@
 import { ITechItem } from "@/types/types";
 import { TechImage } from "@/components/Main/Stack/ATrigger/ATrigger.style";
 
+export const languages: ITechItem[] = [
+  {
+    name: "Javascript",
+    logoImage: (
+      <TechImage
+        alt=""
+        width="40"
+        height="40"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-plain.svg"
+      />
+    ),
+    items: ["Desenvolvo com atenção ao desempenho Javascript;"],
+  },
+  {
+    name: "Typescript",
+    logoImage: (
+      <TechImage
+        alt=""
+        width="40"
+        height="40"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-plain.svg"
+      />
+    ),
+    items: ["Tipagem avançada usando Generics;"],
+  },
+  {
+    name: "Java",
+    logoImage: (
+      <TechImage
+        alt=""
+        width="40"
+        height="40"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg"
+      />
+    ),
+    items: ["Estou aprendendo Java com o framework Spring ;)"],
+  },
+];
+
 export const frontEndList: ITechItem[] = [
   {
     name: "React",
@@ -13,9 +52,23 @@ export const frontEndList: ITechItem[] = [
       />
     ),
     items: [
-      // "Montagem de testes unitários utilizando Jest e React testing Library;",
+      "Montagem de testes unitários utilizando Jest e React testing Library;",
       "Programar tomando como partida o Typescript;",
       "Desenvolver cuidadosamente a arquitetura dos componentes a fim de torná-los simples e escaláveis;",
+    ],
+  },
+  {
+    name: "Vue.js",
+    logoImage: (
+      <TechImage
+        alt=""
+        width="40"
+        height="40"
+        src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/vuejs/vuejs-original.svg"
+      />
+    ),
+    items: [
+      "Desenvolvi front end uma Landing page com cadastro de email para uma empresa usando Typescript e Tailwind.",
     ],
   },
   {

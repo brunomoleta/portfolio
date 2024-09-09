@@ -29,5 +29,5 @@ export const footer1 =
   "vaga, dúvida a respeito de algo no portfólio ou simplesmente para " +
   "trocarmos figurinhas :)";
 export const madeBy =
-  "Portfólio desenhado e desenvolvido feito com as mãos do " +
-  "menino da foto. Última atualização em Julho de 2024.";
+  "Design e desenvolvimento feitos por mim mesmo, Bruno. " +
+  "Última atualização em Setembro de 2024.";

@@ -1,35 +1,72 @@
-import { Emphasis } from "@/components/Main/hero/HeroInfo/HeroInfo.style";
+"use client";
+
+import {
+  Emphasis,
+  HeadListItem,
+} from "@/components/Main/hero/HeroInfo/HeroInfo.style";
 import React from "react";
+import AuthorName from "@/components/AuthorName";
 
 export const Paragraph1: React.FC = () => {
   return (
     <>
-      Obrigado pela visita, <Emphasis>seja bem-vinda(o) :)</Emphasis>
+      <ul>
+        <HeadListItem>
+          🐦Venho dos Campos Gerais, do miolo do estado do Paraná, e amo circo.
+          🎪.
+        </HeadListItem>
+        <HeadListItem>
+          🏛️Me graduei arquiteto e urbanista em Universidade pública e recebi
+          destaque em Concurso Nacional para estudantes da área.
+        </HeadListItem>
+        <HeadListItem>
+          👨🏽‍💻Decidi migrar para a área de tecnologia. Tanto pelo número maior de
+          oportunidades quanto pelo desejo de saber o que é esse tal de{" "}
+          <code>código</code>, e estou muito satisfeito com esta decisão 😊.
+        </HeadListItem>
+        <HeadListItem>
+          💬E não menos importante falo, escuto e escrevo Inglês e Espanhol em
+          nível Avançado.
+        </HeadListItem>
+      </ul>
     </>
   );
 };
 export const Paragraph2: React.FC = () => {
   return (
     <>
-      Busco ser um profissional multidisciplinar cujos temperos principais são:{" "}
-      <Emphasis>comunicação e autonomia</Emphasis>. Graduado arquiteto e
-      urbanista, estou em transição para a área tech, pois vejo que terei maior
-      impacto nas decisões em uma equipe que produz um projeto digital e isso me
-      trará maior satisfação profissional.
+      <p>
+        Minhas realizações na área tech <Emphasis>mais legais</Emphasis> são:
+      </p>
+      <ul>
+        <HeadListItem>
+          💡Faço parte do time de desenvolvimento da{" "}
+          <AuthorName
+            author={"Lacrei Saúde"}
+            site="https://lacreisaude.com.br/"
+          />{" "}
+          uma ONG/Startup que oferece à comunidade LGBTQIAPN+ um acesso à saúde
+          clínica seguro e inclusivo;
+        </HeadListItem>
+        <HeadListItem>
+          ✍🏽Prestei auxílio para desenvolvedores front end iniciantes oferecendo
+          Revisão de Código. Foram mais de 40 reviews minuciosos e em inglês;
+        </HeadListItem>
+        <HeadListItem>
+          🚣🏽‍♂️Liderei e desenvolvi aplicação Full Stack de um e-commerce de
+          equipamentos musicais junto de três colegas. Nele contribui no Front
+          end, Back end e em Testes funcionais de ponta a ponta.
+        </HeadListItem>
+      </ul>
     </>
   );
 };
 
 export const Paragraph3: React.FC = () => {
   return (
-    <>
-      No desenvolvimento de software que tomei parte até o momento usei
-      ferramentas como <Emphasis>Next.js, Node.js, Typescript e SQL </Emphasis>e
-      efetuei testes funcionais usando <Emphasis>Cypress e Cucumber</Emphasis>.
-      Mantendo o objetivo final do produto, que é uma{" "}
-      <Emphasis>experiência do usuário</Emphasis> fluida como um{" "}
-      <Emphasis>rio de águas vivas</Emphasis> e veloz como um{" "}
-      <Emphasis>drible do Vinícius Jr</Emphasis>.
-    </>
+    <p>
+      Estou aberto para trocar ideias e terei prazer em falar com você :)
+      <Emphasis style={{ display: "block" }}>Bora aí?</Emphasis>
+    </p>
   );
 };
