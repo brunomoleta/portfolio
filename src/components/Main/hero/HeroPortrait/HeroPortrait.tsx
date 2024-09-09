@@ -1,11 +1,11 @@
 import Bruno from "@/assets/Lcp/Retrato.jpg";
 import {
-  Container,
+  Container, Describe,
   HeroImage,
   HeroImageBlur,
   ImageWrapper,
 } from "@/components/Main/hero/HeroPortrait/HeroPortrait.style";
-import { Describe } from "@/components/Main/DecorSection/DecorSection.style";
+
 import AuthorName from "@/components/AuthorName";
 
 function HeroPortrait() {

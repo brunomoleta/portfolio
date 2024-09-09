@@ -12,8 +12,8 @@ function HeroLongText() {
     <Wrapper>
       <Name>{heroHeading1}</Name>
       <Dev>
-        Desenvolvedor Full&nbsp;Stack React ou Vue/Node me especializando em
-        Front End.
+        Desenvolvedor Full&nbsp;Stack React ou Vue/Node com ênfase em
+        Front&nbsp;End.
       </Dev>
       <HeroInfo />
     </Wrapper>
