@@ -8,15 +8,6 @@ export const dropdownList = [
     href: "/#sobre-o-bruno",
   },
   {
-    name: "tecnologias",
-    href: "/#tecnologias",
-  },
-
-  {
-    name: "projetos",
-    href: "/#projetos",
-  },
-  {
     name: "contato",
     href: "/#contato",
   },
