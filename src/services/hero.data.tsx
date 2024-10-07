@@ -20,13 +20,11 @@ export const Paragraph1: React.FC = () => {
           destaque em Concurso Nacional para estudantes da área.
         </HeadListItem>
         <HeadListItem>
-          👨🏽‍💻Decidi migrar para a área de tecnologia. Tanto pelo número maior de
-          oportunidades quanto pelo desejo de saber o que é esse tal de{" "}
-          <code>código</code>, e estou muito satisfeito com esta decisão 😊.
+          👨🏽‍💻Sonhava em {" "}
+          <code>programar</code>, então me dediquei por mais de um ano para me tornar um desenvolvedor web full stack. Com este conhecimento fui voluntário na ONG Lacrei Saúde usando os conhecimentos da área 😊.
         </HeadListItem>
         <HeadListItem>
-          💬E não menos importante falo, escuto e escrevo Inglês e Espanhol em
-          nível Avançado.
+          💬 E não menos importante falo Inglês, Espanhol e Francês. Se quiser, podemos praticar juntos.
         </HeadListItem>
       </ul>
     </>
@@ -36,28 +34,9 @@ export const Paragraph2: React.FC = () => {
   return (
     <>
       <p>
-        Minhas realizações na área tech <Emphasis>mais legais</Emphasis> são:
+        Em 2024 embarquei no desafio de ser Consultor imobiliário na Lopes Gold e estou empolgado com isso.
       </p>
-      <ul>
-        <HeadListItem>
-          💡Faço parte do time de desenvolvimento da{" "}
-          <AuthorName
-            author={"Lacrei Saúde"}
-            site="https://lacreisaude.com.br/"
-          />{" "}
-          uma ONG/Startup que oferece à comunidade LGBTQIAPN+ um acesso à saúde
-          clínica seguro e inclusivo;
-        </HeadListItem>
-        <HeadListItem>
-          ✍🏽Prestei auxílio para desenvolvedores front end iniciantes oferecendo
-          Revisão de Código. Foram mais de 40 reviews minuciosos e em inglês;
-        </HeadListItem>
-        <HeadListItem>
-          🚣🏽‍♂️Liderei e desenvolvi aplicação Full Stack de um e-commerce de
-          equipamentos musicais junto de três colegas. Nele contribui no Front
-          end, Back end e em Testes funcionais de ponta a ponta.
-        </HeadListItem>
-      </ul>
+
     </>
   );
 };

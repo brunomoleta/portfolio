@@ -11,7 +11,7 @@ import DarkLightToggle from "@/components/DarkLightToggle";
 import { cookies } from "next/headers";
 
 export const metadata: Metadata = {
-  title: "Bruno Moleta | Desenvolvedor full stack ",
+  title: "Bruno Moleta | Arquiteto e Consultor imobiliário",
   description:
     "Portfólio de Bruno Moleta contendo dois projetos extensivamente detalhados. " +
     "A explicação compreende autores envolvidos, front end, back end e testes.",

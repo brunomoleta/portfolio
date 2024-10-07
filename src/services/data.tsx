@@ -8,10 +8,6 @@ export const heroHeading1: string = "Bruno Moleta.";
 
 export const linksList = [
   {
-    name: "currículo vitae",
-    href: cvLink,
-  },
-  {
     name: "linkedin",
     href: linkedin,
   },

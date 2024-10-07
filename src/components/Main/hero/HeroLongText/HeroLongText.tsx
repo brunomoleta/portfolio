@@ -12,8 +12,7 @@ function HeroLongText() {
     <Wrapper>
       <Name>{heroHeading1}</Name>
       <Dev style={{marginBlockEnd: "var(--s2)"}}>
-        Desenvolvedor Full&nbsp;Stack React ou Vue/Node com ênfase em
-        Front&nbsp;End.
+        Arquiteto e Consultor&nbsp;imobiliário
       </Dev>
       <HeroInfo />
     </Wrapper>

@@ -16,18 +16,13 @@ export const footerData = [
     title: "ir para github",
     href: github,
     icon: <GithubLogo />,
-  },
-  {
-    title: "ir para Currículo Vitae",
-    href: cvLink,
-    icon: <CVLogo />,
-  },
+  }
 ];
 
 export const footer1 =
   "Sinta-se a vontade para entrar em contato. Seja relacionado a uma " +
-  "vaga, dúvida a respeito de algo no portfólio ou simplesmente para " +
+  "oportunidade ou simplesmente para " +
   "trocarmos figurinhas :)";
 export const madeBy =
   "Design e desenvolvimento feitos por mim mesmo, Bruno. " +
-  "Última atualização em Setembro de 2024.";
+  "Última atualização em Outubro de 2024.";

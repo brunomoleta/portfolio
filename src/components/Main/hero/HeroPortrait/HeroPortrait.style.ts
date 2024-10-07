@@ -49,7 +49,7 @@ export const Container = styled.div`
 `;
 export const HeroImage = styled(Image)`
   object-fit: cover;
-  opacity: 0.8;
+  opacity: 1;
   filter: saturate(0.9);
   border-radius: var(--s-1);
 `;
