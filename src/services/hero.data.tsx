@@ -5,26 +5,25 @@ import {
   HeadListItem,
 } from "@/components/Main/hero/HeroInfo/HeroInfo.style";
 import React from "react";
-import AuthorName from "@/components/AuthorName";
+// import AuthorName from "@/components/AuthorName";
 
 export const Paragraph1: React.FC = () => {
   return (
     <>
       <ul>
         <HeadListItem>
-          🐦Venho dos Campos Gerais, do miolo do estado do Paraná, e amo circo.
-          🎪.
+          🐦Venho dos Campos Gerais, do miolo do estado do Paraná, e tenho orgulho da minha <Emphasis>Imbituva</Emphasis>.
         </HeadListItem>
         <HeadListItem>
-          🏛️Me graduei arquiteto e urbanista em Universidade pública e recebi
+          🏛️Me graduei <Emphasis>arquiteto e urbanista</Emphasis> na Universidade Tecnológica Federal do Paraná com
           destaque em Concurso Nacional para estudantes da área.
         </HeadListItem>
         <HeadListItem>
-          👨🏽‍💻Sonhava em {" "}
-          <code>programar</code>, então me dediquei por mais de um ano para me tornar um desenvolvedor web full stack. Com este conhecimento fui voluntário na ONG Lacrei Saúde usando os conhecimentos da área 😊.
+          👨🏽‍💻Dediquei um ano e meio da minha carreira com {" "}
+          <code>programação web</code>.
         </HeadListItem>
         <HeadListItem>
-          💬 E não menos importante falo Inglês, Espanhol e Francês. Se quiser, podemos praticar juntos.
+          ❤️No segundo semestre de 2024 embarquei no desafio de ser <Emphasis>Consultor imobiliário</Emphasis> na imobiliária Lopes Gold e estou contente em ser o auxiliador de pessoas na realização de seus sonhos.
         </HeadListItem>
       </ul>
     </>
@@ -33,10 +32,6 @@ export const Paragraph1: React.FC = () => {
 export const Paragraph2: React.FC = () => {
   return (
     <>
-      <p>
-        Em 2024 embarquei no desafio de ser Consultor imobiliário na Lopes Gold e estou empolgado com isso.
-      </p>
-
     </>
   );
 };
