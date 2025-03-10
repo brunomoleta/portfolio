@@ -9,9 +9,7 @@ function TextHero() {
       <HeroParagraph>
         <Paragraph1 />
       </HeroParagraph>
-      <HeroParagraph>
-        <Paragraph2 />
-      </HeroParagraph>
+      
       <HeroParagraph>
         <Paragraph3 />
       </HeroParagraph>
