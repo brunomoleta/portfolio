@@ -1,10 +1,8 @@
 import {
-  CVLogo,
-  GithubLogo,
   LinkedinLogo,
 } from "@/components/Footer/FooterList/FooterList.style";
 import React from "react";
-import { cvLink, github, linkedin } from "@/services/data";
+import { linkedin } from "@/services/data";
 
 export const footerData = [
   {
@@ -12,11 +10,6 @@ export const footerData = [
     href: linkedin,
     icon: <LinkedinLogo />,
   },
-  {
-    title: "ir para github",
-    href: github,
-    icon: <GithubLogo />,
-  }
 ];
 
 export const footer1 =
@@ -25,4 +18,4 @@ export const footer1 =
   "trocarmos figurinhas :)";
 export const madeBy =
   "Design e desenvolvimento feitos por mim mesmo, Bruno. " +
-  "Última atualização em Outubro de 2024.";
+  "Última atualização em Março de 2025. Imobiliária Lopes Gold CRECI J 9517";

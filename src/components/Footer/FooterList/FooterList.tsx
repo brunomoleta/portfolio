@@ -7,13 +7,13 @@ function FooterList() {
   return (
     <List>
       <LiItem
-        href="mailto:brunomoleta@pm.me"
-        value="brunomoleta@pm.me"
+        href="mailto:moleta.pr@lopesgold.com.br"
+        value="moleta.pr@lopesgold.com.br"
         topic="email"
       />
       <LiItem
         href={whatsappURL}
-        value="+55 (41) 9.9223.8239"
+        value="+55 (41) 9.9228.1134"
         topic="whatsapp"
       />
     </List>
